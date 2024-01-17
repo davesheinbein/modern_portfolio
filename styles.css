@@ -2882,7 +2882,7 @@ a img {
 }
 
 a:hover img {
-  transform: scale(1.10); 
+  transform: scale(1.05); 
 }
 
 
