@@ -154,34 +154,6 @@ function Header(props) {
 											id='modal-1-content'
 										>
 											<ul className='wp-block-navigation__container is-responsive items-justified-left alignwide wp-block-navigation header-section-list'>
-												<li className='wp-block-navigation-item wp-block-navigation-link wp-block-navigation-link__hidden'>
-													<a
-														target='_blank'
-														rel='noopener noreferrer nofollow'
-														href='https://www.davidsheinbeinengineer.com/'
-														className='custom-logo-link'
-														aria-current='page'
-													>
-														<img
-															width='250'
-															height='140'
-															src='https://i0.wp.com/davidssoftwareengineer.wpcomstaging.com/wp-content/uploads/2024/01/black_yellow_minimalist_brain_logo__2_-removebg-preview-edited.png?fit=500%2C281&amp;ssl=1'
-															className='custom-logo'
-															alt='DAVID SHEINBEIN'
-															decoding='async'
-															data-attachment-id='29'
-															data-orig-file='https://i0.wp.com/davidssoftwareengineer.wpcomstaging.com/wp-content/uploads/2024/01/black_yellow_minimalist_brain_logo__2_-removebg-preview-edited.png?fit=500%2C281&amp;ssl=1'
-															data-orig-size='500,281'
-															data-comments-opened='1'
-															data-image-meta='{"aperture":"0","credit":"","camera":"","caption":"David Sheinbein","created_timestamp":"0","copyright":"David Sheinbein","focal_length":"0","iso":"0","shutter_speed":"0","title":"David Sheinbein","orientation":"0"}'
-															data-image-title='David Sheinbein'
-															data-image-description='David Sheinbein'
-															data-image-caption='David Sheinbein'
-															data-medium-file='https://i0.wp.com/davidssoftwareengineer.wpcomstaging.com/wp-content/uploads/2024/01/black_yellow_minimalist_brain_logo__2_-removebg-preview-edited.png?fit=300%2C169&amp;ssl=1'
-															data-large-file='https://i0.wp.com/davidssoftwareengineer.wpcomstaging.com/wp-content/uploads/2024/01/black_yellow_minimalist_brain_logo__2_-removebg-preview-edited.png?fit=500%2C281&amp;ssl=1'
-														/>
-													</a>
-												</li>
 												<li className='wp-block-navigation-item wp-block-navigation-link header-section-text'>
 													<a
 														rel='noopener nofollow'
