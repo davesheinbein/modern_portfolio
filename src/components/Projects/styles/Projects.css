@@ -1,0 +1,24 @@
+/**
+*
+* Testing
+*
+**/
+.fa-star__animated {
+  transition: transform 0.75s ease-in-out;
+}
+
+.fa-star__animated:hover {
+  transform: rotate(360deg);
+}
+
+.rows {
+  display: flex;
+  flex-direction: row;
+}
+.rows__item:first-child {
+  padding-right: 15px;
+}
+
+.block-text {
+  color: var(--wp--preset--color--subtextA);
+}/*# sourceMappingURL=Projects.css.map */

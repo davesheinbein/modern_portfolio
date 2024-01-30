@@ -1,0 +1,123 @@
+/**
+*
+* Testing
+*
+**/
+.header .wp-block-navigation__responsive-container-content_height {
+  height: 100%;
+}
+.header .wp-block-navigation-link__flex {
+  display: flex !important;
+  flex-direction: row !important;
+  align-items: center !important;
+  vertical-align: middle;
+  font-size: var(--wp--preset--font-size--small);
+  width: 100%;
+}
+.header .wp-block-navigation-link__flex i {
+  padding-right: 5px;
+}
+@media (max-width: 600px) {
+  .header .wp-block-navigation-link__hidden,
+  .header .wp-block-navigation__hidden {
+    display: block;
+  }
+}
+@media (min-width: 601px) {
+  .header .wp-block-navigation-link__hidden,
+  .header .wp-block-navigation__hidden {
+    display: none;
+  }
+}
+.header .wp-block-navigation__hidden {
+  margin-top: auto;
+}
+
+.wp-block-template-part.header {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  background-color: var(--wp--preset--color--background);
+}
+
+.wp-block-template-part.header.is-sticky {
+  margin-top: 10px;
+}
+
+.wp-block-columns-is-layout-flex__margin {
+  margin-bottom: 0;
+}
+
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 28px;
+}
+
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: var(--wp--preset--color--slider);
+  transition: 0.4s;
+  border-radius: 34px;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 20px;
+  width: 20px;
+  left: 4px;
+  bottom: 4px;
+  background-color: var(--wp--preset--color--slider--bg);
+  transition: 0.4s;
+  border-radius: 50%;
+}
+
+input:checked + .slider {
+  background-color: white;
+  background-color: var(--wp--preset--color--slider);
+  border: 1px black solid;
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 1px white;
+}
+
+input:checked + .slider:before {
+  transform: translateX(32px);
+}
+
+.slider:before {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  font-size: 14px;
+  color: #11181f;
+}
+
+.wp-block-navigation-color {
+  color: var(--wp--preset--color--nav);
+}
+
+.wp-block-social-link > svg {
+  color: var(--wp--preset--color--nav);
+}
+
+.logo-sizing {
+  width: 250px;
+  aspect-ratio: auto 250/140;
+}/*# sourceMappingURL=Header.css.map */

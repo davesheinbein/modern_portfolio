@@ -1,0 +1,8 @@
+@import '../../../breakpoints/breakpoints.scss';
+@import '../../../mixins/mixins.scss';
+
+.blog {
+	.wp-block-post-excerpt__excerpt {
+		color: #11181f;
+	}
+}
