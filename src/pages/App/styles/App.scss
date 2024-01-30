@@ -3438,29 +3438,16 @@ p {
 			color: var(--wp--preset--color--headerA) !important;
 		}
 
-		// &-list {
-		// 	:nth-child(2) {
-		// 		.header-section-text {
-		// 			padding-left: 0;
-		// 		}
-		// 	}
-
-		// 	:last-child {
-		// 		.header-section-text {
-		// 			padding-right: 0;
-		// 		}
-		// 	}
-		// }
-
 		&-text {
 			color: var(--wp--preset--color--nav--text) !important;
-			border-radius: 25px;
+			border-radius: 10px;
 			padding: 5px;
 
 			&:active,
 			&:hover {
 				color: var(--wp--preset--color--icon) !important;
 				background-color: var(--wp--preset--color--iconBG);
+				padding: 5px;
 			}
 
 			a {

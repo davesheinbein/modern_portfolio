@@ -2914,12 +2914,13 @@ p {
 }
 .header-section-text {
   color: var(--wp--preset--color--nav--text) !important;
-  border-radius: 25px;
+  border-radius: 10px;
   padding: 5px;
 }
 .header-section-text:active, .header-section-text:hover {
   color: var(--wp--preset--color--icon) !important;
   background-color: var(--wp--preset--color--iconBG);
+  padding: 5px;
 }
 .header-section-text a {
   text-decoration: none !important;
