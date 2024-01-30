@@ -157,7 +157,15 @@ function Contact(props) {
 									lineHeight: '1.6',
 								}}
 							>
-								1(310)-628-5770
+								<i className='fa fa-phone contact-section-header'></i>{' '}
+								<a
+									className='contact-section-header'
+									rel='noopener nofollow'
+									href='tel:310-628-5770'
+									title='phone'
+								>
+									1(310)-628-5770
+								</a>
 							</p>
 						</div>
 					</div>

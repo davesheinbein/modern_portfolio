@@ -294,7 +294,7 @@ function Header(props) {
 												</li>
 											</ul>
 
-											<ul className='wp-block-navigation__container is-responsive items-justified-left alignwide wp-block-navigation wp-block-navigation__hidden'>
+											{/* <ul className='wp-block-navigation__container is-responsive items-justified-left alignwide wp-block-navigation wp-block-navigation__hidden'>
 												<li className='wp-block-navigation-item wp-block-navigation-link'>
 													<div className=' wp-block-navigation-link__flex'>
 														<i className='fa fa-phone'></i>
@@ -323,7 +323,8 @@ function Header(props) {
 														</a>
 													</div>
 												</li>
-											</ul>
+											</ul> */}
+
 											<ul className='wp-block-navigation__container is-responsive items-justified-left alignwide wp-block-navigation'>
 												<li className='wp-block-navigation-item wp-block-navigation-link'>
 													<label
