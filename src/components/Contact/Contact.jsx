@@ -159,7 +159,7 @@ function Contact(props) {
 							>
 								<i className='fa fa-phone contact-section-header'></i>{' '}
 								<a
-									className='contact-section-header'
+									className='contact-section-header no-underline'
 									rel='noopener nofollow'
 									href='tel:310-628-5770'
 									title='phone'

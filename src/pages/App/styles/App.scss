@@ -1079,7 +1079,7 @@ ul {
 	color: var(--wp--preset--color--vivid-red) !important;
 
 	&:hover {
-		text-decoration: underline;
+		text-decoration: none;
 	}
 }
 
@@ -3382,12 +3382,13 @@ h6 {
 a {
 	text-decoration: none;
 	transition: color 0.3s ease, background-color 0.3s ease;
-	border-radius: 25px;
+	border-radius: 5px;
 }
 
 a:hover {
 	color: var(--wp--preset--color--icon) !important;
 	background-color: var(--wp--preset--color--iconBG);
+	font-weight: 900;
 }
 
 a:active {
@@ -3441,13 +3442,11 @@ p {
 		&-text {
 			color: var(--wp--preset--color--nav--text) !important;
 			border-radius: 10px;
-			padding: 5px;
 
 			&:active,
 			&:hover {
 				color: var(--wp--preset--color--icon) !important;
 				background-color: var(--wp--preset--color--iconBG);
-				padding: 5px;
 			}
 
 			a {
@@ -3873,5 +3872,16 @@ p {
 		background-color: var(
 			--wp--preset--color--iconBG-hover
 		) !important;
+	}
+}
+
+.no-underline {
+	text-decoration: none !important;
+}
+
+i {
+	&:hover {
+		transition: transform 0.75s ease-in-out;
+		transform: rotate(360deg);
 	}
 }

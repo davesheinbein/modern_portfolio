@@ -237,6 +237,7 @@ function Experience() {
 													href='https://www.internetbrands.com/'
 													target='_blank'
 													rel='noopener noreferrer'
+													className='no-underline'
 												>
 													<p
 														className='has-small-font-size experience-section-text'
@@ -412,6 +413,7 @@ function Experience() {
 													href='https://www.superworldapp.com/'
 													target='_blank'
 													rel='noopener noreferrer'
+													className='no-underline'
 												>
 													<p
 														className='has-small-font-size experience-section-text'
