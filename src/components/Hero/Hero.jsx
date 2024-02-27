@@ -1,7 +1,9 @@
 import React from 'react';
 import './styles/Hero.css';
 
-function Hero() {
+function Hero({ headshotImg }) {
+	const headshotUrl = headshotImg.url;
+	const headshotName = headshotImg.name;
 	return (
 		<div className='wp-block-columns is-layout-flex wp-container-core-columns-layout-4 wp-block-columns-is-layout-flex hero-section'>
 			<div
@@ -28,8 +30,8 @@ function Hero() {
 										<img
 											width='800'
 											height='800'
-											src='https://davidssoftwareengineer.wpcomstaging.com/wp-content/uploads/2024/01/fotor-ai-20240110194250-1.jpg'
-											alt='Headshot'
+											src={headshotUrl}
+											alt={headshotName}
 											className='wp-image-88'
 											style={{
 												borderRadius: '10px',

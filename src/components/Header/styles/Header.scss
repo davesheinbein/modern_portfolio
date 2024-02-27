@@ -127,3 +127,26 @@ input:checked + .slider:before {
 	width: 250px;
 	aspect-ratio: auto 250 / 140;
 }
+
+.no-bg {
+	background-color: transparent !important;
+	border: none !important;
+	border-width: 0 !important;
+
+	&:hover,
+	&:focus,
+	&:active {
+		background-color: transparent !important;
+		border: none !important;
+		border-width: 0 !important;
+		outline: none !important;
+		box-shadow: none !important;
+	}
+}
+
+.wp-block-navigation__responsive-dialog {
+	background-color: var(
+		--wp--preset--color--accent,
+		#11181f
+	) !important;
+}

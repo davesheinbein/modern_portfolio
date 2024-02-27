@@ -1,8 +1,14 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import Header from '../../components/Header/Header';
 import Layout from '../LayoutPage/LayoutPage';
 import { createGlobalStyle } from 'styled-components';
 import { Route, Switch } from 'react-router-dom';
+import { storage } from '../../firebase/firebase';
+import {
+	ref,
+	listAll,
+	getDownloadURL,
+} from 'firebase/storage';
 import './styles/App.css';
 
 const GlobalStyle = createGlobalStyle`
@@ -77,11 +83,88 @@ const App = () => {
 		setColor(newColor);
 	};
 
+	const imgRef = ref(storage, 'images/');
+
+	const [imgList, setImgList] = useState([]);
+
+	useEffect(() => {
+		if (!imgRef) return;
+
+		listAll(imgRef)
+			.then((res) => {
+				res.items.forEach((item) => {
+					const imageName = item.name;
+					const updatedImageName = imageName.replace(
+						/\..*$/,
+						''
+					);
+
+					getDownloadURL(item).then((url) => {
+						setImgList((prev) => [
+							...prev,
+							{ name: updatedImageName, url },
+						]);
+					});
+				});
+			})
+			.catch((error) => {
+				console.log(error);
+			});
+	}, []);
+
+	function findImageByName(imgList, targetImageName) {
+		if (!imgList || !targetImageName) return null;
+
+		const selectedImage = imgList.find(
+			(image) => image.name === targetImageName
+		);
+
+		if (selectedImage) {
+			console.log('Selected Image URL:', selectedImage.url);
+			return selectedImage;
+		}
+
+		console.log(
+			`Image with name '${targetImageName}' not found.`
+		);
+		return null;
+	}
+
+	// files
+	const targetImageName1 = 'logo_red';
+	const redLogo = findImageByName(
+		imgList,
+		targetImageName1
+	);
+
+	const targetImageName2 = 'logo_blue';
+	const blueLogo = findImageByName(
+		imgList,
+		targetImageName2
+	);
+
+	// urls
+	const redLogoImg = redLogo
+		? redLogo
+		: {
+				name: 'David Sheinbein',
+				url: 'https://firebasestorage.googleapis.com/v0/b/davidsheinbeinengineer.appspot.com/o/images%2Flogo_blue.png?alt=media&token=324b6a80-0506-471f-9a0b-523db406613b',
+		  };
+	const blueLogoImg = blueLogo
+		? blueLogo
+		: {
+				name: 'David Sheinbein',
+				url: 'https://firebasestorage.googleapis.com/v0/b/davidsheinbeinengineer.appspot.com/o/images%2Flogo_blue.png?alt=media&token=324b6a80-0506-471f-9a0b-523db406613b',
+		  };
+
 	return (
 		<div className='wp-site-blocks app' id='top'>
 			<GlobalStyle color={color} />
 			<Header
+				imgList={imgList}
 				color={color}
+				redLogoImg={redLogoImg}
+				blueLogoImg={blueLogoImg}
 				handleThemeChange={handleThemeChange}
 			/>
 
@@ -93,6 +176,7 @@ const App = () => {
 						<div>
 							<Layout
 								color={color}
+								imgList={imgList}
 								handleThemeChange={handleThemeChange}
 							/>
 						</div>

@@ -2,7 +2,28 @@ import React, { Component } from 'react';
 import './styles/Projects.css';
 
 export default class Projects extends Component {
-	render() {
+	render(props) {
+		const {
+			funfunctionsImg,
+			fakeTwitchImg,
+			fakeflixImg,
+			frushleyImg,
+			fakeamazonImg,
+			typescriptquizImg,
+			fakeSpotifyImg,
+			covidtrackerImg,
+			imessageImg,
+		} = this.props;
+		const funfunctions = funfunctionsImg || null;
+		const covidtracker = covidtrackerImg || null;
+		const fakeTwitch = fakeTwitchImg || null;
+		const fakeflix = fakeflixImg || null;
+		const frushley = frushleyImg || null;
+		const fakeamazon = fakeamazonImg || null;
+		const imessage = imessageImg || null;
+		const typescriptquiz = typescriptquizImg || null;
+		const fakeSpotify = fakeSpotifyImg || null;
+
 		return (
 			<div
 				className='wp-block-columns is-layout-flex wp-container-core-columns-layout-13 wp-block-columns-is-layout-flex projects-section'
@@ -52,8 +73,8 @@ export default class Projects extends Component {
 														<img
 															width='1789'
 															height='1007'
-															src='https://davidssoftwareengineer.wpcomstaging.com/wp-content/uploads/2024/01/funfunctions-edited.png'
-															alt=''
+															src={funfunctions.url}
+															alt={funfunctions.name}
 															className='wp-image-193'
 															style={{
 																borderRadius: '10px',
@@ -181,8 +202,11 @@ export default class Projects extends Component {
 												<img
 													width='3572'
 													height='1936'
-													src='https://davidssoftwareengineer.wpcomstaging.com/wp-content/uploads/2024/01/covidtrackerscreenshotdark.png?w=1024'
-													alt=''
+													// update
+													width='800'
+													height='500'
+													src={covidtracker.url}
+													alt={covidtracker.name}
 													className='wp-image-164'
 													style={{
 														borderRadius: '10px',
@@ -277,8 +301,8 @@ export default class Projects extends Component {
 													<img
 														width='1024'
 														height='557'
-														src='https://davidssoftwareengineer.wpcomstaging.com/wp-content/uploads/2024/01/fakespotify-1024x557.png'
-														alt=''
+														src={fakeSpotify.url}
+														alt={fakeSpotify.name}
 														className='wp-image-248'
 														style={{
 															borderRadius: '10px',
@@ -382,24 +406,15 @@ export default class Projects extends Component {
 													<img
 														width='1024'
 														height='566'
-														src='https://davidssoftwareengineer.wpcomstaging.com/wp-content/uploads/2024/01/faketwitch-1024x566.png'
-														alt=''
+														src={fakeTwitch.url}
+														alt={fakeTwitch.name}
 														className='wp-image-250'
 														style={{
 															borderRadius: '10px',
 															aspectRatio: '16/9',
 															objectFit: 'cover',
 														}}
-														srcSet='
-																https://i0.wp.com/davidssoftwareengineer.wpcomstaging.com/wp-content/uploads/2024/01/faketwitch.png?resize=1024%2C566&amp;ssl=1  1024w,
-																https://i0.wp.com/davidssoftwareengineer.wpcomstaging.com/wp-content/uploads/2024/01/faketwitch.png?resize=300%2C166&amp;ssl=1    300w,
-																https://i0.wp.com/davidssoftwareengineer.wpcomstaging.com/wp-content/uploads/2024/01/faketwitch.png?resize=150%2C83&amp;ssl=1     150w,
-																https://i0.wp.com/davidssoftwareengineer.wpcomstaging.com/wp-content/uploads/2024/01/faketwitch.png?resize=768%2C425&amp;ssl=1    768w,
-																https://i0.wp.com/davidssoftwareengineer.wpcomstaging.com/wp-content/uploads/2024/01/faketwitch.png?resize=1536%2C849&amp;ssl=1  1536w,
-																https://i0.wp.com/davidssoftwareengineer.wpcomstaging.com/wp-content/uploads/2024/01/faketwitch.png?resize=2048%2C1132&amp;ssl=1 2048w,
-																https://i0.wp.com/davidssoftwareengineer.wpcomstaging.com/wp-content/uploads/2024/01/faketwitch.png?resize=1200%2C663&amp;ssl=1  1200w,
-																https://i0.wp.com/davidssoftwareengineer.wpcomstaging.com/wp-content/uploads/2024/01/faketwitch.png?w=3000&amp;ssl=1             3000w
-															'
+														srcSet={fakeTwitch.url}
 														sizes='(max-width: 1024px) 100vw, 1024px'
 													/>
 												</a>
@@ -487,8 +502,8 @@ export default class Projects extends Component {
 													<img
 														width='1784'
 														height='1004'
-														src='https://davidssoftwareengineer.wpcomstaging.com/wp-content/uploads/2024/01/typescriptQuizScreenshot-edited-1.png'
-														alt=''
+														src={typescriptquiz.url}
+														alt={typescriptquiz.name}
 														className='wp-image-253'
 														style={{
 															borderRadius: '10px',
@@ -593,8 +608,8 @@ export default class Projects extends Component {
 												<img
 													width='3582'
 													height='1943'
-													src='https://davidssoftwareengineer.wpcomstaging.com/wp-content/uploads/2024/01/fakeamazonhomescreenshot.png?w=1024'
-													alt=''
+													src={fakeamazon.url}
+													alt={fakeamazon.name}
 													className='wp-image-165'
 													style={{
 														borderRadius: '10px',
@@ -690,8 +705,8 @@ export default class Projects extends Component {
 													<img
 														width='1024'
 														height='562'
-														src='https://davidssoftwareengineer.wpcomstaging.com/wp-content/uploads/2024/01/fakeflix-1024x562.png'
-														alt=''
+														src={fakeflix.url}
+														alt={fakeflix.name}
 														className='wp-image-249'
 														style={{
 															borderRadius: '10px',
@@ -795,8 +810,8 @@ export default class Projects extends Component {
 													<img
 														width='1024'
 														height='554'
-														src='https://davidssoftwareengineer.wpcomstaging.com/wp-content/uploads/2024/01/imessage-1024x554.png'
-														alt=''
+														src={imessage.url}
+														alt={imessage.name}
 														className='wp-image-255'
 														style={{
 															borderRadius: '10px',
@@ -900,23 +915,15 @@ export default class Projects extends Component {
 													<img
 														width='1024'
 														height='504'
-														src='https://davidssoftwareengineer.wpcomstaging.com/wp-content/uploads/2024/01/frushley-1024x504.png'
-														alt=''
+														src={frushley.url}
+														alt={frushley.name}
 														className='wp-image-256'
 														style={{
 															borderRadius: '10px',
 															aspectRatio: '16/9',
 															objectFit: 'cover',
 														}}
-														srcSet='
-																https://i0.wp.com/davidssoftwareengineer.wpcomstaging.com/wp-content/uploads/2024/01/frushley.png?resize=1024%2C504&amp;ssl=1  1024w,
-																https://i0.wp.com/davidssoftwareengineer.wpcomstaging.com/wp-content/uploads/2024/01/frushley.png?resize=300%2C148&amp;ssl=1    300w,
-																https://i0.wp.com/davidssoftwareengineer.wpcomstaging.com/wp-content/uploads/2024/01/frushley.png?resize=150%2C74&amp;ssl=1     150w,
-																https://i0.wp.com/davidssoftwareengineer.wpcomstaging.com/wp-content/uploads/2024/01/frushley.png?resize=768%2C378&amp;ssl=1    768w,
-																https://i0.wp.com/davidssoftwareengineer.wpcomstaging.com/wp-content/uploads/2024/01/frushley.png?resize=1536%2C755&amp;ssl=1  1536w,
-																https://i0.wp.com/davidssoftwareengineer.wpcomstaging.com/wp-content/uploads/2024/01/frushley.png?resize=2048%2C1007&amp;ssl=1 2048w,
-																https://i0.wp.com/davidssoftwareengineer.wpcomstaging.com/wp-content/uploads/2024/01/frushley.png?resize=1200%2C590&amp;ssl=1  1200w
-															'
+														srcSet={frushley.url}
 														sizes='(max-width: 1024px) 100vw, 1024px'
 													/>
 												</a>
