@@ -36,7 +36,6 @@ console.log(
 export default class Layout extends Component {
 	render(props) {
 		const { imgList } = this.props;
-		console.log('🚀 Layout page ~ imgList:', imgList);
 
 		function findImageByName(imgList, targetImageName) {
 			if (!imgList || !targetImageName) return null;
@@ -111,7 +110,69 @@ export default class Layout extends Component {
 			targetImageName10
 		);
 
+		const targetImageName11 = 'code_comp';
+		const code_comp = findImageByName(
+			imgList,
+			targetImageName11
+		);
+
+		const targetImageName12 = 'comp_code';
+		const comp_code = findImageByName(
+			imgList,
+			targetImageName12
+		);
+
+		const targetImageName13 = 'desk_comp';
+		const desk_comp = findImageByName(
+			imgList,
+			targetImageName13
+		);
+
+		const targetImageName14 = 'message';
+		const message = findImageByName(
+			imgList,
+			targetImageName14
+		);
+
+		const targetImageName15 = 'cat_dog';
+		const cat_dog = findImageByName(
+			imgList,
+			targetImageName15
+		);
+
+		const targetImageName16 = 'logo_red';
+		const logo_red = findImageByName(
+			imgList,
+			targetImageName16
+		);
+
+		const targetImageName17 = 'laptop_code';
+		const laptop_code = findImageByName(
+			imgList,
+			targetImageName17
+		);
+
+		const targetImageName18 = 'logo_blue';
+		const logo_blue = findImageByName(
+			imgList,
+			targetImageName18
+		);
+
+		const targetImageName19 = 'laptop';
+		const laptop = findImageByName(
+			imgList,
+			targetImageName19
+		);
+
 		// urls
+
+		// Header
+		const headshotImg = headshot || {
+			name: 'headshot',
+			url: 'https://firebasestorage.googleapis.com/v0/b/davidsheinbeinengineer.appspot.com/o/images%2Fheadshot.jpg?alt=media&token=7673a0ee-45c0-4ba6-8dc6-891e406d20c9',
+		};
+
+		// projects
 		const funfunctionsImg = funfunctions || {
 			name: 'Fun Functionalities',
 			url: 'https://firebasestorage.googleapis.com/v0/b/davidsheinbeinengineer.appspot.com/o/images%2Ffunfunctions.png?alt=media&token=2f09927a-1177-4806-b6bc-c7767c6469c5',
@@ -149,9 +210,42 @@ export default class Layout extends Component {
 			url: 'https://firebasestorage.googleapis.com/v0/b/davidsheinbeinengineer.appspot.com/o/images%2Fcovidtracker.png?alt=media&token=8dc64f99-a3b7-4c1a-b09a-40dd55eb7627',
 		};
 
-		const headshotImg = headshot || {
-			name: 'headshot',
-			url: 'https://firebasestorage.googleapis.com/v0/b/davidsheinbeinengineer.appspot.com/o/images%2Fheadshot.jpg?alt=media&token=7673a0ee-45c0-4ba6-8dc6-891e406d20c9',
+		// education
+		const codeCompImg = code_comp || {
+			name: 'Code Compilation',
+			url: 'https://firebasestorage.googleapis.com/v0/b/davidsheinbeinengineer.appspot.com/o/images%2Fcode_comp.jpg?alt=media&token=f1e8192f-5724-40a3-bf01-32bf7d583bf1',
+		};
+
+		const compCodeImg = comp_code || {
+			name: 'Compilation Code',
+			url: 'https://firebasestorage.googleapis.com/v0/b/davidsheinbeinengineer.appspot.com/o/images%2Fcomp_code.png?alt=media&token=d03a0ba5-653f-439f-8ca7-0f413f322565',
+		};
+
+		// professional experience
+		const deskCompImg = desk_comp || {
+			name: 'Desktop Compilation',
+			url: 'https://firebasestorage.googleapis.com/v0/b/davidsheinbeinengineer.appspot.com/o/images%2Fdesk_comp.jpg?alt=media&token=25c9270c-699d-4b03-a968-93ea2cae339c',
+		};
+
+		const messageImg = message || {
+			name: 'Message',
+			url: 'https://firebasestorage.googleapis.com/v0/b/davidsheinbeinengineer.appspot.com/o/images%2Fmessage.jpg?alt=media&token=42b675b6-6656-40b3-bf18-29b6ab568325',
+		};
+
+		// blog
+		const catDogImg = cat_dog || {
+			name: 'Cat and Dog',
+			url: 'https://firebasestorage.googleapis.com/v0/b/davidsheinbeinengineer.appspot.com/o/images%2Fcat_dog.jpg?alt=media&token=c467ef65-f6c8-44c2-9d46-4ce57015d173',
+		};
+
+		const laptopCodeImg = laptop_code || {
+			name: 'Laptop Code',
+			url: 'https://firebasestorage.googleapis.com/v0/b/davidsheinbeinengineer.appspot.com/o/images%2Flaptop_code.png?alt=media&token=2149faab-2868-4d7f-886b-4a432ee57f0f',
+		};
+
+		const laptopImg = laptop || {
+			name: 'Laptop',
+			url: 'https://firebasestorage.googleapis.com/v0/b/davidsheinbeinengineer.appspot.com/o/images%2Flaptop.png?alt=media&token=48e84009-d9d9-43f9-a3a3-6c1d74e095be',
 		};
 
 		return (
