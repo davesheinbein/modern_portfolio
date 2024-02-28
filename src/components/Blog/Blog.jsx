@@ -1,7 +1,8 @@
 import React from 'react';
 import './styles/Blog.css';
 
-function Blog() {
+function Blog(props) {
+	const { deskCompImg, messageImg, catDogImg } = props;
 	return (
 		<div
 			className='wp-block-columns is-layout-flex wp-container-core-columns-layout-30 wp-block-columns-is-layout-flex blog blog-section'
@@ -52,7 +53,7 @@ function Blog() {
 											<img
 												width='1080'
 												height='720'
-												src='https://davidssoftwareengineer.wpcomstaging.com/wp-content/uploads/2024/01/temp3.jpg'
+												src={deskCompImg.url}
 												className='attachment-post-thumbnail size-post-thumbnail wp-post-image'
 												alt='Early Insights on ChatGPT: A Chatbot Technology with Great Potential'
 												style={{
@@ -64,15 +65,15 @@ function Blog() {
 												decoding='async'
 												loading='lazy'
 												data-attachment-id='120'
-												data-orig-file='https://i0.wp.com/davidssoftwareengineer.wpcomstaging.com/wp-content/uploads/2024/01/temp3.jpg?fit=1080%2C720&amp;ssl=1'
+												data-orig-file={deskCompImg.url}
 												data-orig-size='1080,720'
 												data-comments-opened='1'
 												data-image-meta='{"aperture":"0","credit":"","camera":"","caption":"","created_timestamp":"0","copyright":"","focal_length":"0","iso":"0","shutter_speed":"0","title":"","orientation":"0"}'
 												data-image-title='temp3'
 												data-image-description=''
 												data-image-caption=''
-												data-medium-file='https://i0.wp.com/davidssoftwareengineer.wpcomstaging.com/wp-content/uploads/2024/01/temp3.jpg?fit=300%2C200&amp;ssl=1'
-												data-large-file='https://i0.wp.com/davidssoftwareengineer.wpcomstaging.com/wp-content/uploads/2024/01/temp3.jpg?fit=1024%2C683&amp;ssl=1'
+												data-medium-file={deskCompImg.url}
+												data-large-file={deskCompImg.url}
 											/>
 										</a>
 									</figure>
@@ -131,7 +132,7 @@ function Blog() {
 											<img
 												width='1080'
 												height='720'
-												src='https://davidssoftwareengineer.wpcomstaging.com/wp-content/uploads/2024/01/temp2.jpg'
+												src={messageImg.url}
 												className='attachment-post-thumbnail size-post-thumbnail wp-post-image'
 												alt='My First Conversation with ChatGPT: Impressive Adaptability'
 												style={{
@@ -143,15 +144,15 @@ function Blog() {
 												decoding='async'
 												loading='lazy'
 												data-attachment-id='116'
-												data-orig-file='https://i0.wp.com/davidssoftwareengineer.wpcomstaging.com/wp-content/uploads/2024/01/temp2.jpg?fit=1080%2C720&amp;ssl=1'
+												data-orig-file={messageImg.url}
 												data-orig-size='1080,720'
 												data-comments-opened='1'
 												data-image-meta='{"aperture":"0","credit":"","camera":"","caption":"","created_timestamp":"0","copyright":"","focal_length":"0","iso":"0","shutter_speed":"0","title":"","orientation":"0"}'
 												data-image-title='temp2'
 												data-image-description=''
 												data-image-caption=''
-												data-medium-file='https://i0.wp.com/davidssoftwareengineer.wpcomstaging.com/wp-content/uploads/2024/01/temp2.jpg?fit=300%2C200&amp;ssl=1'
-												data-large-file='https://i0.wp.com/davidssoftwareengineer.wpcomstaging.com/wp-content/uploads/2024/01/temp2.jpg?fit=1024%2C683&amp;ssl=1'
+												data-medium-file={messageImg.url}
+												data-large-file={messageImg.url}
 											/>
 										</a>
 									</figure>
@@ -207,7 +208,7 @@ function Blog() {
 											<img
 												width='1080'
 												height='720'
-												src='https://davidssoftwareengineer.wpcomstaging.com/wp-content/uploads/2024/01/temp1.jpg'
+												src={catDogImg.url}
 												className='attachment-post-thumbnail size-post-thumbnail wp-post-image'
 												alt='Nurturing Skill Growth in Code Collaboration'
 												style={{
@@ -219,15 +220,15 @@ function Blog() {
 												decoding='async'
 												loading='lazy'
 												data-attachment-id='45'
-												data-orig-file='https://i0.wp.com/davidssoftwareengineer.wpcomstaging.com/wp-content/uploads/2024/01/temp1.jpg?fit=1080%2C720&amp;ssl=1'
+												data-orig-file={catDogImg.url}
 												data-orig-size='1080,720'
 												data-comments-opened='1'
 												data-image-meta='{"aperture":"0","credit":"","camera":"","caption":"","created_timestamp":"0","copyright":"","focal_length":"0","iso":"0","shutter_speed":"0","title":"","orientation":"0"}'
 												data-image-title='temp1'
 												data-image-description=''
 												data-image-caption=''
-												data-medium-file='https://i0.wp.com/davidssoftwareengineer.wpcomstaging.com/wp-content/uploads/2024/01/temp1.jpg?fit=300%2C200&amp;ssl=1'
-												data-large-file='https://i0.wp.com/davidssoftwareengineer.wpcomstaging.com/wp-content/uploads/2024/01/temp1.jpg?fit=1024%2C683&amp;ssl=1'
+												data-medium-file={catDogImg.url}
+												data-large-file={catDogImg.url}
 											/>
 										</a>
 									</figure>

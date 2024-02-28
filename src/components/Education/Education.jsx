@@ -1,7 +1,8 @@
 import React from 'react';
 import './styles/Education.css';
 
-function Education() {
+function Education(props) {
+	const { codeCompImg, compCodeImg } = props;
 	return (
 		<div
 			className='wp-block-columns is-layout-flex wp-container-core-columns-layout-17 wp-block-columns-is-layout-flex education-section'
@@ -163,25 +164,15 @@ function Education() {
 								<img
 									width='683'
 									height='1024'
-									src='https://davidssoftwareengineer.wpcomstaging.com/wp-content/uploads/2024/01/safar-safarov-koOdUvfGr4c-unsplash-683x1024.jpg'
-									alt=''
+									src={codeCompImg.url}
+									alt={codeCompImg.name}
 									className='wp-image-210'
 									style={{
 										borderRadius: '10px',
 										aspectRatio: '9/16',
 										objectFit: 'cover',
 									}}
-									srcSet='
-												https://i0.wp.com/davidssoftwareengineer.wpcomstaging.com/wp-content/uploads/2024/01/safar-safarov-koOdUvfGr4c-unsplash.jpg?resize=683%2C1024&amp;ssl=1   683w,
-												https://i0.wp.com/davidssoftwareengineer.wpcomstaging.com/wp-content/uploads/2024/01/safar-safarov-koOdUvfGr4c-unsplash.jpg?resize=200%2C300&amp;ssl=1    200w,
-												https://i0.wp.com/davidssoftwareengineer.wpcomstaging.com/wp-content/uploads/2024/01/safar-safarov-koOdUvfGr4c-unsplash.jpg?resize=100%2C150&amp;ssl=1    100w,
-												https://i0.wp.com/davidssoftwareengineer.wpcomstaging.com/wp-content/uploads/2024/01/safar-safarov-koOdUvfGr4c-unsplash.jpg?resize=768%2C1152&amp;ssl=1   768w,
-												https://i0.wp.com/davidssoftwareengineer.wpcomstaging.com/wp-content/uploads/2024/01/safar-safarov-koOdUvfGr4c-unsplash.jpg?resize=1024%2C1536&amp;ssl=1 1024w,
-												https://i0.wp.com/davidssoftwareengineer.wpcomstaging.com/wp-content/uploads/2024/01/safar-safarov-koOdUvfGr4c-unsplash.jpg?resize=1365%2C2048&amp;ssl=1 1365w,
-												https://i0.wp.com/davidssoftwareengineer.wpcomstaging.com/wp-content/uploads/2024/01/safar-safarov-koOdUvfGr4c-unsplash.jpg?resize=1200%2C1800&amp;ssl=1 1200w,
-												https://i0.wp.com/davidssoftwareengineer.wpcomstaging.com/wp-content/uploads/2024/01/safar-safarov-koOdUvfGr4c-unsplash.jpg?w=2000&amp;ssl=1             2000w,
-												https://i0.wp.com/davidssoftwareengineer.wpcomstaging.com/wp-content/uploads/2024/01/safar-safarov-koOdUvfGr4c-unsplash.jpg?w=3000&amp;ssl=1             3000w
-											'
+									srcSet={codeCompImg.url}
 									sizes='(max-width: 683px) 100vw, 683px'
 								/>
 							</figure>
@@ -202,25 +193,15 @@ function Education() {
 								<img
 									width='3882'
 									height='2584'
-									src='https://davidssoftwareengineer.wpcomstaging.com/wp-content/uploads/2024/01/christopher-gower-m_HRfLhgABo-unsplash.jpg'
-									alt=''
+									src={compCodeImg.url}
+									alt={compCodeImg.name}
 									className='wp-image-212'
 									style={{
 										borderRadius: '10px',
 										aspectRatio: '9/16',
 										objectFit: 'cover',
 									}}
-									srcSet='
-												https://i0.wp.com/davidssoftwareengineer.wpcomstaging.com/wp-content/uploads/2024/01/christopher-gower-m_HRfLhgABo-unsplash.jpg?w=3882&amp;ssl=1             3882w,
-												https://i0.wp.com/davidssoftwareengineer.wpcomstaging.com/wp-content/uploads/2024/01/christopher-gower-m_HRfLhgABo-unsplash.jpg?resize=300%2C200&amp;ssl=1    300w,
-												https://i0.wp.com/davidssoftwareengineer.wpcomstaging.com/wp-content/uploads/2024/01/christopher-gower-m_HRfLhgABo-unsplash.jpg?resize=1024%2C682&amp;ssl=1  1024w,
-												https://i0.wp.com/davidssoftwareengineer.wpcomstaging.com/wp-content/uploads/2024/01/christopher-gower-m_HRfLhgABo-unsplash.jpg?resize=150%2C100&amp;ssl=1    150w,
-												https://i0.wp.com/davidssoftwareengineer.wpcomstaging.com/wp-content/uploads/2024/01/christopher-gower-m_HRfLhgABo-unsplash.jpg?resize=768%2C511&amp;ssl=1    768w,
-												https://i0.wp.com/davidssoftwareengineer.wpcomstaging.com/wp-content/uploads/2024/01/christopher-gower-m_HRfLhgABo-unsplash.jpg?resize=1536%2C1022&amp;ssl=1 1536w,
-												https://i0.wp.com/davidssoftwareengineer.wpcomstaging.com/wp-content/uploads/2024/01/christopher-gower-m_HRfLhgABo-unsplash.jpg?resize=2048%2C1363&amp;ssl=1 2048w,
-												https://i0.wp.com/davidssoftwareengineer.wpcomstaging.com/wp-content/uploads/2024/01/christopher-gower-m_HRfLhgABo-unsplash.jpg?resize=1200%2C799&amp;ssl=1  1200w,
-												https://i0.wp.com/davidssoftwareengineer.wpcomstaging.com/wp-content/uploads/2024/01/christopher-gower-m_HRfLhgABo-unsplash.jpg?w=3000&amp;ssl=1             3000w
-											'
+									srcSet={compCodeImg.url}
 									sizes='(max-width: 3882px) 100vw, 3882px'
 								/>
 							</figure>

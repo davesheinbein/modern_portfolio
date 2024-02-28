@@ -222,22 +222,6 @@ export default class Layout extends Component {
 		};
 
 		// professional experience
-		const deskCompImg = desk_comp || {
-			name: 'Desktop Compilation',
-			url: 'https://firebasestorage.googleapis.com/v0/b/davidsheinbeinengineer.appspot.com/o/images%2Fdesk_comp.jpg?alt=media&token=25c9270c-699d-4b03-a968-93ea2cae339c',
-		};
-
-		const messageImg = message || {
-			name: 'Message',
-			url: 'https://firebasestorage.googleapis.com/v0/b/davidsheinbeinengineer.appspot.com/o/images%2Fmessage.jpg?alt=media&token=42b675b6-6656-40b3-bf18-29b6ab568325',
-		};
-
-		// blog
-		const catDogImg = cat_dog || {
-			name: 'Cat and Dog',
-			url: 'https://firebasestorage.googleapis.com/v0/b/davidsheinbeinengineer.appspot.com/o/images%2Fcat_dog.jpg?alt=media&token=c467ef65-f6c8-44c2-9d46-4ce57015d173',
-		};
-
 		const laptopCodeImg = laptop_code || {
 			name: 'Laptop Code',
 			url: 'https://firebasestorage.googleapis.com/v0/b/davidsheinbeinengineer.appspot.com/o/images%2Flaptop_code.png?alt=media&token=2149faab-2868-4d7f-886b-4a432ee57f0f',
@@ -246,6 +230,21 @@ export default class Layout extends Component {
 		const laptopImg = laptop || {
 			name: 'Laptop',
 			url: 'https://firebasestorage.googleapis.com/v0/b/davidsheinbeinengineer.appspot.com/o/images%2Flaptop.png?alt=media&token=48e84009-d9d9-43f9-a3a3-6c1d74e095be',
+		};
+
+		// blog
+		const deskCompImg = desk_comp || {
+			name: 'Desktop Compilation',
+			url: 'https://firebasestorage.googleapis.com/v0/b/davidsheinbeinengineer.appspot.com/o/images%2Fdesk_comp.jpg?alt=media&token=25c9270c-699d-4b03-a968-93ea2cae339c',
+		};
+		const messageImg = message || {
+			name: 'Message',
+			url: 'https://firebasestorage.googleapis.com/v0/b/davidsheinbeinengineer.appspot.com/o/images%2Fmessage.jpg?alt=media&token=42b675b6-6656-40b3-bf18-29b6ab568325',
+		};
+
+		const catDogImg = cat_dog || {
+			name: 'Cat and Dog',
+			url: 'https://firebasestorage.googleapis.com/v0/b/davidsheinbeinengineer.appspot.com/o/images%2Fcat_dog.jpg?alt=media&token=c467ef65-f6c8-44c2-9d46-4ce57015d173',
 		};
 
 		return (
@@ -265,9 +264,21 @@ export default class Layout extends Component {
 					imessageImg={imessageImg}
 				/>
 				<Skills imgList={imgList} />
-				<Education imgList={imgList} />
-				<Experience imgList={imgList} />
-				<Blog imgList={imgList} />
+				<Education
+					codeCompImg={codeCompImg}
+					compCodeImg={compCodeImg}
+				/>
+				<Experience
+					imgList={imgList}
+					laptopCodeImg={laptopCodeImg}
+					laptopImg={laptopImg}
+				/>
+				<Blog
+					imgList={imgList}
+					deskCompImg={deskCompImg}
+					messageImg={messageImg}
+					catDogImg={catDogImg}
+				/>
 				<Endorsements imgList={imgList} />
 				<Contact
 					handleThemeChange={this.props.handleThemeChange}

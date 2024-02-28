@@ -1,7 +1,8 @@
 import React from 'react';
 import './styles/Experience.css';
 
-function Experience() {
+function Experience(props) {
+	const { laptopCodeImg, laptopImg } = props;
 	return (
 		<div
 			className='wp-block-columns is-layout-flex wp-container-core-columns-layout-29 wp-block-columns-is-layout-flex experience-section'
@@ -195,23 +196,13 @@ function Experience() {
 														<img
 															width='6082'
 															height='4055'
-															src='https://davidssoftwareengineer.wpcomstaging.com/wp-content/uploads/2024/01/joshua-reddekopp-SyYmXSDnJ54-unsplash.jpg'
-															alt=''
+															src={laptopCodeImg.url}
+															alt={laptopCodeImg.name}
 															className='wp-image-222'
 															style={{
 																borderRadius: '10px',
 															}}
-															srcSet='
-																		https://i0.wp.com/davidssoftwareengineer.wpcomstaging.com/wp-content/uploads/2024/01/joshua-reddekopp-SyYmXSDnJ54-unsplash.jpg?w=6082&amp;ssl=1             6082w,
-																		https://i0.wp.com/davidssoftwareengineer.wpcomstaging.com/wp-content/uploads/2024/01/joshua-reddekopp-SyYmXSDnJ54-unsplash.jpg?resize=300%2C200&amp;ssl=1    300w,
-																		https://i0.wp.com/davidssoftwareengineer.wpcomstaging.com/wp-content/uploads/2024/01/joshua-reddekopp-SyYmXSDnJ54-unsplash.jpg?resize=1024%2C683&amp;ssl=1  1024w,
-																		https://i0.wp.com/davidssoftwareengineer.wpcomstaging.com/wp-content/uploads/2024/01/joshua-reddekopp-SyYmXSDnJ54-unsplash.jpg?resize=150%2C100&amp;ssl=1    150w,
-																		https://i0.wp.com/davidssoftwareengineer.wpcomstaging.com/wp-content/uploads/2024/01/joshua-reddekopp-SyYmXSDnJ54-unsplash.jpg?resize=768%2C512&amp;ssl=1    768w,
-																		https://i0.wp.com/davidssoftwareengineer.wpcomstaging.com/wp-content/uploads/2024/01/joshua-reddekopp-SyYmXSDnJ54-unsplash.jpg?resize=1536%2C1024&amp;ssl=1 1536w,
-																		https://i0.wp.com/davidssoftwareengineer.wpcomstaging.com/wp-content/uploads/2024/01/joshua-reddekopp-SyYmXSDnJ54-unsplash.jpg?resize=2048%2C1365&amp;ssl=1 2048w,
-																		https://i0.wp.com/davidssoftwareengineer.wpcomstaging.com/wp-content/uploads/2024/01/joshua-reddekopp-SyYmXSDnJ54-unsplash.jpg?resize=1200%2C800&amp;ssl=1  1200w,
-																		https://i0.wp.com/davidssoftwareengineer.wpcomstaging.com/wp-content/uploads/2024/01/joshua-reddekopp-SyYmXSDnJ54-unsplash.jpg?w=3000&amp;ssl=1             3000w
-																	'
+															srcSet={laptopCodeImg.url}
 															sizes='(max-width: 6082px) 100vw, 6082px'
 														/>
 													</a>
@@ -371,23 +362,13 @@ function Experience() {
 														<img
 															width='6000'
 															height='4000'
-															src='https://davidssoftwareengineer.wpcomstaging.com/wp-content/uploads/2024/01/clement-helardot-95YRwf6CNw8-unsplash.jpg'
-															alt=''
+															src={laptopImg.url}
+															alt={laptopImg.name}
 															className='wp-image-223'
 															style={{
 																borderRadius: '10px',
 															}}
-															srcSet='
-																		https://i0.wp.com/davidssoftwareengineer.wpcomstaging.com/wp-content/uploads/2024/01/clement-helardot-95YRwf6CNw8-unsplash.jpg?w=6000&amp;ssl=1             6000w,
-																		https://i0.wp.com/davidssoftwareengineer.wpcomstaging.com/wp-content/uploads/2024/01/clement-helardot-95YRwf6CNw8-unsplash.jpg?resize=300%2C200&amp;ssl=1    300w,
-																		https://i0.wp.com/davidssoftwareengineer.wpcomstaging.com/wp-content/uploads/2024/01/clement-helardot-95YRwf6CNw8-unsplash.jpg?resize=1024%2C683&amp;ssl=1  1024w,
-																		https://i0.wp.com/davidssoftwareengineer.wpcomstaging.com/wp-content/uploads/2024/01/clement-helardot-95YRwf6CNw8-unsplash.jpg?resize=150%2C100&amp;ssl=1    150w,
-																		https://i0.wp.com/davidssoftwareengineer.wpcomstaging.com/wp-content/uploads/2024/01/clement-helardot-95YRwf6CNw8-unsplash.jpg?resize=768%2C512&amp;ssl=1    768w,
-																		https://i0.wp.com/davidssoftwareengineer.wpcomstaging.com/wp-content/uploads/2024/01/clement-helardot-95YRwf6CNw8-unsplash.jpg?resize=1536%2C1024&amp;ssl=1 1536w,
-																		https://i0.wp.com/davidssoftwareengineer.wpcomstaging.com/wp-content/uploads/2024/01/clement-helardot-95YRwf6CNw8-unsplash.jpg?resize=2048%2C1365&amp;ssl=1 2048w,
-																		https://i0.wp.com/davidssoftwareengineer.wpcomstaging.com/wp-content/uploads/2024/01/clement-helardot-95YRwf6CNw8-unsplash.jpg?resize=1200%2C800&amp;ssl=1  1200w,
-																		https://i0.wp.com/davidssoftwareengineer.wpcomstaging.com/wp-content/uploads/2024/01/clement-helardot-95YRwf6CNw8-unsplash.jpg?w=3000&amp;ssl=1             3000w
-																	'
+															srcSet={laptopImg.url}
 															sizes='(max-width: 6000px) 100vw, 6000px'
 														/>
 													</a>
