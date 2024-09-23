@@ -29,69 +29,161 @@ function Endorsements() {
 					<div className='wp-block-columns alignwide is-layout-flex wp-container-core-columns-layout-31 wp-block-columns-is-layout-flex'>
 						<div className='wp-block-column is-layout-flow wp-container-core-column-layout-40 wp-block-column-is-layout-flow'>
 							<p className='has-background-color has-text-color has-link-color wp-elements-748c6fdb72b926c49d219f0d66ab87b2 endorsements-section-text'>
-								“David was an absolute pleasure to work with
-								throughout the planning and execution of the
-								app we worked on. He has a very keen eye for
-								creativity and design and played a crucial
-								role in developing our overall look for our
-								application and really brought it together.
-								I continue to look to him for guidance on
-								some projects I currently work on as he
-								continues to elevate his skills.”
+								“David is an excellent team member. Working
+								as a part of my Front End Engineering team,
+								David has proved to be adaptable, dedicated,
+								dependable, with a growing confidence, and
+								expending skill set. Through the years that
+								I have worked with him so far, he has taken
+								on tasks that vary on the difficulty
+								spectrum and solved them all. David is
+								frequently looking for the best way to solve
+								a problem and delivering on time and within
+								estimates. David was flexible enough to work
+								with an EOL version of Angular and new react
+								frameworks at the same building each in
+								different simultaneous projects. His time
+								and attention management is excellent,. More
+								recently he has begun leading milestone
+								demonstrations intended for management and
+								assisting peers coming into the codebases..
+								David has always been a strong performer,
+								and if given the chance in the future I
+								would certainly recommend his hire.”
 							</p>
 
-							<p className='has-vivid-red-color has-text-color has-link-color wp-elements-47c4abfa708ff59b18e5640ba4837fce endorsements-section-accent'>
-								—<strong> Jonathan Lane</strong>
-							</p>
+							<a
+								href='https://www.linkedin.com/in/dtrwos/'
+								className='has-vivid-red-color has-text-color has-link-color wp-elements-47c4abfa708ff59b18e5640ba4837fce endorsements-section-accent no-underline'
+							>
+								— <strong>Chris Drottar</strong>
+							</a>
 						</div>
 
 						<div className='wp-block-column is-layout-flow wp-container-core-column-layout-41 wp-block-column-is-layout-flow'>
 							<p className='has-background-color has-text-color has-link-color wp-elements-ce4b1369c8d34991e16b8ca954e2cf20 endorsements-section-text'>
-								“David was an extremely thorough, talented
-								and hard-working Software Engineering
-								student. He will make an exceptional
-								addition to any company!”
+								"Working with David has been a great
+								experience. His technical skills and
+								creativity made him a valuable part of our
+								team. He effectively translated front-end
+								requirements into streamlined systems and
+								enhanced dynamic forms using React, Angular,
+								and CSS. I was especially impressed by his
+								work on the HOP UI Kit, which showcased his
+								commitment to both quality and innovation.
+								David also communicated effectively with the
+								product team, consistently reviewing
+								designs, identifying gaps, and proposing
+								alternative technical solutions to help
+								define use cases in more detail. He was
+								always ready to help any team member for
+								onboarding or for new project work, making
+								him a great team player. His strong teamwork
+								and collaboration helped make our project a
+								success."
 							</p>
 
-							<p className='has-vivid-red-color has-text-color has-link-color wp-elements-f0f396bd3d0d7df8a17d4f05acef505f endorsements-section-accent'>
-								— <strong>Jim Clark</strong>
-							</p>
+							<a
+								href='https://www.linkedin.com/in/ashwini-bauskar/'
+								className='has-vivid-red-color has-text-color has-link-color wp-elements-f0f396bd3d0d7df8a17d4f05acef505f endorsements-section-accent no-underline'
+							>
+								— <strong>Ashwini Bauskar</strong>
+							</a>
 						</div>
 					</div>
 
 					<div className='wp-block-columns alignwide is-layout-flex wp-container-core-columns-layout-31 wp-block-columns-is-layout-flex'>
 						<div className='wp-block-column is-layout-flow wp-container-core-column-layout-40 wp-block-column-is-layout-flow'>
 							<p className='has-background-color has-text-color has-link-color wp-elements-748c6fdb72b926c49d219f0d66ab87b2 endorsements-section-text'>
-								"I highly recommend David Sheinbein as a
-								top-notch full-stack developer. Having
-								collaborated closely on projects, I've seen
-								his impressive technical skills, notably
-								skilled in JavaScript and DOM manipulation.
-								David tackles challenges with enthusiasm,
-								providing reliable solutions and bringing a
-								friendly, communicative, and personable
-								approach to the team. His eye for styling,
-								particularly with SCSS, adds a creative
-								touch to his work. For any team seeking a
-								results-driven and personable full-stack
-								developer, David is the ideal choice."
+								“I had the honor of working with David at
+								Internet Brands where he was instrumental in
+								bringing our complex healthcare webapps to
+								life. A solid, effective frontend dev with a
+								crisp sense for building the right solutions
+								at the right time, he works efficiently and
+								autonomously. Any problem we could think of,
+								I was confident that David would be able to
+								find a solution. While his skills in
+								frontend technologies like React and Angular
+								are great, what makes him a standout
+								teammate is his ability to break down
+								complex problems into manageable pieces and
+								his attention to detail.”
 							</p>
 
-							<p className='has-vivid-red-color has-text-color has-link-color wp-elements-47c4abfa708ff59b18e5640ba4837fce endorsements-section-accent'>
-								—<strong> Jake Liebow</strong>
-							</p>
+							<a
+								href='https://www.linkedin.com/in/deepikachaudhari/'
+								className='has-vivid-red-color has-text-color has-link-color wp-elements-47c4abfa708ff59b18e5640ba4837fce endorsements-section-accent no-underline'
+							>
+								— <strong>Deepika Chaudhari</strong>
+							</a>
 						</div>
 
-						{/* <div className='wp-block-column is-layout-flow wp-container-core-column-layout-41 wp-block-column-is-layout-flow'>
+						<div className='wp-block-column is-layout-flow wp-container-core-column-layout-41 wp-block-column-is-layout-flow'>
 							<p className='has-background-color has-text-color has-link-color wp-elements-ce4b1369c8d34991e16b8ca954e2cf20 endorsements-section-text'>
-								“Good Frontend Engineer and good at
-								JavaScript and React”
+								“My team was primarily backend developers,
+								but we would regularly borrow David in order
+								to build react bundles for our projects.
+								David was a highly skilled front end
+								developer, who was a pleasure to work with.
+								We could give him a design in figma or any
+								other tool and he could create a pixel
+								perfect implementation. If he had any
+								concerns or questions, he would raise them
+								immediately and proactively. If I had the
+								opportunity, I would absolutely work with
+								David again.”
 							</p>
 
-							<p className='has-vivid-red-color has-text-color has-link-color wp-elements-f0f396bd3d0d7df8a17d4f05acef505f endorsements-section-accent'>
-								— <strong>Jeremy Guan</strong>
+							<a
+								href='https://www.linkedin.com/in/terencekulik/'
+								className='has-vivid-red-color has-text-color has-link-color wp-elements-f0f396bd3d0d7df8a17d4f05acef505f endorsements-section-accent no-underline'
+							>
+								— <strong>Terence Kulik</strong>
+							</a>
+						</div>
+					</div>
+
+					<div className='wp-block-columns alignwide is-layout-flex wp-container-core-columns-layout-31 wp-block-columns-is-layout-flex'>
+						<div className='wp-block-column is-layout-flow wp-container-core-column-layout-40 wp-block-column-is-layout-flow'>
+							<p className='has-background-color has-text-color has-link-color wp-elements-748c6fdb72b926c49d219f0d66ab87b2 endorsements-section-text'>
+								“David has collaborated closely with all of
+								the front-end developers on my team over the
+								past few years. He consistently demonstrated
+								meticulous attention to detail, a clear
+								design vision, and an ability to identify
+								gaps in the process, proactively
+								communicating them to the product team. I
+								was highly impressed with his work and would
+								confidently recommend him
 							</p>
-						</div> */}
+
+							<a
+								href='https://www.linkedin.com/in/zohrehmalek/'
+								className='has-vivid-red-color has-text-color has-link-color wp-elements-47c4abfa708ff59b18e5640ba4837fce endorsements-section-accent no-underline'
+							>
+								- <strong>Zohreh Malek</strong>
+							</a>
+						</div>
+
+						<div className='wp-block-column is-layout-flow wp-container-core-column-layout-41 wp-block-column-is-layout-flow'>
+							<p className='has-background-color has-text-color has-link-color wp-elements-ce4b1369c8d34991e16b8ca954e2cf20 endorsements-section-text'>
+								“David plays an important roles in our
+								frontend development team, he has shown a
+								great progress from an associate to a well
+								establish frontend developer. He is quick
+								witted and passionate in his work, a very
+								good communicator to make sure he can push
+								his task forward.”
+							</p>
+
+							<a
+								href='https://www.linkedin.com/in/budichandra/'
+								className='has-vivid-red-color has-text-color has-link-color wp-elements-f0f396bd3d0d7df8a17d4f05acef505f endorsements-section-accent no-underline'
+							>
+								— <strong>Budi Chandra</strong>
+							</a>
+						</div>
 					</div>
 				</div>
 			</div>
