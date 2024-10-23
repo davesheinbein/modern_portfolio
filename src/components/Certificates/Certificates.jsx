@@ -10,7 +10,8 @@ const certificates = [
 		link: 'https://www.freecodecamp.org/certification/dsDev/back-end-development-and-apis',
 		skills:
 			'MongoDB · MongoDB Atlas · Express.js · Node.js · Git · GitHub · HTML5 · JavaScript · Cascading Style Sheets (CSS)',
-		// image: 'placeholder',
+		image:
+			'https://media.licdn.com/dms/image/v2/D562DAQFUYYmqO3Q9Fg/profile-treasury-image-shrink_800_800/profile-treasury-image-shrink_800_800/0/1729206745705?e=1730311200&v=beta&t=GLqY5e2R482j46QxZOiTdv3rXvH_tk48r6CKw85jCvo',
 	},
 	{
 		title: 'Data Visualization',
@@ -19,7 +20,8 @@ const certificates = [
 		link: 'https://www.freecodecamp.org/certification/dsDev/data-visualization',
 		skills:
 			'HTML5 · Cascading Style Sheets (CSS) · JavaScript · D3.js · TopoJSON',
-		// image: 'placeholder',
+		image:
+			'https://media.licdn.com/dms/image/v2/D562DAQEa55me7pfBbQ/profile-treasury-image-shrink_800_800/profile-treasury-image-shrink_800_800/0/1729617282325?e=1730311200&v=beta&t=qdJBAbPhBZ2XMomIH4BmFolfDRPUjGjPLe_F4R_q778',
 	},
 	{
 		title: 'Front End Development Libraries',
@@ -28,7 +30,8 @@ const certificates = [
 		link: 'https://www.freecodecamp.org/certification/dsDev/front-end-libraries',
 		skills:
 			'Front-End Development · HTML5 · Cascading Style Sheets (CSS) · Git · GitHub',
-		// image: 'placeholder',
+		image:
+			'https://media.licdn.com/dms/image/v2/D562DAQGkg6vSRL3QiA/profile-treasury-image-shrink_800_800/profile-treasury-image-shrink_800_800/0/1729206992476?e=1730311200&v=beta&t=Q-IrXfqN4R06B8cpSmWEYuLIBmVSgMb5hEeZDzQPEGY',
 	},
 	{
 		title: 'JavaScript Algorithms and Data Structures',
@@ -37,7 +40,8 @@ const certificates = [
 		link: 'https://www.freecodecamp.org/certification/dsDev/javascript-algorithms-and-data-structures-v8',
 		skills:
 			'JavaScript · HTML5 · HTML · Cascading Style Sheets (CSS) · Git · GitHub · Front-End Development',
-		// image: 'placeholder',
+		image:
+			'https://media.licdn.com/dms/image/v2/D562DAQGj5Kp6GuEtrQ/profile-treasury-image-shrink_800_800/profile-treasury-image-shrink_800_800/0/1729207170298?e=1730311200&v=beta&t=3Yr8YaHf-qcZUr7FXRKhGRyQaSX60kZKpbIDrXb8tyE',
 	},
 	{
 		title: 'Responsive Web Design',
@@ -46,7 +50,17 @@ const certificates = [
 		link: 'https://www.freecodecamp.org/certification/dsDev/responsive-web-design',
 		skills:
 			'HTML5 · Cascading Style Sheets (CSS) · JavaScript · Front-end Development · Git · GitHub',
-		// image: 'placeholder',
+		image:
+			'https://media.licdn.com/dms/image/v2/D562DAQH-ytqi06aiKA/profile-treasury-image-shrink_800_800/profile-treasury-image-shrink_800_800/0/1729207071003?e=1730311200&v=beta&t=k5QnUD4DelbmBsQ_h2bkSCV75VE7M35YhR6B_jwvlws',
+	},
+	{
+		title: 'Scientific Computing with Python',
+		issueDate: 'Oct 2024',
+		issuer: 'FreeCodeCamp',
+		link: 'https://www.freecodecamp.org/certification/dsDev/scientific-computing-with-python-v7',
+		skills: 'Python · Git · GitHub',
+		image:
+			'https://media.licdn.com/dms/image/v2/D562DAQHm_on6_DQXhw/profile-treasury-image-shrink_800_800/profile-treasury-image-shrink_800_800/0/1729705738391?e=1730311200&v=beta&t=4rYcSxSJtG8pjWW3ucWtG5OzBxzrqG-CxoHgM2wSz14',
 	},
 	// {
 	// 	title: 'Google Ads Shopping Certification',
@@ -88,14 +102,14 @@ const certificates = [
 	// 	skills: 'Google Adwords',
 	// 	// image: 'placeholder',
 	// },
-	{
-		title: 'Google Analytics Individual Qualification',
-		issueDate: 'Oct 2018',
-		issuer: 'Google Ads',
-		link: 'https://ads.google.com/intl/en_us/home/resources/certifications/',
-		skills: 'Google Adwords',
-		// image: 'placeholder',
-	},
+	// {
+	// 	title: 'Google Analytics Individual Qualification',
+	// 	issueDate: 'Oct 2018',
+	// 	issuer: 'Google Ads',
+	// 	link: 'https://ads.google.com/intl/en_us/home/resources/certifications/',
+	// 	skills: 'Google Adwords',
+	// 	// image: 'placeholder',
+	// },
 ];
 
 function Certificates() {
@@ -115,11 +129,11 @@ function Certificates() {
 					<ul className='certificates-list'>
 						{certificates.map((certificate, index) => (
 							<li key={index} className='certificate-item'>
-								{/* <img
-							className='certificate-logo'
-							src={certificate.image}
-							alt={`${certificate.title} logo`}
-						/> */}
+								<img
+									className='certificate-img'
+									src={certificate.image}
+									alt={`${certificate.title} logo`}
+								/>
 								<h3 className='certificate-title'>
 									{certificate.title}
 								</h3>

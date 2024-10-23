@@ -1298,6 +1298,13 @@ export default class Projects extends Component {
 									Codepen
 								</a>
 								<a
+									href='https://codesandbox.io/u/davesheinbein'
+									className='more__projects-project-link'
+								>
+									<i className='fa fa-chain more__projects-project-link-icon no-underline'></i>
+									Codesandbox
+								</a>
+								<a
 									href='https://glitch.com/@davesheinbein'
 									className='more__projects-project-link'
 								>
