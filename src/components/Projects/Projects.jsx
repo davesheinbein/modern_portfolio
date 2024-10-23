@@ -1286,6 +1286,33 @@ export default class Projects extends Component {
 								</div>
 							</div>
 						</div>
+						<div className='more__projects'>
+							More projects available on:
+							<br />
+							<div className='more__projects-project'>
+								<a
+									href='https://codepen.io/dsDeveloper'
+									className='more__projects-project-link'
+								>
+									<i className='fa fa-chain more__projects-project-link-icon no-underline'></i>
+									Codepen
+								</a>
+								<a
+									href='https://glitch.com/@davesheinbein'
+									className='more__projects-project-link'
+								>
+									<i className='fa fa-chain more__projects-project-link-icon no-underline'></i>
+									Glitch
+								</a>
+								<a
+									href='https://replit.com/@davesheinbein'
+									className='more__projects-project-link'
+								>
+									<i className='fa fa-chain more__projects-project-link-icon no-underline'></i>
+									Replit
+								</a>
+							</div>
+						</div>
 					</div>
 				</div>
 			</div>

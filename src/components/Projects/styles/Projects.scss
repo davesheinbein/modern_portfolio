@@ -46,3 +46,25 @@
 .git__projects-section-accent {
 	color: var(--wp--preset--color--accent) !important;
 }
+
+.more__projects {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	align-items: center;
+	width: 100%;
+	max-width: unset !important;
+	font-size: 36px;
+	user-select: none;
+
+	&-project {
+		&-link {
+			font-size: 30px;
+			padding: 0 20px;
+			text-decoration: none;
+			&-icon {
+				padding-right: 5px;
+			}
+		}
+	}
+}
