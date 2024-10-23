@@ -6,6 +6,7 @@ import Projects from '../../components/Projects/Projects';
 import Contact from '../../components/Contact/Contact';
 import Skills from '../../components/Skills/Skills';
 import Education from '../../components/Education/Education';
+import Certificates from '../../components/Certificates/Certificates';
 import Experience from '../../components/Experience/Experience';
 import Blog from '../../components/Blog/Blog';
 import Endorsements from '../../components/Endorsements/Endorsements';
@@ -294,6 +295,7 @@ export default class Layout extends Component {
 					codeCompImg={codeCompImg}
 					compCodeImg={compCodeImg}
 				/>
+				<Certificates imgList={imgList} />
 				<Experience
 					imgList={imgList}
 					laptopCodeImg={laptopCodeImg}
