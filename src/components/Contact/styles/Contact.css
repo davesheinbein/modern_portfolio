@@ -8,4 +8,5 @@
 }
 .contact .wp-block-social-link-anchor:hover, .contact .wp-block-social-link-anchor:active {
   scale: 1.25;
+  border-radius: 5px;
 }/*# sourceMappingURL=Contact.css.map */

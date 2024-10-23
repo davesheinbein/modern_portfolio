@@ -85,7 +85,7 @@ function Endorsements() {
 
 							<a
 								href='https://www.linkedin.com/in/ashwini-bauskar/'
-								className='has-vivid-red-color has-text-color has-link-color wp-elements-f0f396bd3d0d7df8a17d4f05acef505f endorsements-section-accent no-underline'
+								className='has-vivid-red-color has-text-color has-link-color endorsements-section-accent no-underline'
 							>
 								— <strong>Ashwini Bauskar</strong>
 							</a>
@@ -137,7 +137,7 @@ function Endorsements() {
 
 							<a
 								href='https://www.linkedin.com/in/terencekulik/'
-								className='has-vivid-red-color has-text-color has-link-color wp-elements-f0f396bd3d0d7df8a17d4f05acef505f endorsements-section-accent no-underline'
+								className='has-vivid-red-color has-text-color has-link-color endorsements-section-accent no-underline'
 							>
 								— <strong>Terence Kulik</strong>
 							</a>
@@ -179,7 +179,7 @@ function Endorsements() {
 
 							<a
 								href='https://www.linkedin.com/in/budichandra/'
-								className='has-vivid-red-color has-text-color has-link-color wp-elements-f0f396bd3d0d7df8a17d4f05acef505f endorsements-section-accent no-underline'
+								className='has-vivid-red-color has-text-color has-link-color endorsements-section-accent no-underline'
 							>
 								— <strong>Budi Chandra</strong>
 							</a>

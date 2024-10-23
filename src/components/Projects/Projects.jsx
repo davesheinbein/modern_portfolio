@@ -13,7 +13,12 @@ export default class Projects extends Component {
 			fakeSpotifyImg,
 			covidtrackerImg,
 			imessageImg,
+			choroplethMapImg,
+			treemapImg,
+			temperatureHeatMapImg,
+			scatterplotImg,
 		} = this.props;
+
 		const funfunctions = funfunctionsImg || null;
 		const covidtracker = covidtrackerImg || null;
 		const fakeTwitch = fakeTwitchImg || null;
@@ -23,6 +28,11 @@ export default class Projects extends Component {
 		const imessage = imessageImg || null;
 		const typescriptquiz = typescriptquizImg || null;
 		const fakeSpotify = fakeSpotifyImg || null;
+		const choroplethMap = choroplethMapImg || null;
+		const treemap = treemapImg || null;
+		const temperatureHeatMap =
+			temperatureHeatMapImg || null;
+		const scatterplot = scatterplotImg || null;
 
 		return (
 			<div
@@ -200,12 +210,10 @@ export default class Projects extends Component {
 												href='https://github.com/davesheinbein/covid-tracker'
 											>
 												<img
-													width='3572'
-													height='1936'
-													// update
 													width='800'
 													height='500'
 													src={covidtracker.url}
+													srcset={covidtracker.url}
 													alt={covidtracker.name}
 													className='wp-image-164'
 													style={{
@@ -309,16 +317,7 @@ export default class Projects extends Component {
 															aspectRatio: '16/9',
 															objectFit: 'cover',
 														}}
-														srcSet='
-																https://i0.wp.com/davidssoftwareengineer.wpcomstaging.com/wp-content/uploads/2024/01/fakespotify.png?resize=1024%2C557&amp;ssl=1  1024w,
-																https://i0.wp.com/davidssoftwareengineer.wpcomstaging.com/wp-content/uploads/2024/01/fakespotify.png?resize=300%2C163&amp;ssl=1    300w,
-																https://i0.wp.com/davidssoftwareengineer.wpcomstaging.com/wp-content/uploads/2024/01/fakespotify.png?resize=150%2C82&amp;ssl=1     150w,
-																https://i0.wp.com/davidssoftwareengineer.wpcomstaging.com/wp-content/uploads/2024/01/fakespotify.png?resize=768%2C418&amp;ssl=1    768w,
-																https://i0.wp.com/davidssoftwareengineer.wpcomstaging.com/wp-content/uploads/2024/01/fakespotify.png?resize=1536%2C836&amp;ssl=1  1536w,
-																https://i0.wp.com/davidssoftwareengineer.wpcomstaging.com/wp-content/uploads/2024/01/fakespotify.png?resize=2048%2C1114&amp;ssl=1 2048w,
-																https://i0.wp.com/davidssoftwareengineer.wpcomstaging.com/wp-content/uploads/2024/01/fakespotify.png?resize=1200%2C653&amp;ssl=1  1200w,
-																https://i0.wp.com/davidssoftwareengineer.wpcomstaging.com/wp-content/uploads/2024/01/fakespotify.png?w=3000&amp;ssl=1             3000w
-															'
+														srcSet={fakeSpotify.url}
 														sizes='(max-width: 1024px) 100vw, 1024px'
 													/>
 												</a>
@@ -510,15 +509,7 @@ export default class Projects extends Component {
 															aspectRatio: '16/9',
 															objectFit: 'cover',
 														}}
-														srcSet='
-																https://i0.wp.com/davidssoftwareengineer.wpcomstaging.com/wp-content/uploads/2024/01/typescriptQuizScreenshot-edited-1.png?w=1784&amp;ssl=1            1784w,
-																https://i0.wp.com/davidssoftwareengineer.wpcomstaging.com/wp-content/uploads/2024/01/typescriptQuizScreenshot-edited-1.png?resize=300%2C169&amp;ssl=1   300w,
-																https://i0.wp.com/davidssoftwareengineer.wpcomstaging.com/wp-content/uploads/2024/01/typescriptQuizScreenshot-edited-1.png?resize=1024%2C576&amp;ssl=1 1024w,
-																https://i0.wp.com/davidssoftwareengineer.wpcomstaging.com/wp-content/uploads/2024/01/typescriptQuizScreenshot-edited-1.png?resize=150%2C84&amp;ssl=1    150w,
-																https://i0.wp.com/davidssoftwareengineer.wpcomstaging.com/wp-content/uploads/2024/01/typescriptQuizScreenshot-edited-1.png?resize=768%2C432&amp;ssl=1   768w,
-																https://i0.wp.com/davidssoftwareengineer.wpcomstaging.com/wp-content/uploads/2024/01/typescriptQuizScreenshot-edited-1.png?resize=1536%2C864&amp;ssl=1 1536w,
-																https://i0.wp.com/davidssoftwareengineer.wpcomstaging.com/wp-content/uploads/2024/01/typescriptQuizScreenshot-edited-1.png?resize=1200%2C675&amp;ssl=1 1200w
-															'
+														srcSet={typescriptquiz.url}
 														sizes='(max-width: 1784px) 100vw, 1784px'
 													/>
 												</a>
@@ -713,16 +704,7 @@ export default class Projects extends Component {
 															aspectRatio: '16/9',
 															objectFit: 'cover',
 														}}
-														srcSet='
-																https://i0.wp.com/davidssoftwareengineer.wpcomstaging.com/wp-content/uploads/2024/01/fakeflix.png?resize=1024%2C562&amp;ssl=1  1024w,
-																https://i0.wp.com/davidssoftwareengineer.wpcomstaging.com/wp-content/uploads/2024/01/fakeflix.png?resize=300%2C165&amp;ssl=1    300w,
-																https://i0.wp.com/davidssoftwareengineer.wpcomstaging.com/wp-content/uploads/2024/01/fakeflix.png?resize=150%2C82&amp;ssl=1     150w,
-																https://i0.wp.com/davidssoftwareengineer.wpcomstaging.com/wp-content/uploads/2024/01/fakeflix.png?resize=768%2C421&amp;ssl=1    768w,
-																https://i0.wp.com/davidssoftwareengineer.wpcomstaging.com/wp-content/uploads/2024/01/fakeflix.png?resize=1536%2C843&amp;ssl=1  1536w,
-																https://i0.wp.com/davidssoftwareengineer.wpcomstaging.com/wp-content/uploads/2024/01/fakeflix.png?resize=2048%2C1123&amp;ssl=1 2048w,
-																https://i0.wp.com/davidssoftwareengineer.wpcomstaging.com/wp-content/uploads/2024/01/fakeflix.png?resize=1200%2C658&amp;ssl=1  1200w,
-																https://i0.wp.com/davidssoftwareengineer.wpcomstaging.com/wp-content/uploads/2024/01/fakeflix.png?w=3000&amp;ssl=1             3000w
-															'
+														srcSet='https://i.imgur.com/13EPwv3.png'
 														sizes='(max-width: 1024px) 100vw, 1024px'
 													/>
 												</a>
@@ -818,16 +800,7 @@ export default class Projects extends Component {
 															aspectRatio: '16/9',
 															objectFit: 'cover',
 														}}
-														srcSet='
-																https://i0.wp.com/davidssoftwareengineer.wpcomstaging.com/wp-content/uploads/2024/01/imessage.png?resize=1024%2C554&amp;ssl=1  1024w,
-																https://i0.wp.com/davidssoftwareengineer.wpcomstaging.com/wp-content/uploads/2024/01/imessage.png?resize=300%2C162&amp;ssl=1    300w,
-																https://i0.wp.com/davidssoftwareengineer.wpcomstaging.com/wp-content/uploads/2024/01/imessage.png?resize=150%2C81&amp;ssl=1     150w,
-																https://i0.wp.com/davidssoftwareengineer.wpcomstaging.com/wp-content/uploads/2024/01/imessage.png?resize=768%2C416&amp;ssl=1    768w,
-																https://i0.wp.com/davidssoftwareengineer.wpcomstaging.com/wp-content/uploads/2024/01/imessage.png?resize=1536%2C832&amp;ssl=1  1536w,
-																https://i0.wp.com/davidssoftwareengineer.wpcomstaging.com/wp-content/uploads/2024/01/imessage.png?resize=2048%2C1109&amp;ssl=1 2048w,
-																https://i0.wp.com/davidssoftwareengineer.wpcomstaging.com/wp-content/uploads/2024/01/imessage.png?resize=1200%2C650&amp;ssl=1  1200w,
-																https://i0.wp.com/davidssoftwareengineer.wpcomstaging.com/wp-content/uploads/2024/01/imessage.png?w=3000&amp;ssl=1             3000w
-															'
+														srcSet={imessage.url}
 														sizes='(max-width: 1024px) 100vw, 1024px'
 													/>
 												</a>
@@ -1002,6 +975,314 @@ export default class Projects extends Component {
 											</div>
 										</div>
 									</div>
+								</div>
+								{/*  */}
+							</div>
+							{/*  */}
+						</div>
+						{/*  */}
+						<h3 className='wp-block-heading alignwide projects-section-header'>
+							<a
+								className='projects-section-header no-underline'
+								href='https://codepen.io/dsDeveloper'
+							>
+								CodePen Projects
+							</a>
+						</h3>
+
+						<div className='git__projects-grid'>
+							{/* CodePen Project 1 */}
+							<div className='wp-block-group git__project-item'>
+								<h3 className='wp-block-heading has-medium-font-size'>
+									<a
+										className='git__projects-section-accent no-underline'
+										target='_blank'
+										rel='noopener noreferrer'
+										href='https://codepen.io/dsDeveloper/full/oNKwaeN'
+									>
+										Choropleth Map
+									</a>
+								</h3>
+								<img
+									className='git__projects-section-img'
+									src={choroplethMap.url}
+									alt={choroplethMap.name}
+								/>
+								<p className='git__projects-section-text'>
+									An interactive choropleth map showcasing
+									the educational attainment of adults aged
+									25 and older across U.S. counties from
+									2010-2014. Users can explore detailed
+									county-level data by hovering over
+									regions, revealing the percentage of
+									individuals holding a bachelor's degree or
+									higher.
+									<br />
+									<br />
+									Based on:
+									<a
+										className='git__projects-section-text-link'
+										href='https://www.freecodecamp.org/learn/data-visualization/data-visualization-projects/visualize-data-with-a-choropleth-map'
+									>
+										FreeCodeCamp Project
+									</a>
+								</p>
+								<p className='git__projects-section-text'>
+									Tech Stack: HTML, CSS, JavaScript, D3.js
+								</p>
+								<div className='rows'>
+									<p className='rows__item'>
+										<i className='fa fa-globe git__projects-section-accent no-underline'></i>{' '}
+										<a
+											target='_blank'
+											rel='noopener noreferrer'
+											href='https://codepen.io/dsDeveloper/full/oNKwaeN'
+											className='git__projects-section-url'
+										>
+											Project
+										</a>
+									</p>
+									<p className='rows__item'>
+										<i className='fa fa-chain git__projects-section-accent no-underline'></i>{' '}
+										<a
+											target='_blank'
+											rel='noopener noreferrer'
+											href='https://codepen.io/dsDeveloper/pen/oNKwaeN'
+											className='git__projects-section-url'
+										>
+											CodePen
+										</a>
+									</p>
+									<p className='rows__item'>
+										<i className='fa fa-github git__projects-section-accent no-underline'></i>{' '}
+										<a
+											target='_blank'
+											rel='noopener noreferrer'
+											href='https://gist.github.com/davesheinbein/003f8a4eab0146b5258e940b6deba11e'
+											className='git__projects-section-url'
+										>
+											GitHub Gist
+										</a>
+									</p>
+								</div>
+							</div>
+
+							{/* CodePen Project 2 */}
+							<div className='wp-block-group git__project-item'>
+								<h3 className='wp-block-heading has-medium-font-size'>
+									<a
+										className='git__projects-section-accent no-underline'
+										target='_blank'
+										rel='noopener noreferrer'
+										href='https://codepen.io/dsDeveloper/full/WNVOYKB'
+									>
+										Treemap Diagram
+									</a>
+								</h3>
+								<img
+									className='git__projects-section-img'
+									src={treemap.url}
+									alt={treemap.name}
+								/>
+								<p className='git__projects-section-text'>
+									An interactive treemap diagram that
+									visualizes Kickstarter pledges across
+									various categories. Users can hover over
+									each tile to reveal funding details for
+									specific projects, offering insights into
+									the distribution of pledged amounts across
+									creative sectors.
+									<br />
+									<br />
+									Based on:
+									<a href='https://www.freecodecamp.org/learn/data-visualization/data-visualization-projects/visualize-data-with-a-treemap-diagram'>
+										FreeCodeCamp Project
+									</a>
+								</p>
+								<p className='git__projects-section-text'>
+									Tech Stack: HTML, CSS, JavaScript, D3.js
+								</p>
+								<div className='rows'>
+									<p className='rows__item'>
+										<i className='fa fa-globe git__projects-section-accent no-underline'></i>{' '}
+										<a
+											target='_blank'
+											rel='noopener noreferrer'
+											href='https://codepen.io/dsDeveloper/full/WNVOYKB'
+											className='git__projects-section-url'
+										>
+											Project
+										</a>
+									</p>
+									<p className='rows__item'>
+										<i className='fa fa-chain git__projects-section-accent no-underline'></i>{' '}
+										<a
+											target='_blank'
+											rel='noopener noreferrer'
+											href='https://codepen.io/dsDeveloper/pen/WNVOYKB'
+											className='git__projects-section-url'
+										>
+											CodePen
+										</a>
+									</p>
+									<p className='rows__item'>
+										<i className='fa fa-github git__projects-section-accent no-underline'></i>{' '}
+										<a
+											target='_blank'
+											rel='noopener noreferrer'
+											href='https://gist.github.com/davesheinbein/701f42aa6ec3418d517c6f9cb5ef8ae3'
+											className='git__projects-section-url'
+										>
+											GitHub Gist
+										</a>
+									</p>
+								</div>
+							</div>
+
+							{/* Repeat for additional git__projects */}
+							<div className='wp-block-group git__project-item'>
+								<h3 className='wp-block-heading has-medium-font-size'>
+									<a
+										className='git__projects-section-accent no-underline'
+										target='_blank'
+										rel='noopener noreferrer'
+										href='https://codepen.io/dsDeveloper/pen/xxvryGM'
+									>
+										Temperature Heat Map
+									</a>
+								</h3>
+								<img
+									className='git__projects-section-img'
+									src={temperatureHeatMap.url}
+									alt={temperatureHeatMap.name}
+								/>
+								<p className='git__projects-section-text'>
+									Explore a comprehensive heat map that
+									visualizes global temperature changes from
+									1754 to 2016. This interactive tool allows
+									users to hover over individual cells to
+									uncover detailed information about monthly
+									temperature anomalies, facilitating a
+									deeper understanding of historical climate
+									trends.
+									<br />
+									<br />
+									Based on:
+									<a href='https://www.freecodecamp.org/learn/data-visualization/data-visualization-projects/visualize-data-with-a-heat-map'>
+										FreeCodeCamp Project
+									</a>
+								</p>
+								<p className='git__projects-section-text'>
+									Tech Stack: HTML, CSS, JavaScript, D3.js
+								</p>
+								<div className='rows'>
+									<p className='rows__item'>
+										<i className='fa fa-globe git__projects-section-accent no-underline'></i>{' '}
+										<a
+											target='_blank'
+											rel='noopener noreferrer'
+											href='https://codepen.io/dsDeveloper/full/xxvryGM'
+											className='git__projects-section-url'
+										>
+											Project
+										</a>
+									</p>
+									<p className='rows__item'>
+										<i className='fa fa-chain git__projects-section-accent no-underline'></i>{' '}
+										<a
+											target='_blank'
+											rel='noopener noreferrer'
+											href='https://codepen.io/dsDeveloper/pen/xxvryGM'
+											className='git__projects-section-url'
+										>
+											CodePen
+										</a>
+									</p>
+									<p className='rows__item'>
+										<i className='fa fa-github git__projects-section-accent no-underline'></i>{' '}
+										<a
+											target='_blank'
+											rel='noopener noreferrer'
+											href='https://gist.github.com/davesheinbein/003f8a4eab0146b5258e940b6deba11e'
+											className='git__projects-section-url'
+										>
+											GitHub Gist
+										</a>
+									</p>
+								</div>
+							</div>
+
+							<div className='wp-block-group git__project-item'>
+								<h3 className='wp-block-heading has-medium-font-size'>
+									<a
+										className='git__projects-section-accent no-underline'
+										target='_blank'
+										rel='noopener noreferrer'
+										href='https://codepen.io/yourusername/pen/project4'
+									>
+										Cyclists Scatterplot
+									</a>
+								</h3>
+								<img
+									className='git__projects-section-img'
+									src={scatterplot.url}
+									alt={scatterplot.name}
+								/>
+								<p className='git__projects-section-text'>
+									This scatterplot visualizes the
+									performance of cyclists over time,
+									showcasing the relationship between race
+									times and doping allegations in the sport.
+									The interactive graph allows you to
+									explore historical cycling data,
+									highlighting notable moments in the
+									sport's history. Hover over the points to
+									uncover the details of each cyclist's year
+									and race time.
+									<br />
+									<br />
+									Based on:
+									<a href='https://www.freecodecamp.org/learn/data-visualization/data-visualization-projects/visualize-data-with-a-scatterplot-graph'>
+										FreeCodeCamp Project
+									</a>
+								</p>
+								<p className='git__projects-section-text'>
+									Tech Stack: HTML, CSS, JavaScript, D3.js
+								</p>
+								<div className='rows'>
+									<p className='rows__item'>
+										<i className='fa fa-globe git__projects-section-accent no-underline'></i>{' '}
+										<a
+											target='_blank'
+											rel='noopener noreferrer'
+											href='https://codepen.io/dsDeveloper/full/YzmQJXK'
+											className='git__projects-section-url'
+										>
+											Project
+										</a>
+									</p>
+									<p className='rows__item'>
+										<i className='fa fa-chain git__projects-section-accent no-underline'></i>{' '}
+										<a
+											target='_blank'
+											rel='noopener noreferrer'
+											href='https://codepen.io/dsDeveloper/pen/YzmQJXK'
+											className='git__projects-section-url'
+										>
+											CodePen
+										</a>
+									</p>
+									<p className='rows__item'>
+										<i className='fa fa-github git__projects-section-accent no-underline'></i>{' '}
+										<a
+											target='_blank'
+											rel='noopener noreferrer'
+											href='https://gist.github.com/davesheinbein/f9700777468789de1e85f25e26984f3b'
+											className='git__projects-section-url'
+										>
+											GitHub Gist
+										</a>
+									</p>
 								</div>
 							</div>
 						</div>

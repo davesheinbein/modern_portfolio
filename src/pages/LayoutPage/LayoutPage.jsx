@@ -169,82 +169,104 @@ export default class Layout extends Component {
 		// Header
 		const headshotImg = headshot || {
 			name: 'headshot',
-			url: 'https://firebasestorage.googleapis.com/v0/b/davidsheinbeinengineer.appspot.com/o/images%2Fheadshot.jpg?alt=media&token=7673a0ee-45c0-4ba6-8dc6-891e406d20c9',
+			url: 'https://i.imgur.com/1mMXZZy.png',
 		};
 
 		// projects
 		const funfunctionsImg = funfunctions || {
 			name: 'Fun Functionalities',
-			url: 'https://firebasestorage.googleapis.com/v0/b/davidsheinbeinengineer.appspot.com/o/images%2Ffunfunctions.png?alt=media&token=2f09927a-1177-4806-b6bc-c7767c6469c5',
+			url: 'https://i.imgur.com/l19QzZ6.png',
 		};
 		const fakeflixImg = fakeflix || {
 			name: 'Fake Netflix',
-			url: 'https://firebasestorage.googleapis.com/v0/b/davidsheinbeinengineer.appspot.com/o/images%2FfakeTwitch.png?alt=media&token=361115a0-1b99-4a58-951f-dae18b5ba3f2',
+			url: 'https://i.imgur.com/13EPwv3.png',
 		};
 		const fakeTwitchImg = fakeTwitch || {
 			name: 'Fake Twitch',
-			url: 'https://firebasestorage.googleapis.com/v0/b/davidsheinbeinengineer.appspot.com/o/images%2Ffaketwitch.png?alt=media&token=361115a0-1b99-4a58-951f-dae18b5ba3f2',
+			url: 'https://i.imgur.com/D54Lfah.png',
 		};
 		const frushleyImg = frushley || {
 			name: 'Frushley',
-			url: 'https://firebasestorage.googleapis.com/v0/b/davidsheinbeinengineer.appspot.com/o/images%2Ffrushley.png?alt=media&token=1d23dcb6-2c39-4cfb-a01a-2d7a5ae17b8c',
+			url: 'https://i.imgur.com/I3amyTz.png',
 		};
 		const fakeamazonImg = fakeamazon || {
 			name: 'Fake Amazon',
-			url: 'https://firebasestorage.googleapis.com/v0/b/davidsheinbeinengineer.appspot.com/o/images%2Ffakeamazon.png?alt=media&token=879ebfa8-a64e-48f3-91d5-aa1f75180df8',
+			url: 'https://i.imgur.com/bZ5z6c6.png',
 		};
 		const typescriptquizImg = typescriptquiz || {
 			name: 'Typescript Quiz',
-			url: 'https://firebasestorage.googleapis.com/v0/b/davidsheinbeinengineer.appspot.com/o/images%2Ftypescriptquiz.png?alt=media&token=76104ccb-9646-453b-880b-a58c847f5ad8',
+			url: 'https://i.imgur.com/5fImcdK.png',
 		};
 		const fakeSpotifyImg = fakeSpotify || {
 			name: 'Fake Spotify',
-			url: 'https://firebasestorage.googleapis.com/v0/b/davidsheinbeinengineer.appspot.com/o/images%2Ffakespotify.png?alt=media&token=ff7301d9-9a14-4e92-83a1-c36dbf883d0a',
+			url: 'https://i.imgur.com/gkDm6Sp.png',
 		};
 		const covidtrackerImg = covidtracker || {
 			name: 'Covid Tracker',
-			url: 'https://firebasestorage.googleapis.com/v0/b/davidsheinbeinengineer.appspot.com/o/images%2Fcovidtracker.png?alt=media&token=8dc64f99-a3b7-4c1a-b09a-40dd55eb7627',
+			url: 'https://i.imgur.com/elQXVfa.png',
 		};
 		const imessageImg = imessage || {
 			name: 'iMessage Mock',
-			url: 'https://firebasestorage.googleapis.com/v0/b/davidsheinbeinengineer.appspot.com/o/images%2Fcovidtracker.png?alt=media&token=8dc64f99-a3b7-4c1a-b09a-40dd55eb7627',
+			url: 'https://i.imgur.com/HjhEgn4.png',
+		};
+
+		// here
+		// codepens
+		const choroplethMapImg = {
+			name: 'Choropleth Map',
+			url: 'https://i.imgur.com/fbQVL65.png',
+		};
+
+		const treemapImg = {
+			name: 'Treemap',
+			url: 'https://i.imgur.com/WPZgxXf.png',
+		};
+
+		const temperatureHeatMapImg = {
+			name: 'Temperature Heat Map',
+			url: 'https://i.imgur.com/QjiTkVe.png',
+		};
+
+		const scatterplotImg = {
+			name: 'Cyclists Scatterplot ',
+			url: 'https://i.imgur.com/aDRq7CH.png',
 		};
 
 		// education
 		const codeCompImg = code_comp || {
 			name: 'Code Compilation',
-			url: 'https://firebasestorage.googleapis.com/v0/b/davidsheinbeinengineer.appspot.com/o/images%2Fcode_comp.jpg?alt=media&token=f1e8192f-5724-40a3-bf01-32bf7d583bf1',
+			url: 'https://i.imgur.com/yE3JEtC.png',
 		};
 
 		const compCodeImg = comp_code || {
 			name: 'Compilation Code',
-			url: 'https://firebasestorage.googleapis.com/v0/b/davidsheinbeinengineer.appspot.com/o/images%2Fcomp_code.png?alt=media&token=d03a0ba5-653f-439f-8ca7-0f413f322565',
+			url: 'https://i.imgur.com/53kGNna.png',
 		};
 
 		// professional experience
 		const laptopCodeImg = laptop_code || {
 			name: 'Laptop Code',
-			url: 'https://firebasestorage.googleapis.com/v0/b/davidsheinbeinengineer.appspot.com/o/images%2Flaptop_code.png?alt=media&token=2149faab-2868-4d7f-886b-4a432ee57f0f',
+			url: 'https://i.imgur.com/lEKSUqq.png',
 		};
 
 		const laptopImg = laptop || {
 			name: 'Laptop',
-			url: 'https://firebasestorage.googleapis.com/v0/b/davidsheinbeinengineer.appspot.com/o/images%2Flaptop.png?alt=media&token=48e84009-d9d9-43f9-a3a3-6c1d74e095be',
+			url: 'https://i.imgur.com/NTHOBr8.png',
 		};
 
 		// blog
 		const deskCompImg = desk_comp || {
 			name: 'Desktop Compilation',
-			url: 'https://firebasestorage.googleapis.com/v0/b/davidsheinbeinengineer.appspot.com/o/images%2Fdesk_comp.jpg?alt=media&token=25c9270c-699d-4b03-a968-93ea2cae339c',
+			url: 'https://i.imgur.com/AGeYmjU.png',
 		};
 		const messageImg = message || {
 			name: 'Message',
-			url: 'https://firebasestorage.googleapis.com/v0/b/davidsheinbeinengineer.appspot.com/o/images%2Fmessage.jpg?alt=media&token=42b675b6-6656-40b3-bf18-29b6ab568325',
+			url: 'https://i.imgur.com/mTBUwM5.png',
 		};
 
 		const catDogImg = cat_dog || {
 			name: 'Cat and Dog',
-			url: 'https://firebasestorage.googleapis.com/v0/b/davidsheinbeinengineer.appspot.com/o/images%2Fcat_dog.jpg?alt=media&token=c467ef65-f6c8-44c2-9d46-4ce57015d173',
+			url: 'https://i.imgur.com/ERr4bVB.png',
 		};
 
 		return (
@@ -262,6 +284,10 @@ export default class Layout extends Component {
 					fakeSpotifyImg={fakeSpotifyImg}
 					covidtrackerImg={covidtrackerImg}
 					imessageImg={imessageImg}
+					choroplethMapImg={choroplethMapImg}
+					treemapImg={treemapImg}
+					temperatureHeatMapImg={temperatureHeatMapImg}
+					scatterplotImg={scatterplotImg}
 				/>
 				<Skills imgList={imgList} />
 				<Education

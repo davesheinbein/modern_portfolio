@@ -1645,8 +1645,6 @@ body
 		:not(.alignleft):not(.alignright):not(.alignfull)
 	) {
 	max-width: var(--wp--style--global--content-size);
-	margin-left: auto !important;
-	margin-right: auto !important;
 }
 
 body .is-layout-constrained > .alignwide {
@@ -3810,6 +3808,13 @@ p {
 			background-color: var(
 				--wp--preset--color--iconBG
 			) !important;
+			border-radius: 5px;
+
+			&:active,
+			&:hover {
+				transition: all 0.3s ease;
+				border-radius: 10px;
+			}
 		}
 	}
 }
@@ -3867,11 +3872,7 @@ p {
 	border-radius: 50%;
 	&:hover,
 	&:active {
-		scale: 1.25;
-		color: var(--wp--preset--color--icon-hover) !important;
-		background-color: var(
-			--wp--preset--color--iconBG-hover
-		) !important;
+		border-radius: 10px;
 	}
 }
 

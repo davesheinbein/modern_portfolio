@@ -148,13 +148,13 @@ const App = () => {
 		? redLogo
 		: {
 				name: 'David Sheinbein',
-				url: 'https://firebasestorage.googleapis.com/v0/b/davidsheinbeinengineer.appspot.com/o/images%2Flogo_blue.png?alt=media&token=324b6a80-0506-471f-9a0b-523db406613b',
+				url: 'https://i.imgur.com/d0JaEF9.png',
 		  };
 	const blueLogoImg = blueLogo
 		? blueLogo
 		: {
 				name: 'David Sheinbein',
-				url: 'https://firebasestorage.googleapis.com/v0/b/davidsheinbeinengineer.appspot.com/o/images%2Flogo_blue.png?alt=media&token=324b6a80-0506-471f-9a0b-523db406613b',
+				url: 'https://i.imgur.com/JG0XupS.png',
 		  };
 
 	return (

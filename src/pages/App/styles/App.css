@@ -1489,8 +1489,6 @@ body .is-layout-constrained > .aligncenter {
 
 body .is-layout-constrained > :where(:not(.alignleft):not(.alignright):not(.alignfull)) {
   max-width: var(--wp--style--global--content-size);
-  margin-left: auto !important;
-  margin-right: auto !important;
 }
 
 body .is-layout-constrained > .alignwide {
@@ -3127,6 +3125,11 @@ p {
 .contact-section-icons {
   color: var(--wp--preset--color--icon) !important;
   background-color: var(--wp--preset--color--iconBG) !important;
+  border-radius: 5px;
+}
+.contact-section-icons:active, .contact-section-icons:hover {
+  transition: all 0.3s ease;
+  border-radius: 10px;
 }
 
 .footer-section {
@@ -3160,9 +3163,7 @@ p {
   border-radius: 50%;
 }
 .wp-block-social-link-anchor:hover, .wp-block-social-link-anchor:active {
-  scale: 1.25;
-  color: var(--wp--preset--color--icon-hover) !important;
-  background-color: var(--wp--preset--color--iconBG-hover) !important;
+  border-radius: 10px;
 }
 
 .no-underline {
