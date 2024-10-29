@@ -54,6 +54,16 @@ const certificates = [
 			'https://media.licdn.com/dms/image/v2/D562DAQH-ytqi06aiKA/profile-treasury-image-shrink_800_800/profile-treasury-image-shrink_800_800/0/1729207071003?e=1730311200&v=beta&t=k5QnUD4DelbmBsQ_h2bkSCV75VE7M35YhR6B_jwvlws',
 	},
 	{
+		title: 'Relational Database',
+		issueDate: 'Oct 2024',
+		issuer: 'FreeCodeCamp',
+		link: 'https://www.freecodecamp.org/certification/dsDev/relational-database-v8',
+		skills:
+			'PostgreSQL · Git · GitHub · Databases · Terminal',
+		image:
+			'https://media.licdn.com/dms/image/v2/D562DAQEMEzoEbglNew/profile-treasury-image-shrink_800_800/profile-treasury-image-shrink_800_800/0/1730232823097?e=1730840400&v=beta&t=TbzvDKvv-cctA19ojGREIb6f3mhkk2aQtuR4ktaQ9Gk',
+	},
+	{
 		title: 'Scientific Computing with Python',
 		issueDate: 'Oct 2024',
 		issuer: 'FreeCodeCamp',
