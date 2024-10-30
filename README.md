@@ -171,4 +171,18 @@ _Sr. Technical Program/Project Manager_
 - [Replit](https://replit.com/@davesheinbein)
 - [Linktree](https://linktr.ee/dsDev)
 
+<h3 align="left">Connect with me:</h3>
+<p align="left">
+<a href="https://codepen.io/https://codepen.io/dsdeveloper" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/codepen.svg" alt="https://codepen.io/dsdeveloper" height="30" width="40" /></a>
+<a href="https://dev.to/dsdeveloper" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/devto.svg" alt="dsdeveloper" height="30" width="40" /></a>
+<a href="https://x.com/dsdevloping" target="blank"><img align="center" src="https://about.x.com/content/dam/about-twitter/x/brand-toolkit/logo-black.png.twimg.1920.png" alt="dsdevloping" height="30" width="40" /></a>
+<a href="https://linkedin.com/in/https://linkedin.com/in/david-sheinbein" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/linked-in-alt.svg" alt="https://linkedin.com/in/david-sheinbein" height="30" width="40" /></a>
+<a href="https://stackoverflow.com/users/https://stackoverflow.com/users/14243607/dsdeveloper" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/stack-overflow.svg" alt="https://stackoverflow.com/users/14243607/dsdeveloper" height="30" width="40" /></a>
+<a href="https://codesandbox.com/https://codesandbox.io/dashboard/" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/codesandbox.svg" alt="https://codesandbox.io/dashboard/" height="30" width="40" /></a>
+<a href="https://medium.com/@davidsheinbeindev" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/medium.svg" alt="@davidsheinbeindev" height="30" width="40" /></a>
+<a href="https://www.hackerrank.com/dsdeveloper" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/hackerrank.svg" alt="dsdeveloper" height="30" width="40" /></a>
+<a href="https://www.leetcode.com/davidsheinbeindev" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/leet-code.svg" alt="davidsheinbeindev" height="30" width="40" /></a>
+</p>
+
+
 #### For more [information](https://linktr.ee/dsDev) about me or to schedule a meeting [schedule a meeting](https://calendly.com/davidsheinbeindev/intro)
