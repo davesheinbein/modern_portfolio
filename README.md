@@ -87,7 +87,7 @@ I enjoy helping people discover and implement interesting ways to scale and grow
 
 ## Certifications
 
-David has earned multiple certifications from FreeCodeCamp, showcasing a well-rounded skill set in development. You can view these certifications through the following links:
+I have earned multiple certifications, showcasing a well-rounded skill set in development. You can view these certifications through the following links:
 
 | Certification Title                       | Issuer       | Date     | Skills                                               | Links                                                                                                          |
 | ----------------------------------------- | ------------ | -------- | ---------------------------------------------------- | -------------------------------------------------------------------------------------------------------------- |
