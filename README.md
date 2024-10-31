@@ -9,7 +9,7 @@ Hey there! Welcome to my portfolio! I'm David Sheinbein, a Full Stack Developer 
 David Sheinbein  
 Full Stack Developer  
 Los Angeles, CA | (310) 628-5770 | davidsheinbeindev@gmail.com  
-[davidsheinbeinengineer.com](https://www.davidsheinbeinengineer.com/) | [github.com/davesheinbein](https://github.com/davesheinbein) | [linkedin.com/in/david-sheinbein](https://www.linkedin.com/in/david-sheinbein/)
+[Portfolio:](https://davidsheinbeinengineer.com/) [davidsheinbeinengineer.com](https://www.davidsheinbeinengineer.com/) | [github.com/davesheinbein](https://github.com/davesheinbein) | [linkedin.com/in/david-sheinbein](https://www.linkedin.com/in/david-sheinbein/)
 
 ## Summary
 
