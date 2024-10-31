@@ -1,6 +1,6 @@
 # **David Sheinbein Portfolio**
 
-Hey there! Welcome to my modern portfolio! I'm David Sheinbein, a Full Stack Developer based in sunny Los Angeles, CA. I'm all about crafting impactful solutions and bringing ideas to life through diverse projects. Feel free to dive into my journey, explore my skills, and check out the projects that keep me excited in the world of Full-Stack Software Engineering.
+Hey there! Welcome to my portfolio! I'm David Sheinbein, a Full Stack Developer based in sunny Los Angeles, CA. I'm all about crafting impactful solutions and bringing ideas to life through diverse projects. Feel free to dive into my journey, explore my skills, and check out the projects that keep me excited in the world of Full-Stack Software Engineering.
 
 ![David Sheinbein Banner](https://i.imgur.com/PrrQHTC.jpeg)
 
@@ -101,6 +101,18 @@ I have earned multiple certifications, showcasing a well-rounded skill set in de
 
 ---
 
+### Blogs posts
+
+<!-- BLOG-POST-LIST:START -->
+
+- [Harnessing the Power of JavaScript for Modern Web Applications](https://medium.com/@davidsheinbeindev/harnessing-the-power-of-javascript-for-modern-web-applications-a312eb095b04?source=rss-1c389b2c5210------2)
+- [The Importance of Writing Clean, Maintainable Code](https://medium.com/@davidsheinbeindev/the-importance-of-writing-clean-maintainable-code-4b814d33592b?source=rss-1c389b2c5210------2)
+- [Angular vs. React: Choosing the Right Tool for Your Project](https://medium.com/@davidsheinbeindev/angular-vs-react-choosing-the-right-tool-for-your-project-009e3d612dbd?source=rss-1c389b2c5210------2)
+- [Nurturing Skill Growth in Code Collaboration](https://medium.com/@davidsheinbeindev/nurturing-skill-growth-in-code-collaboration-0cccb19bfb89?source=rss-1c389b2c5210------2)
+<!-- BLOG-POST-LIST:END -->
+
+---
+
 ## Recommendations
 
 **Chris Drottar**  
@@ -184,5 +196,15 @@ _Sr. Technical Program/Project Manager_
 <a href="https://www.leetcode.com/davidsheinbeindev" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/leet-code.svg" alt="davidsheinbeindev" height="30" width="40" /></a>
 </p>
 
-
 #### For more [information](https://linktr.ee/dsDev) about me or to schedule a meeting [schedule a meeting](https://calendly.com/davidsheinbeindev/intro)
+
+<img src="https://raw.githubusercontent.com/davesheinbein/davesheinbein/output/snake.svg" alt="Snake animation" />
+
+<p align="left"> <a href="https://github.com/ryo-ma/github-profile-trophy"><img src="https://github-profile-trophy.vercel.app/?username=davesheinbein&column=5&theme=tokyonight" alt="davesheinbein" /></a> </p>
+
+#### **Visitor Count**
+
+<div align="center">
+  <img src="https://profile-counter.glitch.me/davesheinbein/count.svg?"  />
+</div>
+
