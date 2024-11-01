@@ -1,7 +1,6 @@
 name: Prettier # Name of the workflow
 
 on:
-  workflow_dispatch: # Allows manual triggering of the workflow from the GitHub Actions tab
   push: # Triggers the workflow on push events
     branches:
       - main # Include the main branch
@@ -14,6 +13,7 @@ on:
       - develop # Include the develop branch
       - staging # Include the staging branch
       - master # Include the master branch
+  workflow_dispatch: # Allows manual triggering of the workflow from the GitHub Actions tab
 
 permissions:
   contents: write # Allow write access to the repository contents
@@ -25,10 +25,10 @@ jobs:
 
     steps: # Define the sequence of steps for the job
       - name: Checkout code # Step to check out the repository's code
-        uses: actions/checkout@v2 # Uses the checkout action to pull the code from the repo
+        uses: actions/checkout@v3 # Use the latest version of the checkout action
 
       - name: Set up Node.js # Step to set up the Node.js environment
-        uses: actions/setup-node@v2 # Uses the setup-node action
+        uses: actions/setup-node@v3 # Use the latest version of the setup-node action
         with:
           node-version: '16' # Specify the Node.js version to use for the job
 
@@ -36,7 +36,6 @@ jobs:
         run: npm install # Runs npm install to install dependencies listed in package.json
 
       - name: Run Prettier # Step to run Prettier for code formatting
-        # run: npx prettier --check . # Run Prettier with the --check option to check if code is formatted correctly
         run: npx prettier --write . # Run Prettier with the --write option to automatically format the code
 
       - name: Commit and push changes # Step to commit and push changes
@@ -51,4 +50,4 @@ jobs:
             echo "No changes to commit"  # Output message if there are no changes
           fi
         env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }} # GitHub token for authentication
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }} # Token for authentication
