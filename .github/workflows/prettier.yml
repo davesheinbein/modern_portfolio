@@ -1,6 +1,7 @@
 name: Prettier # Name of the workflow
 
 on:
+  workflow_dispatch: # Allows manual triggering of the workflow from the GitHub Actions tab
   push: # Triggers the workflow on push events
     branches:
       - main # Include the main branch
@@ -13,9 +14,8 @@ on:
       - develop # Include the develop branch
       - staging # Include the staging branch
       - master # Include the master branch
-  workflow_dispatch: # Allows manual triggering of the workflow from the GitHub Actions tab
 
-  permissions:
+permissions:
   contents: write # Allow write access to the repository contents
   workflows: write # Allow modifying workflow files
 
