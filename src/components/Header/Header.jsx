@@ -1,162 +1,156 @@
-import React, { useState } from 'react';
-import Navbar from 'react-bootstrap/Navbar';
-import Nav from 'react-bootstrap/Nav';
-import Container from 'react-bootstrap/Container';
-import './styles/Header.css';
+import React, { useState } from "react";
+import Navbar from "react-bootstrap/Navbar";
+import Nav from "react-bootstrap/Nav";
+import Container from "react-bootstrap/Container";
+import "./styles/Header.css";
 
 function Header(props) {
-	const [isMenuOpen, setIsMenuOpen] = useState(false);
-	const { redLogoImg, blueLogoImg } = props;
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const { redLogoImg, blueLogoImg } = props;
 
-	const redLogoUrl = redLogoImg.url;
-	const blueLogoUrl = blueLogoImg.url;
-	const redLogoName = redLogoImg.name;
-	const blueLogoName = blueLogoImg.name;
+  const redLogoUrl = redLogoImg.url;
+  const blueLogoUrl = blueLogoImg.url;
+  const redLogoName = redLogoImg.name;
+  const blueLogoName = blueLogoImg.name;
 
-	const handleMenuToggle = () => {
-		setIsMenuOpen(!isMenuOpen);
-	};
+  const handleMenuToggle = () => {
+    setIsMenuOpen(!isMenuOpen);
+  };
 
-	const handleToggle = () => {
-		props.handleThemeChange(
-			props.color === 'dark' ? 'default' : 'dark'
-		);
-	};
+  const handleToggle = () => {
+    props.handleThemeChange(props.color === "dark" ? "default" : "dark");
+  };
 
-	// new version of code
-	return (
-		<header className='wp-block-template-part header header-section'>
-			<Navbar
-				expand='lg'
-				variant='dark'
-				className='header-section'
-				expanded={isMenuOpen}
-			>
-				<Container>
-					<Navbar.Brand href='https://www.davidsheinbeinengineer.com/'>
-						{props.color === 'dark' ? (
-							<img
-								width='250'
-								height='140'
-								src={redLogoUrl}
-								className='custom-logo logo-sizing'
-								alt={redLogoName}
-								decoding='async'
-								srcset={redLogoUrl}
-								sizes='(max-width: 250px) 100vw, 250px'
-								data-attachment-id='16'
-								data-permalink={redLogoUrl}
-								data-orig-file={redLogoUrl}
-								data-orig-size='500,281'
-								data-comments-opened='1'
-								data-image-meta='{"aperture":"0","credit":"","camera":"","caption":"David Sheinbein","created_timestamp":"0","copyright":"David Sheinbein","focal_length":"0","iso":"0","shutter_speed":"0","title":"David Sheinbein","orientation":"0"}'
-								data-image-title='David Sheinbein'
-								data-image-description='David Sheinbein'
-								data-image-caption='David Sheinbein'
-								data-medium-file={redLogoUrl}
-								data-large-file={redLogoUrl}
-							></img>
-						) : (
-							<img
-								width='250'
-								height='140'
-								src={blueLogoUrl}
-								className='custom-logo logo-sizing'
-								alt={blueLogoName}
-								decoding='async'
-								data-permalink={blueLogoUrl}
-								data-orig-file={blueLogoUrl}
-								data-orig-size='500,281'
-								data-image-meta='{"aperture":"0","credit":"","camera":"","caption":"David Sheinbein","created_timestamp":"0","copyright":"David Sheinbein","focal_length":"0","iso":"0","shutter_speed":"0","title":"David Sheinbein","orientation":"0"}'
-								data-image-title='David Sheinbein'
-								data-image-description='David Sheinbein'
-								data-image-caption='David Sheinbein'
-								data-medium-file={blueLogoUrl}
-								data-large-file={blueLogoUrl}
-							/>
-						)}
-					</Navbar.Brand>
+  // new version of code
+  return (
+    <header className="wp-block-template-part header header-section">
+      <Navbar
+        expand="lg"
+        variant="dark"
+        className="header-section"
+        expanded={isMenuOpen}
+      >
+        <Container>
+          <Navbar.Brand href="https://www.davidsheinbeinengineer.com/">
+            {props.color === "dark" ? (
+              <img
+                width="250"
+                height="140"
+                src={redLogoUrl}
+                className="custom-logo logo-sizing"
+                alt={redLogoName}
+                decoding="async"
+                srcset={redLogoUrl}
+                sizes="(max-width: 250px) 100vw, 250px"
+                data-attachment-id="16"
+                data-permalink={redLogoUrl}
+                data-orig-file={redLogoUrl}
+                data-orig-size="500,281"
+                data-comments-opened="1"
+                data-image-meta='{"aperture":"0","credit":"","camera":"","caption":"David Sheinbein","created_timestamp":"0","copyright":"David Sheinbein","focal_length":"0","iso":"0","shutter_speed":"0","title":"David Sheinbein","orientation":"0"}'
+                data-image-title="David Sheinbein"
+                data-image-description="David Sheinbein"
+                data-image-caption="David Sheinbein"
+                data-medium-file={redLogoUrl}
+                data-large-file={redLogoUrl}
+              ></img>
+            ) : (
+              <img
+                width="250"
+                height="140"
+                src={blueLogoUrl}
+                className="custom-logo logo-sizing"
+                alt={blueLogoName}
+                decoding="async"
+                data-permalink={blueLogoUrl}
+                data-orig-file={blueLogoUrl}
+                data-orig-size="500,281"
+                data-image-meta='{"aperture":"0","credit":"","camera":"","caption":"David Sheinbein","created_timestamp":"0","copyright":"David Sheinbein","focal_length":"0","iso":"0","shutter_speed":"0","title":"David Sheinbein","orientation":"0"}'
+                data-image-title="David Sheinbein"
+                data-image-description="David Sheinbein"
+                data-image-caption="David Sheinbein"
+                data-medium-file={blueLogoUrl}
+                data-large-file={blueLogoUrl}
+              />
+            )}
+          </Navbar.Brand>
 
-					<Navbar.Toggle
-						aria-controls='responsive-navbar-nav'
-						onClick={handleMenuToggle}
-						className='wp-block-navigation__responsive-dialog'
-					/>
+          <Navbar.Toggle
+            aria-controls="responsive-navbar-nav"
+            onClick={handleMenuToggle}
+            className="wp-block-navigation__responsive-dialog"
+          />
 
-					<Navbar.Collapse id='responsive-navbar-nav'>
-						<Nav className='ml-auto'>
-							<Nav.Link
-								className='wp-block-navigation-item wp-block-navigation-link header-section-text'
-								href='#about'
-							>
-								About
-							</Nav.Link>
-							<Nav.Link
-								className='wp-block-navigation-item wp-block-navigation-link header-section-text'
-								href='#projects'
-							>
-								Projects
-							</Nav.Link>
-							<Nav.Link
-								className='wp-block-navigation-item wp-block-navigation-link header-section-text'
-								href='#education'
-							>
-								Education
-							</Nav.Link>
-							<Nav.Link
-								className='wp-block-navigation-item wp-block-navigation-link header-section-text'
-								href='#experience'
-							>
-								Experience
-							</Nav.Link>
-							<Nav.Link
-								className='wp-block-navigation-item wp-block-navigation-link header-section-text'
-								href='#skills'
-							>
-								Skills
-							</Nav.Link>
-							<Nav.Link
-								className='wp-block-navigation-item wp-block-navigation-link header-section-text'
-								href='#blog'
-							>
-								Blog
-							</Nav.Link>
-							<Nav.Link
-								className='wp-block-navigation-item wp-block-navigation-link header-section-text'
-								href='#contact'
-							>
-								Contact
-							</Nav.Link>
-						</Nav>
+          <Navbar.Collapse id="responsive-navbar-nav">
+            <Nav className="ml-auto">
+              <Nav.Link
+                className="wp-block-navigation-item wp-block-navigation-link header-section-text"
+                href="#about"
+              >
+                About
+              </Nav.Link>
+              <Nav.Link
+                className="wp-block-navigation-item wp-block-navigation-link header-section-text"
+                href="#projects"
+              >
+                Projects
+              </Nav.Link>
+              <Nav.Link
+                className="wp-block-navigation-item wp-block-navigation-link header-section-text"
+                href="#education"
+              >
+                Education
+              </Nav.Link>
+              <Nav.Link
+                className="wp-block-navigation-item wp-block-navigation-link header-section-text"
+                href="#experience"
+              >
+                Experience
+              </Nav.Link>
+              <Nav.Link
+                className="wp-block-navigation-item wp-block-navigation-link header-section-text"
+                href="#skills"
+              >
+                Skills
+              </Nav.Link>
+              <Nav.Link
+                className="wp-block-navigation-item wp-block-navigation-link header-section-text"
+                href="#blog"
+              >
+                Blog
+              </Nav.Link>
+              <Nav.Link
+                className="wp-block-navigation-item wp-block-navigation-link header-section-text"
+                href="#contact"
+              >
+                Contact
+              </Nav.Link>
+            </Nav>
 
-						<Nav className='ml-auto'>
-							<Nav.Link
-								className='wp-block-navigation-item wp-block-navigation-link no-bg'
-								href='#'
-								onClick={handleToggle}
-							>
-								<label
-									className='switch'
-									title={
-										props.color === 'dark'
-											? 'Dark Mode'
-											: 'Light Mode'
-									}
-								>
-									<input
-										type='checkbox'
-										checked={props.color === 'dark'}
-										onChange={handleToggle}
-									/>
-									<span className='slider round'></span>
-								</label>
-							</Nav.Link>
-						</Nav>
-					</Navbar.Collapse>
-				</Container>
-			</Navbar>
-		</header>
-	);
+            <Nav className="ml-auto">
+              <Nav.Link
+                className="wp-block-navigation-item wp-block-navigation-link no-bg"
+                href="#"
+                onClick={handleToggle}
+              >
+                <label
+                  className="switch"
+                  title={props.color === "dark" ? "Dark Mode" : "Light Mode"}
+                >
+                  <input
+                    type="checkbox"
+                    checked={props.color === "dark"}
+                    onChange={handleToggle}
+                  />
+                  <span className="slider round"></span>
+                </label>
+              </Nav.Link>
+            </Nav>
+          </Navbar.Collapse>
+        </Container>
+      </Navbar>
+    </header>
+  );
 }
 
 export default Header;

@@ -1,52 +1,50 @@
 .certificates__section {
-	padding: 20px;
-	background: var(
-		--wp--preset--color--backgroundB
-	) !important;
+  padding: 20px;
+  background: var(--wp--preset--color--backgroundB) !important;
 }
 
 .certificates__section-title {
-	color: var(--wp--preset--color--headerB) !important;
+  color: var(--wp--preset--color--headerB) !important;
 }
 
 .certificates-list {
-	list-style-type: none;
-	padding: 0;
-	display: grid;
-	grid-template-columns: repeat(3, 1fr);
-	gap: 20px;
+  list-style-type: none;
+  padding: 0;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
 }
 
 .certificate-item {
-	color: #666;
-	background-color: #fff;
-	padding: 15px;
-	border-radius: 8px;
-	box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  color: #666;
+  background-color: #fff;
+  padding: 15px;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
 .certificate-title {
-	color: var(--wp--preset--color--accent) !important;
-	font-size: 1.25rem;
-	margin: 0 0 5px;
+  color: var(--wp--preset--color--accent) !important;
+  font-size: 1.25rem;
+  margin: 0 0 5px;
 }
 
 .certificate-img {
-	width: 100%;
-	border-radius: 5px;
-	margin-top: 10px;
+  width: 100%;
+  border-radius: 5px;
+  margin-top: 10px;
 }
 
 .certificate-info {
-	color: #666;
-	margin: 0 0 10px;
+  color: #666;
+  margin: 0 0 10px;
 }
 
 .certificate-link {
-	color: #007bff;
-	text-decoration: none;
+  color: #007bff;
+  text-decoration: none;
 }
 
 .certificate-link:hover {
-	text-decoration: underline;
+  text-decoration: underline;
 }

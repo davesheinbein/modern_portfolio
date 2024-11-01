@@ -127,7 +127,9 @@ input:checked + .slider:before {
   border: none !important;
   border-width: 0 !important;
 }
-.no-bg:hover, .no-bg:focus, .no-bg:active {
+.no-bg:hover,
+.no-bg:focus,
+.no-bg:active {
   background-color: transparent !important;
   border: none !important;
   border-width: 0 !important;
@@ -137,4 +139,4 @@ input:checked + .slider:before {
 
 .wp-block-navigation__responsive-dialog {
   background-color: var(--wp--preset--color--accent, #11181f) !important;
-}/*# sourceMappingURL=Header.css.map */
+} /*# sourceMappingURL=Header.css.map */

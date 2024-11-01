@@ -1,13 +1,13 @@
-@import '../../../breakpoints/breakpoints.scss';
-@import '../../../mixins/mixins.scss';
+@import "../../../breakpoints/breakpoints.scss";
+@import "../../../mixins/mixins.scss";
 
 .contact {
-	.wp-block-social-link-anchor {
-		border-radius: 50%;
-		&:hover,
-		&:active {
-			scale: 1.25;
-			border-radius: 5px;
-		}
-	}
+  .wp-block-social-link-anchor {
+    border-radius: 50%;
+    &:hover,
+    &:active {
+      scale: 1.25;
+      border-radius: 5px;
+    }
+  }
 }

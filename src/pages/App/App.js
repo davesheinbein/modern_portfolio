@@ -1,21 +1,17 @@
-import React, { useEffect, useState } from 'react';
-import Header from '../../components/Header/Header';
-import Layout from '../LayoutPage/LayoutPage';
-import { createGlobalStyle } from 'styled-components';
-import { Route, Switch } from 'react-router-dom';
-import { storage } from '../../firebase/firebase';
-import {
-	ref,
-	listAll,
-	getDownloadURL,
-} from 'firebase/storage';
-import './styles/App.css';
+import React, { useEffect, useState } from "react";
+import Header from "../../components/Header/Header";
+import Layout from "../LayoutPage/LayoutPage";
+import { createGlobalStyle } from "styled-components";
+import { Route, Switch } from "react-router-dom";
+import { storage } from "../../firebase/firebase";
+import { ref, listAll, getDownloadURL } from "firebase/storage";
+import "./styles/App.css";
 
 const GlobalStyle = createGlobalStyle`
   ${(props) => {
-		switch (props.color) {
-			case 'dark':
-				return `
+    switch (props.color) {
+      case "dark":
+        return `
           :root {
             --wp--preset--color--slider: #f7f9fd;
 			--wp--preset--color--slider--bg: #003049;
@@ -43,8 +39,8 @@ const GlobalStyle = createGlobalStyle`
 			--wp--preset--color--backgroundB:  #a8dadc; 
           }
         `;
-			default:
-				return `
+      default:
+        return `
           :root {
             --wp--preset--color--slider: #11181f;
 			--wp--preset--color--slider--bg: #f7f9fd;
@@ -72,119 +68,105 @@ const GlobalStyle = createGlobalStyle`
 			--wp--preset--color--backgroundB:  #003049; 
           }
         `;
-		}
-	}}
+    }
+  }}
 `;
 
 const App = () => {
-	const [color, setColor] = useState('default');
+  const [color, setColor] = useState("default");
 
-	const handleThemeChange = (newColor) => {
-		setColor(newColor);
-	};
+  const handleThemeChange = (newColor) => {
+    setColor(newColor);
+  };
 
-	const imgRef = ref(storage, 'images/');
+  const imgRef = ref(storage, "images/");
 
-	const [imgList, setImgList] = useState([]);
+  const [imgList, setImgList] = useState([]);
 
-	useEffect(() => {
-		if (!imgRef) return;
+  useEffect(() => {
+    if (!imgRef) return;
 
-		listAll(imgRef)
-			.then((res) => {
-				res.items.forEach((item) => {
-					const imageName = item.name;
-					const updatedImageName = imageName.replace(
-						/\..*$/,
-						''
-					);
+    listAll(imgRef)
+      .then((res) => {
+        res.items.forEach((item) => {
+          const imageName = item.name;
+          const updatedImageName = imageName.replace(/\..*$/, "");
 
-					getDownloadURL(item).then((url) => {
-						setImgList((prev) => [
-							...prev,
-							{ name: updatedImageName, url },
-						]);
-					});
-				});
-			})
-			.catch((error) => {
-				console.log(error);
-			});
-	}, []);
+          getDownloadURL(item).then((url) => {
+            setImgList((prev) => [...prev, { name: updatedImageName, url }]);
+          });
+        });
+      })
+      .catch((error) => {
+        console.log(error);
+      });
+  }, []);
 
-	function findImageByName(imgList, targetImageName) {
-		if (!imgList || !targetImageName) return null;
+  function findImageByName(imgList, targetImageName) {
+    if (!imgList || !targetImageName) return null;
 
-		const selectedImage = imgList.find(
-			(image) => image.name === targetImageName
-		);
+    const selectedImage = imgList.find(
+      (image) => image.name === targetImageName,
+    );
 
-		if (selectedImage) {
-			console.log('Selected Image URL:', selectedImage.url);
-			return selectedImage;
-		}
+    if (selectedImage) {
+      console.log("Selected Image URL:", selectedImage.url);
+      return selectedImage;
+    }
 
-		console.log(
-			`Image with name '${targetImageName}' not found.`
-		);
-		return null;
-	}
+    console.log(`Image with name '${targetImageName}' not found.`);
+    return null;
+  }
 
-	// files
-	const targetImageName1 = 'logo_red';
-	const redLogo = findImageByName(
-		imgList,
-		targetImageName1
-	);
+  // files
+  const targetImageName1 = "logo_red";
+  const redLogo = findImageByName(imgList, targetImageName1);
 
-	const targetImageName2 = 'logo_blue';
-	const blueLogo = findImageByName(
-		imgList,
-		targetImageName2
-	);
+  const targetImageName2 = "logo_blue";
+  const blueLogo = findImageByName(imgList, targetImageName2);
 
-	// urls
-	const redLogoImg = redLogo
-		? redLogo
-		: {
-				name: 'David Sheinbein',
-				url: 'https://i.imgur.com/d0JaEF9.png',
-		  };
-	const blueLogoImg = blueLogo
-		? blueLogo
-		: {
-				name: 'David Sheinbein',
-				url: 'https://i.imgur.com/JG0XupS.png',
-		  };
+  // urls
+  const redLogoImg = redLogo
+    ? redLogo
+    : {
+        name: "David Sheinbein",
+        url: "https://i.imgur.com/d0JaEF9.png",
+      };
+  const blueLogoImg = blueLogo
+    ? blueLogo
+    : {
+        name: "David Sheinbein",
+        url: "https://i.imgur.com/JG0XupS.png",
+      };
 
-	return (
-		<div className='wp-site-blocks app' id='top'>
-			<GlobalStyle color={color} />
-			<Header
-				imgList={imgList}
-				color={color}
-				redLogoImg={redLogoImg}
-				blueLogoImg={blueLogoImg}
-				handleThemeChange={handleThemeChange}
-			/>
+  return (
+    <div className="wp-site-blocks app" id="top">
+      <GlobalStyle color={color} />
+      <Header
+        imgList={imgList}
+        color={color}
+        redLogoImg={redLogoImg}
+        blueLogoImg={blueLogoImg}
+        handleThemeChange={handleThemeChange}
+      />
 
-			<Switch>
-				<Route
-					exact
-					path='/'
-					render={() => (
-						<div>
-							<Layout
-								color={color}
-								imgList={imgList}
-								handleThemeChange={handleThemeChange}
-							/>
-						</div>
-					)}
-				/>
-			</Switch>
-		</div>
-	);
+      <Switch>
+        <Route
+          exact
+          path="/"
+          render={() => (
+            <div>
+              <Layout
+                color={color}
+                imgList={imgList}
+                handleThemeChange={handleThemeChange}
+              />
+            </div>
+          )}
+        />
+      </Switch>
+    </div>
+  );
 };
 
 export default App;
