@@ -20,7 +20,6 @@ jobs:
     runs-on: ubuntu-latest # Specifies the environment to run the job on
     permissions:
       contents: write # Allow write access to the repository contents
-      workflows: write # Allow modifying workflow files
 
     steps: # Define the sequence of steps for the job
       - name: Checkout code # Step to check out the repository's code
