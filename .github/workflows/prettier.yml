@@ -15,6 +15,10 @@ on:
       - master # Include the master branch
   workflow_dispatch: # Allows manual triggering of the workflow from the GitHub Actions tab
 
+  permissions:
+  contents: write # Allow write access to the repository contents
+  workflows: write # Allow modifying workflow files
+
 jobs:
   format: # Define a job named "format"
     runs-on: ubuntu-latest # Specifies the environment to run the job on
