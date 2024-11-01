@@ -40,7 +40,11 @@ jobs:
           git config --local user.name "github-actions[bot]"  # Configure Git user name
           git config --local user.email "github-actions[bot]@users.noreply.github.com"  # Configure Git user email
           git add .  # Stage all changes
-          git commit -m "chore: format code with Prettier" || echo "No changes to commit"  # Commit changes if there are any
-          git push origin HEAD  # Push changes to the current branch
-        env: # Pass the necessary environment variables
+          if ! git diff-index --quiet HEAD; then  # Check if there are changes
+            git commit -m "chore: format code with Prettier"  # Commit changes if there are any
+            git push origin HEAD  # Push changes to the current branch
+          else
+            echo "No changes to commit"  # Output message if there are no changes
+          fi
+        env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }} # GitHub token for authentication
