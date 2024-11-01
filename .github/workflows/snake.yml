@@ -12,7 +12,6 @@ jobs:
   generate:
     permissions:
       contents: write # Allow write access to the repository contents
-      workflows: write # Allow modifying workflow files if needed
     runs-on: ubuntu-latest
     timeout-minutes: 5
 
