@@ -5,11 +5,16 @@
 
 .certificates__section-title {
   color: var(--wp--preset--color--headerB) !important;
+  max-width: var(--wp--style--global--wide-size);
+  margin: 0 auto;
+  padding: 0 0 50px;
 }
 
 .certificates-list {
+  max-width: var(--wp--style--global--wide-size);
   list-style-type: none;
   padding: 0;
+  margin: 0 auto;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 20px;
@@ -47,4 +52,4 @@
 
 .certificate-link:hover {
   text-decoration: underline;
-} /*# sourceMappingURL=Certificates.css.map */
+}/*# sourceMappingURL=Certificates.css.map */
