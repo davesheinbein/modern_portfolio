@@ -102,6 +102,7 @@
   cursor: pointer;
   transition: background 0.2s;
 }
-.contact-form-submit:hover, .contact-form-submit:focus {
+.contact-form-submit:hover,
+.contact-form-submit:focus {
   background: #b71c2b;
-}/*# sourceMappingURL=Contact.css.map */
+} /*# sourceMappingURL=Contact.css.map */
