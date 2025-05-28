@@ -6,7 +6,8 @@
 .contact .wp-block-social-link-anchor {
   border-radius: 50%;
 }
-.contact .wp-block-social-link-anchor:hover, .contact .wp-block-social-link-anchor:active {
+.contact .wp-block-social-link-anchor:hover,
+.contact .wp-block-social-link-anchor:active {
   scale: 1.25;
   border-radius: 5px;
-}/*# sourceMappingURL=Contact.css.map */
+} /*# sourceMappingURL=Contact.css.map */

@@ -1,150 +1,150 @@
 [
-	{
-		"job_title": "Senior Frontend Engineer",
-		"job_description": "Leads UI development."
-	},
-	{
-		"job_title": "React Engineer",
-		"job_description": "Expert in React UIs."
-	},
-	{
-		"job_title": "Full Stack Engineer",
-		"job_description": "Builds front & back end."
-	},
-	{
-		"job_title": "Web Application Developer",
-		"job_description": "Optimizes web apps."
-	},
-	{
-		"job_title": "Design Systems Developer",
-		"job_description": "Creates UI components."
-	},
-	{
-		"job_title": "Frontend Developer",
-		"job_description": "Builds responsive UIs."
-	},
-	{
-		"job_title": "JavaScript Developer",
-		"job_description": "JavaScript for web."
-	},
-	{
-		"job_title": "API Engineer",
-		"job_description": "Builds APIs."
-	},
-	{
-		"job_title": "UI/UX Developer",
-		"job_description": "Designs user interfaces."
-	},
-	{
-		"job_title": "Backend Developer",
-		"job_description": "Server-side logic."
-	},
-	{
-		"job_title": "Mobile Engineer",
-		"job_description": "Builds mobile apps."
-	},
-	{
-		"job_title": "Auth & Identity Engineer",
-		"job_description": "Secures authentication."
-	},
-	{
-		"job_title": "Product Developer",
-		"job_description": "Improves workflows."
-	},
-	{
-		"job_title": "Web Engineer",
-		"job_description": "Maintains web platforms."
-	},
-	{
-		"job_title": "Angular Engineer",
-		"job_description": "Angular & RxJS expert."
-	},
-	{
-		"job_title": "Creative Technologist",
-		"job_description": "Merges code & design."
-	},
-	{
-		"job_title": "Growth Engineer",
-		"job_description": "Scales products."
-	},
-	{
-		"job_title": "Angular Developer",
-		"job_description": "Builds with Angular."
-	},
-	{
-		"job_title": "Web Developer",
-		"job_description": "Builds websites."
-	},
-	{
-		"job_title": "Mobile Developer",
-		"job_description": "Creates mobile apps."
-	},
-	{
-		"job_title": "JavaScript Engineer",
-		"job_description": "JavaScript for web."
-	},
-	{
-		"job_title": "Full Stack Developer",
-		"job_description": "Front & back end dev."
-	},
-	{
-		"job_title": "Product Engineer",
-		"job_description": "Product-focused dev."
-	},
-	{
-		"job_title": "Software Developer",
-		"job_description": "General development."
-	},
-	{
-		"job_title": "DevOps Engineer",
-		"job_description": "Links dev & ops."
-	},
-	{
-		"job_title": "Design Systems Engineer",
-		"job_description": "Creates UI systems."
-	},
-	{
-		"job_title": "UI/UX Engineer",
-		"job_description": "Designs user experience."
-	},
-	{
-		"job_title": "API Developer",
-		"job_description": "Maintains APIs."
-	},
-	{
-		"job_title": "Auth & Identity Developer",
-		"job_description": "Secures authentication."
-	},
-	{
-		"job_title": "Growth Developer",
-		"job_description": "Scales products."
-	},
-	{
-		"job_title": "React Developer",
-		"job_description": "Builds with React."
-	},
-	{
-		"job_title": "Web Application Engineer",
-		"job_description": "Optimizes web apps."
-	},
-	{
-		"job_title": "Software Engineer",
-		"job_description": "Broad development."
-	},
-	{
-		"job_title": "DevOps Developer",
-		"job_description": "Links dev & ops."
-	},
-	{
-		"job_title": "Data Visualization Engineer",
-		"job_description": "Visualizes data."
-	},
-	{
-		"job_title": "Data Visualization Developer",
-		"job_description": "Visualizes data."
-	},
-	{
-		"job_title": "Backend Engineer",
-		"job_description": "Server-side APIs."
-	}
+  {
+    "job_title": "Senior Frontend Engineer",
+    "job_description": "Leads UI development."
+  },
+  {
+    "job_title": "React Engineer",
+    "job_description": "Expert in React UIs."
+  },
+  {
+    "job_title": "Full Stack Engineer",
+    "job_description": "Builds front & back end."
+  },
+  {
+    "job_title": "Web Application Developer",
+    "job_description": "Optimizes web apps."
+  },
+  {
+    "job_title": "Design Systems Developer",
+    "job_description": "Creates UI components."
+  },
+  {
+    "job_title": "Frontend Developer",
+    "job_description": "Builds responsive UIs."
+  },
+  {
+    "job_title": "JavaScript Developer",
+    "job_description": "JavaScript for web."
+  },
+  {
+    "job_title": "API Engineer",
+    "job_description": "Builds APIs."
+  },
+  {
+    "job_title": "UI/UX Developer",
+    "job_description": "Designs user interfaces."
+  },
+  {
+    "job_title": "Backend Developer",
+    "job_description": "Server-side logic."
+  },
+  {
+    "job_title": "Mobile Engineer",
+    "job_description": "Builds mobile apps."
+  },
+  {
+    "job_title": "Auth & Identity Engineer",
+    "job_description": "Secures authentication."
+  },
+  {
+    "job_title": "Product Developer",
+    "job_description": "Improves workflows."
+  },
+  {
+    "job_title": "Web Engineer",
+    "job_description": "Maintains web platforms."
+  },
+  {
+    "job_title": "Angular Engineer",
+    "job_description": "Angular & RxJS expert."
+  },
+  {
+    "job_title": "Creative Technologist",
+    "job_description": "Merges code & design."
+  },
+  {
+    "job_title": "Growth Engineer",
+    "job_description": "Scales products."
+  },
+  {
+    "job_title": "Angular Developer",
+    "job_description": "Builds with Angular."
+  },
+  {
+    "job_title": "Web Developer",
+    "job_description": "Builds websites."
+  },
+  {
+    "job_title": "Mobile Developer",
+    "job_description": "Creates mobile apps."
+  },
+  {
+    "job_title": "JavaScript Engineer",
+    "job_description": "JavaScript for web."
+  },
+  {
+    "job_title": "Full Stack Developer",
+    "job_description": "Front & back end dev."
+  },
+  {
+    "job_title": "Product Engineer",
+    "job_description": "Product-focused dev."
+  },
+  {
+    "job_title": "Software Developer",
+    "job_description": "General development."
+  },
+  {
+    "job_title": "DevOps Engineer",
+    "job_description": "Links dev & ops."
+  },
+  {
+    "job_title": "Design Systems Engineer",
+    "job_description": "Creates UI systems."
+  },
+  {
+    "job_title": "UI/UX Engineer",
+    "job_description": "Designs user experience."
+  },
+  {
+    "job_title": "API Developer",
+    "job_description": "Maintains APIs."
+  },
+  {
+    "job_title": "Auth & Identity Developer",
+    "job_description": "Secures authentication."
+  },
+  {
+    "job_title": "Growth Developer",
+    "job_description": "Scales products."
+  },
+  {
+    "job_title": "React Developer",
+    "job_description": "Builds with React."
+  },
+  {
+    "job_title": "Web Application Engineer",
+    "job_description": "Optimizes web apps."
+  },
+  {
+    "job_title": "Software Engineer",
+    "job_description": "Broad development."
+  },
+  {
+    "job_title": "DevOps Developer",
+    "job_description": "Links dev & ops."
+  },
+  {
+    "job_title": "Data Visualization Engineer",
+    "job_description": "Visualizes data."
+  },
+  {
+    "job_title": "Data Visualization Developer",
+    "job_description": "Visualizes data."
+  },
+  {
+    "job_title": "Backend Engineer",
+    "job_description": "Server-side APIs."
+  }
 ]
