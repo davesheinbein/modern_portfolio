@@ -12,55 +12,53 @@ function Contact(props) {
 	const [formStatus, setFormStatus] = useState(null); // success | error | null
 	const jobpositions = jobpositionsData;
 
-	// Typing animation for subtitle and tagline (copied/adapted from Header)
-	useEffect(() => {
-		setFade(true);
-		setTyping('subtitle');
-		setTypedSubtitle('');
-		setTypedTagline('');
-		const subtitle = jobpositions[jobIndex].job_title;
-		const tagline = jobpositions[jobIndex].job_description;
-		let subIdx = 0;
-		let tagIdx = 0;
+  // Typing animation for subtitle and tagline (copied/adapted from Header)
+  useEffect(() => {
+    setFade(true);
+    setTyping("subtitle");
+    setTypedSubtitle("");
+    setTypedTagline("");
+    const subtitle = jobpositions[jobIndex].job_title;
+    const tagline = jobpositions[jobIndex].job_description;
+    let subIdx = 0;
+    let tagIdx = 0;
 
-		function typeSubtitle() {
-			if (subIdx <= subtitle.length) {
-				setTypedSubtitle(subtitle.slice(0, subIdx));
-				subIdx++;
-				setTimeout(typeSubtitle, 40);
-			} else {
-				setTyping('tagline');
-				typeTagline();
-			}
-		}
+    function typeSubtitle() {
+      if (subIdx <= subtitle.length) {
+        setTypedSubtitle(subtitle.slice(0, subIdx));
+        subIdx++;
+        setTimeout(typeSubtitle, 40);
+      } else {
+        setTyping("tagline");
+        typeTagline();
+      }
+    }
 
-		function typeTagline() {
-			if (tagIdx <= tagline.length) {
-				setTypedTagline(tagline.slice(0, tagIdx));
-				tagIdx++;
-				setTimeout(typeTagline, 30);
-			} else {
-				setTyping(false);
-				// Wait before fading out and cycling
-				setTimeout(() => {
-					setFade(false);
-					setTimeout(() => {
-						setJobIndex(
-							(prev) => (prev + 1) % jobpositions.length
-						);
-					}, 400);
-				}, 3000);
-			}
-		}
+    function typeTagline() {
+      if (tagIdx <= tagline.length) {
+        setTypedTagline(tagline.slice(0, tagIdx));
+        tagIdx++;
+        setTimeout(typeTagline, 30);
+      } else {
+        setTyping(false);
+        // Wait before fading out and cycling
+        setTimeout(() => {
+          setFade(false);
+          setTimeout(() => {
+            setJobIndex((prev) => (prev + 1) % jobpositions.length);
+          }, 400);
+        }, 3000);
+      }
+    }
 
-		typeSubtitle();
+    typeSubtitle();
 
-		return () => {
-			setTypedSubtitle('');
-			setTypedTagline('');
-		};
-		// eslint-disable-next-line react-hooks/exhaustive-deps
-	}, [jobIndex, jobpositions.length]);
+    return () => {
+      setTypedSubtitle("");
+      setTypedTagline("");
+    };
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [jobIndex, jobpositions.length]);
 
 	const handleSubmit = (e) => {
 		e.preventDefault();
