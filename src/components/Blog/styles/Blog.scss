@@ -6,19 +6,19 @@
     color: #11181f;
   }
 
-	&-section {
-		&-header {
-			display: flex;
-		}
-	}
+  &-section {
+    &-header {
+      display: flex;
+    }
+  }
 
-	.blog-slider-list {
-		display: flex;
-		gap: 20px;
-		overflow: hidden;
-		padding: 0;
-		margin: 0 auto;
-	}
+  .blog-slider-list {
+    display: flex;
+    gap: 20px;
+    overflow: hidden;
+    padding: 0;
+    margin: 0 auto;
+  }
 
   .blog-slider-item {
     min-width: 0;
@@ -26,12 +26,12 @@
     // The transition is set inline for each item for now
   }
 
-	.blog-slider-controls {
-		display: flex;
-		justify-content: flex-end;
-		gap: 1rem;
-		margin-bottom: 1rem;
-		margin-left: 25px;
+  .blog-slider-controls {
+    display: flex;
+    justify-content: flex-end;
+    gap: 1rem;
+    margin-bottom: 1rem;
+    margin-left: 25px;
 
     button {
       background: #fff;
