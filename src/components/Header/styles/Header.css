@@ -161,7 +161,9 @@ input:checked + .slider:before {
   border: none !important;
   border-width: 0 !important;
 }
-.no-bg:hover, .no-bg:focus, .no-bg:active {
+.no-bg:hover,
+.no-bg:focus,
+.no-bg:active {
   background-color: transparent !important;
   border: none !important;
   border-width: 0 !important;
@@ -193,10 +195,12 @@ input:checked + .slider:before {
 }
 
 @keyframes blink-cursor {
-  0%, 49% {
+  0%,
+  49% {
     opacity: 1;
   }
-  50%, 100% {
+  50%,
+  100% {
     opacity: 0;
   }
 }
@@ -207,12 +211,14 @@ input:checked + .slider:before {
   display: inline-block;
 }
 
-.wp-block-navigation-item.wp-block-navigation-link.header-section-text .ripple-letter {
+.wp-block-navigation-item.wp-block-navigation-link.header-section-text
+  .ripple-letter {
   display: inline-block;
   transition: transform 0.35s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.wp-block-navigation-item.wp-block-navigation-link.header-section-text.ripple-animate .ripple-letter {
+.wp-block-navigation-item.wp-block-navigation-link.header-section-text.ripple-animate
+  .ripple-letter {
   animation: ripple-pop 0.5s cubic-bezier(0.4, 0, 0.2, 1) both;
   animation-delay: var(--ripple-delay, 0ms);
 }
@@ -230,4 +236,4 @@ input:checked + .slider:before {
   100% {
     transform: translateY(0) scale(1);
   }
-}/*# sourceMappingURL=Header.css.map */
+} /*# sourceMappingURL=Header.css.map */
