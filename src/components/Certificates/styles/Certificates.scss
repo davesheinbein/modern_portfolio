@@ -37,6 +37,8 @@
 }
 
 .certificate-img {
+	max-height: 282.63px;
+	object-fit: contain;
 	width: 100%;
 	border-radius: 5px;
 	margin-top: 10px;
@@ -54,4 +56,8 @@
 
 .certificate-link:hover {
 	text-decoration: underline;
+}
+
+.reset-margin {
+	margin: 0 !important;
 }

@@ -1,5 +1,12 @@
-@import "../../../breakpoints/breakpoints.scss";
-@import "../../../mixins/mixins.scss";
+@import '../../../breakpoints/breakpoints.scss';
+@import '../../../mixins/mixins.scss';
 
 .education {
+}
+
+.experience-section-text:first-child {
+	padding: 0;
+}
+.experience-section-text {
+	padding: 25px 0 0;
 }

@@ -12,18 +12,12 @@ function Education(props) {
 				className='wp-block-column is-layout-flow wp-block-column-is-layout-flow education-section'
 				style={{ flexBasis: '100%' }}
 			>
-				<div
-					style={{ height: '50px' }}
-					aria-hidden='true'
-					className='wp-block-spacer'
-				></div>
-
-				<div className='wp-block-group alignfull has-global-padding is-layout-constrained wp-container-core-group-layout-32 wp-block-group-is-layout-constrained'>
+				<div className='wp-block-group alignfull has-global-padding is-layout-constrained wp-container-core-group-layout-32 wp-block-group-is-layout-constrained padding-top-50'>
 					<h2 className='wp-block-heading alignwide has-text-align-left education-section-header'>
 						Education
 					</h2>
 
-					<div
+					{/* <div
 						className='wp-block-columns alignwide is-layout-flex wp-container-core-columns-layout-15 wp-block-columns-is-layout-flex'
 						style={{
 							paddingTop: '0px',
@@ -179,10 +173,10 @@ function Education(props) {
 								/>
 							</figure>
 						</div>
-					</div>
+					</div> */}
 
 					<div
-						className='wp-block-columns alignwide is-layout-flex wp-container-core-columns-layout-16 wp-block-columns-is-layout-flex'
+						className='wp-block-columns alignwide is-layout-flex wp-container-core-columns-layout-16 wp-block-columns-is-layout-flex reset-margin'
 						style={{
 							paddingTop: '0px',
 							paddingRight: '0px',
@@ -324,12 +318,6 @@ function Education(props) {
 						</div>
 					</div>
 				</div>
-
-				<div
-					style={{ height: '50px' }}
-					aria-hidden='true'
-					className='wp-block-spacer'
-				></div>
 			</div>
 		</div>
 	);

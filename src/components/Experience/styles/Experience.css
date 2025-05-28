@@ -2,4 +2,11 @@
 *
 * Testing
 *
-**//*# sourceMappingURL=Experience.css.map */
+**/
+.experience-section-text:first-child {
+  padding: 0;
+}
+
+.experience-section-text {
+  padding: 25px 0 0;
+}/*# sourceMappingURL=Experience.css.map */

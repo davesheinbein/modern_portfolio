@@ -823,8 +823,12 @@ p.has-text-align-right[style*="writing-mode:vertical-rl"] {
   rotate: 180deg;
 }
 
-.wp-block-spacer {
-  clear: both;
+.padding-top-50 {
+  padding-top: 50px;
+}
+
+.padding-bottom-50 {
+  padding-bottom: 50px;
 }
 
 ol,
