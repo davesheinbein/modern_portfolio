@@ -227,9 +227,8 @@ function Education(props) {
 
 								<p className='education-section-accent'>
 									<strong>
-										Bachelor of Arts in Communications
-										<br />
-										Bachelor of Arts in Media Production
+										Bachelor Degree in Communications |
+										Media Production
 									</strong>
 								</p>
 

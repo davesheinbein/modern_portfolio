@@ -1,5 +1,60 @@
-@import "../../../breakpoints/breakpoints.scss";
-@import "../../../mixins/mixins.scss";
+@import '../../../breakpoints/breakpoints.scss';
+@import '../../../mixins/mixins.scss';
 
 .endorsements {
+	&-list {
+		&.fade-in {
+			animation: fadeIn 1s;
+		}
+	}
+}
+
+.endorsements-list {
+	position: relative;
+	min-height: 300px;
+}
+
+.endorsements-list .wp-block-columns {
+	opacity: 0;
+	transform: translateY(40px) scale(0.98);
+	animation: fadeSlideIn 1s cubic-bezier(0.4, 0, 0.2, 1)
+		forwards;
+}
+
+.endorsements-list .wp-block-columns-exit {
+	opacity: 1;
+	transform: translateY(0) scale(1);
+	animation: fadeSlideOut 0.7s cubic-bezier(0.4, 0, 0.2, 1)
+		forwards;
+}
+
+@keyframes fadeIn {
+	from {
+		opacity: 0;
+	}
+	to {
+		opacity: 1;
+	}
+}
+
+@keyframes fadeSlideIn {
+	from {
+		opacity: 0;
+		transform: translateY(40px) scale(0.98);
+	}
+	to {
+		opacity: 1;
+		transform: translateY(0) scale(1);
+	}
+}
+
+@keyframes fadeSlideOut {
+	from {
+		opacity: 1;
+		transform: translateY(0) scale(1);
+	}
+	to {
+		opacity: 0;
+		transform: translateY(-40px) scale(0.98);
+	}
 }

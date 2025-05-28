@@ -5,4 +5,34 @@
 **/
 .blog .wp-block-post-excerpt__excerpt {
   color: #11181f;
+}
+.blog .blog-slider-list {
+  display: flex;
+  gap: 20px;
+  overflow: hidden;
+  padding: 0;
+  margin: 0 auto;
+}
+.blog .blog-slider-item {
+  min-width: 0;
+  flex: 1 0 0%;
+}
+.blog .blog-slider-controls {
+  display: flex;
+  justify-content: flex-end;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+.blog .blog-slider-controls button {
+  background: #fff;
+  border: 1px solid #ccc;
+  border-radius: 50%;
+  width: 36px;
+  height: 36px;
+  font-size: 1.5rem;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+.blog .blog-slider-controls button:hover {
+  background: #f0f0f0;
 }/*# sourceMappingURL=Blog.css.map */

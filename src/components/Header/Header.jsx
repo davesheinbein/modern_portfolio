@@ -4,7 +4,7 @@ import Navbar from 'react-bootstrap/Navbar';
 import Nav from 'react-bootstrap/Nav';
 import Container from 'react-bootstrap/Container';
 import './styles/Header.css';
-import jobpositionsData from './jobpositions.json';
+import jobpositionsData from '../utils/jobpositions.json';
 
 function Header(props) {
 	const [isMenuOpen, setIsMenuOpen] = useState(false);

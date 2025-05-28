@@ -1,0 +1,65 @@
+[
+	{
+		"title": "Responsive Design in 2024: Making Your Web Apps Shine Across Devices",
+		"url": "https://medium.com/@davidsheinbeindev/responsive-design-in-2024-making-your-web-apps-shine-across-devices-e457825fd144",
+		"imgKey": "responsiveDesignImg",
+		"imgUrl": "https://miro.medium.com/v2/resize:fit:720/format:webp/1*MDutGXHacRc_mo05N2WEDQ.png",
+		"excerpt": "In today’s digital landscape, people access web applications on a wide range of devices, from smartphones to big desktop screens. As a Full…",
+		"published": "Nov 11, 2024",
+		"readTime": "3 min read"
+	},
+	{
+		"title": "Harnessing the Power of JavaScript for Modern Web Applications",
+		"url": "https://medium.com/@davidsheinbeindev/harnessing-the-power-of-javascript-for-modern-web-applications-a312eb095b04",
+		"imgKey": "harnessingDesignImg",
+		"imgUrl": "https://miro.medium.com/v2/resize:fit:720/format:webp/1*SQ39ycckLp2iw4lE2XEN5A.png",
+		"excerpt": "As a Full Stack Developer, I have spent considerable time delving into the intricacies of JavaScript. It is undeniably one of the most…",
+		"published": "Oct 30, 2024",
+		"readTime": "3 min read"
+	},
+	{
+		"title": "The Importance of Writing Clean, Maintainable Code",
+		"url": "https://medium.com/@davidsheinbeindev/the-importance-of-writing-clean-maintainable-code-4b814d33592b",
+		"imgKey": "importanceImg",
+		"imgUrl": "https://miro.medium.com/v2/resize:fit:720/format:webp/1*XM4bljz3sfS6TTTAHoASdA.png",
+		"excerpt": "One of the most valuable lessons I’ve learned throughout my career as a Full Stack Developer is the importance of writing clean…",
+		"published": "Oct 30, 2024",
+		"readTime": "4 min read"
+	},
+	{
+		"title": "Angular vs. React: Choosing the Right Tool for Your Project",
+		"url": "https://medium.com/@davidsheinbeindev/angular-vs-react-choosing-the-right-tool-for-your-project-009e3d612dbd",
+		"imgKey": "angularVsReactImg",
+		"imgUrl": "https://miro.medium.com/v2/resize:fit:720/format:webp/1*CaqLW_XLOLQlGC04ZhHSEw.png",
+		"excerpt": "As a Full Stack Developer, one of the most common questions I hear is: “Should we use Angular or React for this project?” It’s a great…",
+		"published": "Oct 30, 2024",
+		"readTime": "5 min read"
+	},
+	{
+		"title": "Nurturing Skill Growth in Code Collaboration",
+		"url": "https://www.linkedin.com/pulse/nurturing-skill-growth-code-collaboration-david-sheinbein-d8ckc/?trackingId=lw%2Bo5gAEQCSOF%2FPVzT%2FX%2BA%3D%3D",
+		"imgKey": "catDogImg",
+		"imgUrl": "catDogImg",
+		"excerpt": "Navigating the dynamic world of frontend development, the significance of our team’s meticulous code reviews is something we all deeply…",
+		"published": "Oct 30, 2024",
+		"readTime": "2 min read"
+	},
+	{
+		"title": "My First Conversation with ChatGPT: Impressive Adaptability",
+		"url": "https://www.linkedin.com/pulse/my-first-conversation-chatgpt-impressive-adaptability-david-sheinbein%3FtrackingId=%252BpioCukkQYmTmcPb7q4M7g%253D%253D/?trackingId=%2BpioCukkQYmTmcPb7q4M7g%3D%3D",
+		"imgKey": "messageImg",
+		"imgUrl": "messageImg",
+		"excerpt": "Today, I had the opportunity to speak with ChatGPT, a large language model developed by OpenAI. From the moment I began talking with…",
+		"published": "Oct 30, 2024",
+		"readTime": "3 min read"
+	},
+	{
+		"title": "Early Insights on ChatGPT: A Chatbot Technology with Great Potential",
+		"url": "https://www.linkedin.com/pulse/early-insights-chatgpt-chatbot-technology-great-david-sheinbein/?trackingId=lw%2Bo5gAEQCSOF%2FPVzT%2FX%2BA%3D%3D",
+		"imgKey": "deskCompImg",
+		"imgUrl": "deskCompImg",
+		"excerpt": "As a frontend developer, I am always on the lookout for innovative technologies that can enhance the user experience on the web. Recently…",
+		"published": "Oct 30, 2024",
+		"readTime": "2 min read"
+	}
+]

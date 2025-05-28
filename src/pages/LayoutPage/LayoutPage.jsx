@@ -175,6 +175,31 @@ export default class Layout extends Component {
 			imgList,
 			targetImageName21
 		);
+
+		const targetImageName22 = 'responsiveDesignImg';
+		const responsiveDesign = findImageByName(
+			imgList,
+			targetImageName22
+		);
+
+		const targetImageName23 = 'harnessingDesignImg';
+		const harnessingDesign = findImageByName(
+			imgList,
+			targetImageName23
+		);
+
+		const targetImageName24 = 'importanceImg';
+		const importance = findImageByName(
+			imgList,
+			targetImageName24
+		);
+
+		const targetImageName25 = 'angularVsReactImg';
+		const angularVsReact = findImageByName(
+			imgList,
+			targetImageName25
+		);
+
 		// urls
 
 		// Header
@@ -221,7 +246,6 @@ export default class Layout extends Component {
 			url: 'https://i.imgur.com/HjhEgn4.png',
 		};
 
-		// here
 		// codepens
 		const choroplethMapImg = {
 			name: 'Choropleth Map',
@@ -290,6 +314,26 @@ export default class Layout extends Component {
 			url: 'https://i.imgur.com/ERr4bVB.png',
 		};
 
+		const responsiveDesignImg = responsiveDesign || {
+			name: 'Responsive Design in 2024: Making Your Web Apps Shine Across Devices',
+			url: 'https://miro.medium.com/v2/resize:fit:720/format:webp/1*MDutGXHacRc_mo05N2WEDQ.png',
+		};
+
+		const harnessingDesignImg = harnessingDesign || {
+			name: 'Harnessing the Power of JavaScript for Modern Web Applications',
+			url: 'https://miro.medium.com/v2/resize:fit:720/format:webp/1*SQ39ycckLp2iw4lE2XEN5A.png',
+		};
+
+		const importanceImg = importance || {
+			name: 'The Importance of Writing Clean, Maintainable Code',
+			url: 'https://miro.medium.com/v2/resize:fit:720/format:webp/1*XM4bljz3sfS6TTTAHoASdA.png',
+		};
+
+		const angularVsReactImg = angularVsReact || {
+			name: 'Angular vs. React: Choosing the Right Tool for Your Project',
+			url: 'https://miro.medium.com/v2/resize:fit:720/format:webp/1*CaqLW_XLOLQlGC04ZhHSEw.png',
+		};
+
 		return (
 			<main className='wp-block-group is-layout-flow wp-container-core-group-layout-45 wp-block-group-is-layout-flow'>
 				<Hero headshotImg={headshotImg} />
@@ -328,6 +372,10 @@ export default class Layout extends Component {
 					deskCompImg={deskCompImg}
 					messageImg={messageImg}
 					catDogImg={catDogImg}
+					responsiveDesignImg={responsiveDesignImg}
+					harnessingDesignImg={harnessingDesignImg}
+					importanceImg={importanceImg}
+					angularVsReactImg={angularVsReactImg}
 				/>
 				<Endorsements imgList={imgList} />
 				<Contact
