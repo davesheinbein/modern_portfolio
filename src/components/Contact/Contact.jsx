@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import './styles/Contact.css';
 import jobpositionsData from '../utils/jobpositions.json';
+import emailjs from 'emailjs-com';
 
 function Contact(props) {
 	const [jobIndex, setJobIndex] = useState(0);
@@ -8,6 +9,7 @@ function Contact(props) {
 	const [typedSubtitle, setTypedSubtitle] = useState('');
 	const [typedTagline, setTypedTagline] = useState('');
 	const [typing, setTyping] = useState('subtitle');
+	const [formStatus, setFormStatus] = useState(null); // success | error | null
 	const jobpositions = jobpositionsData;
 
 	// Typing animation for subtitle and tagline (copied/adapted from Header)
@@ -59,6 +61,27 @@ function Contact(props) {
 		};
 		// eslint-disable-next-line react-hooks/exhaustive-deps
 	}, [jobIndex, jobpositions.length]);
+
+	const handleSubmit = (e) => {
+		e.preventDefault();
+		setFormStatus(null);
+		emailjs
+			.sendForm(
+				'service_t286ywp', // EmailJS service ID
+				'portfolioEmail', // EmailJS template ID
+				e.target,
+				'zGrV05Nik78ARO3fq' // EmailJS public key
+			)
+			.then(
+				(result) => {
+					setFormStatus('success');
+					e.target.reset();
+				},
+				(error) => {
+					setFormStatus('error');
+				}
+			);
+	};
 
 	return (
 		<div
@@ -176,49 +199,62 @@ function Contact(props) {
 									</p>
 								</div>
 								<form
-									action='https://example.com/contact-form-handler'
-									method='post'
+									onSubmit={handleSubmit}
 									className='contact-form wpcf7-form'
-									novalidate='novalidate'
+									noValidate
 									data-status='init'
 								>
-									<div className='contact-form-fields'>
+									<div className='contact-form_fields'>
 										<div className='contact-form-field'>
-											<label htmlFor='your-name'>
+											<label htmlFor='name'>
 												Name{' '}
 												<span className='required'>*</span>
 											</label>
 											<input
 												type='text'
-												name='your-name'
-												id='your-name'
+												name='name'
+												id='name'
 												required
 												aria-required='true'
 												placeholder='Your Name'
 											/>
 										</div>
 										<div className='contact-form-field'>
-											<label htmlFor='your-email'>
+											<label htmlFor='email'>
 												Email{' '}
 												<span className='required'>*</span>
 											</label>
 											<input
 												type='email'
-												name='your-email'
-												id='your-email'
+												name='email'
+												id='email'
 												required
 												aria-required='true'
 												placeholder='Your Email'
 											/>
 										</div>
 										<div className='contact-form-field'>
-											<label htmlFor='your-message'>
+											<label htmlFor='subject'>
+												Subject{' '}
+												<span className='required'>*</span>
+											</label>
+											<input
+												type='text'
+												name='subject'
+												id='subject'
+												required
+												aria-required='true'
+												placeholder='Subject'
+											/>
+										</div>
+										<div className='contact-form-field'>
+											<label htmlFor='message'>
 												Message{' '}
 												<span className='required'>*</span>
 											</label>
 											<textarea
-												name='your-message'
-												id='your-message'
+												name='message'
+												id='message'
 												required
 												aria-required='true'
 												placeholder='Your Message'
@@ -234,6 +270,27 @@ function Contact(props) {
 											Send Message
 										</button>
 									</div>
+									{formStatus === 'success' && (
+										<p
+											style={{
+												color: 'green',
+												marginTop: '1rem',
+											}}
+										>
+											Thank you! Your message has been sent.
+										</p>
+									)}
+									{formStatus === 'error' && (
+										<p
+											style={{
+												color: 'red',
+												marginTop: '1rem',
+											}}
+										>
+											Sorry, there was an error. Please try
+											again later.
+										</p>
+									)}
 								</form>
 							</div>
 						</div>

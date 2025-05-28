@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import './styles/Blog.css';
 import blogposts from '../utils/blogposts.json';
+import { getPaginatedItems } from '../utils/utils';
 
 function Blog(props) {
 	const {
@@ -40,12 +41,11 @@ function Blog(props) {
 		);
 	};
 
-	const visiblePosts = [];
-	for (let i = 0; i < postsPerPage; i++) {
-		visiblePosts.push(
-			blogposts[(startIdx + i) % totalPosts]
-		);
-	}
+	const visiblePosts = getPaginatedItems(
+		blogposts,
+		startIdx,
+		postsPerPage
+	);
 
 	return (
 		<div
@@ -77,27 +77,29 @@ function Blog(props) {
 						}}
 					>
 						Blog posts
-					</h2>
-
-					<div
-						className='blog-slider-controls'
-						style={{
-							display: 'flex',
-							justifyContent: 'flex-end',
-							gap: '1rem',
-							marginBottom: '1rem',
-						}}
-					>
-						<button
-							onClick={handlePrev}
-							aria-label='Previous'
+						<span
+							className='blog-slider-controls'
+							style={{
+								display: 'flex',
+								justifyContent: 'flex-end',
+								gap: '1rem',
+								marginBottom: '1rem',
+							}}
 						>
-							&lt;
-						</button>
-						<button onClick={handleNext} aria-label='Next'>
-							&gt;
-						</button>
-					</div>
+							<button
+								onClick={handlePrev}
+								aria-label='Previous'
+							>
+								&lt;
+							</button>
+							<button
+								onClick={handleNext}
+								aria-label='Next'
+							>
+								&gt;
+							</button>
+						</span>
+					</h2>
 
 					<div className='wp-block-query alignwide is-layout-flow wp-block-query-is-layout-flow'>
 						<ul className='columns-3 wp-block-post-template is-layout-grid wp-container-core-post-template-layout-1 wp-block-post-template-is-layout-grid blog-slider-list'>

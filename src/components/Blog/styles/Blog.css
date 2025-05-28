@@ -1,5 +1,13 @@
+/**
+*
+* Testing
+*
+**/
 .blog .wp-block-post-excerpt__excerpt {
   color: #11181f;
+}
+.blog-section-header {
+  display: flex;
 }
 .blog .blog-slider-list {
   display: flex;
@@ -17,6 +25,7 @@
   justify-content: flex-end;
   gap: 1rem;
   margin-bottom: 1rem;
+  margin-left: 25px;
 }
 .blog .blog-slider-controls button {
   background: #fff;
