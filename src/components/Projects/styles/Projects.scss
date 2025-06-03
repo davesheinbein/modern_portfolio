@@ -1,71 +1,75 @@
-@import "../../../breakpoints/breakpoints.scss";
-@import "../../../mixins/mixins.scss";
+@import '../../../breakpoints/breakpoints.scss';
+@import '../../../mixins/mixins.scss';
 
 .fa-star__animated {
-  transition: transform 0.75s ease-in-out;
+	transition: transform 0.75s ease-in-out;
 }
 
 .fa-star__animated:hover {
-  transform: rotate(360deg);
+	transform: rotate(360deg);
 }
 
 .rows {
-  display: flex;
-  flex-direction: row;
-  &__item {
-    padding-right: 15px;
-  }
+	display: flex;
+	flex-direction: row;
+	&__item {
+		padding-right: 15px;
+	}
 }
 
 .block-text {
-  color: var(--wp--preset--color--subtextA);
+	color: var(--wp--preset--color--subtextA);
 }
 
 .git__projects-grid {
-  width: 100%;
-  max-width: var(--wp--style--global--wide-size) !important;
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 20px;
-  // margin: 0 !important;
-  margin: 0 auto;
-  padding: 10px 0 !important;
+	width: 100%;
+	max-width: var(--wp--style--global--wide-size) !important;
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	gap: 20px;
+	// margin: 0 !important;
+	margin: 0 auto;
+	padding: 10px 0 !important;
 }
 
 .git__project-item {
-  border: 1px solid #ccc;
-  padding: 10px;
-  border-radius: 8px;
+	border: 1px solid #ccc;
+	padding: 10px;
+	border-radius: 8px;
 }
 
 .git__projects-section-img {
-  width: 100%;
-  border-radius: 5px;
-  margin-top: 10px;
+	width: 100%;
+	border-radius: 5px;
+	margin-top: 10px;
 }
 
 .git__projects-section-accent {
-  color: var(--wp--preset--color--accent) !important;
+	color: var(--wp--preset--color--accent) !important;
 }
 
 .more__projects {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  align-items: center;
-  width: 100%;
-  max-width: unset !important;
-  font-size: 36px;
-  user-select: none;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	align-items: center;
+	width: 100%;
+	max-width: unset !important;
+	font-size: 36px;
+	user-select: none;
 
-  &-project {
-    &-link {
-      font-size: 30px;
-      padding: 0 20px;
-      text-decoration: none;
-      &-icon {
-        padding-right: 5px;
-      }
-    }
-  }
+	&-project {
+		&-link {
+			font-size: 30px;
+			padding: 0 20px;
+			text-decoration: none;
+			&-icon {
+				padding-right: 5px;
+			}
+		}
+	}
+}
+
+.no-border {
+	border: none !important;
 }

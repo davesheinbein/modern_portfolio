@@ -68,4 +68,8 @@
 }
 .more__projects-project-link-icon {
   padding-right: 5px;
+}
+
+.no-border {
+  border: none !important;
 }/*# sourceMappingURL=Projects.css.map */

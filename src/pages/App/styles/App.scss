@@ -1,4 +1,5 @@
 @import '../../../breakpoints/breakpoints.scss';
+@import '../../../styles/animations.scss';
 
 * {
 	margin: 0;
@@ -735,77 +736,6 @@
 		)
 		.scrim {
 		animation: turn-off-visibility 0.4s forwards;
-	}
-}
-
-@keyframes turn-on-visibility {
-	0% {
-		opacity: 0;
-	}
-
-	to {
-		opacity: 1;
-	}
-}
-
-@keyframes turn-off-visibility {
-	0% {
-		opacity: 1;
-		visibility: visible;
-	}
-
-	99% {
-		opacity: 0;
-		visibility: visible;
-	}
-
-	to {
-		opacity: 0;
-		visibility: hidden;
-	}
-}
-
-@keyframes lightbox-zoom-in {
-	0% {
-		transform: translate(
-				calc(
-					(-100vw + var(--wp--lightbox-scrollbar-width)) / 2 +
-						var(--wp--lightbox-initial-left-position)
-				),
-				calc(
-					-50vh + var(--wp--lightbox-initial-top-position)
-				)
-			)
-			scale(var(--wp--lightbox-scale));
-	}
-
-	to {
-		transform: translate(-50%, -50%) scale(1);
-	}
-}
-
-@keyframes lightbox-zoom-out {
-	0% {
-		transform: translate(-50%, -50%) scale(1);
-		visibility: visible;
-	}
-
-	99% {
-		visibility: visible;
-	}
-
-	to {
-		transform: translate(
-				calc(
-					(-100vw + var(--wp--lightbox-scrollbar-width)) / 2 +
-						var(--wp--lightbox-initial-left-position)
-				),
-				calc(
-					-50vh + var(--wp--lightbox-initial-top-position)
-				)
-			)
-			scale(var(--wp--lightbox-scale));
-		visibility: hidden;
 	}
 }
 

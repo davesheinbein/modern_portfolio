@@ -2,6 +2,8 @@ import React, { useState, useEffect } from 'react';
 import './styles/Contact.css';
 import jobpositionsData from '../utils/jobpositions.json';
 import emailjs from 'emailjs-com';
+import { DotLottiePlayer } from '@dotlottie/react-player';
+import { DotLottieReact } from '@lottiefiles/dotlottie-react';
 
 function Contact(props) {
 	const [jobIndex, setJobIndex] = useState(0);
@@ -10,55 +12,66 @@ function Contact(props) {
 	const [typedTagline, setTypedTagline] = useState('');
 	const [typing, setTyping] = useState('subtitle');
 	const [formStatus, setFormStatus] = useState(null); // success | error | null
+	const [flipped, setFlipped] = useState(false);
 	const jobpositions = jobpositionsData;
 
-  // Typing animation for subtitle and tagline (copied/adapted from Header)
-  useEffect(() => {
-    setFade(true);
-    setTyping("subtitle");
-    setTypedSubtitle("");
-    setTypedTagline("");
-    const subtitle = jobpositions[jobIndex].job_title;
-    const tagline = jobpositions[jobIndex].job_description;
-    let subIdx = 0;
-    let tagIdx = 0;
+	// Typing animation for subtitle and tagline (copied/adapted from Header)
+	useEffect(() => {
+		setFade(true);
+		setTyping('subtitle');
+		setTypedSubtitle('');
+		setTypedTagline('');
+		const subtitle = jobpositions[jobIndex].job_title;
+		const tagline = jobpositions[jobIndex].job_description;
+		let subIdx = 0;
+		let tagIdx = 0;
 
-    function typeSubtitle() {
-      if (subIdx <= subtitle.length) {
-        setTypedSubtitle(subtitle.slice(0, subIdx));
-        subIdx++;
-        setTimeout(typeSubtitle, 40);
-      } else {
-        setTyping("tagline");
-        typeTagline();
-      }
-    }
+		function typeSubtitle() {
+			if (subIdx <= subtitle.length) {
+				setTypedSubtitle(subtitle.slice(0, subIdx));
+				subIdx++;
+				setTimeout(typeSubtitle, 40);
+			} else {
+				setTyping('tagline');
+				typeTagline();
+			}
+		}
 
-    function typeTagline() {
-      if (tagIdx <= tagline.length) {
-        setTypedTagline(tagline.slice(0, tagIdx));
-        tagIdx++;
-        setTimeout(typeTagline, 30);
-      } else {
-        setTyping(false);
-        // Wait before fading out and cycling
-        setTimeout(() => {
-          setFade(false);
-          setTimeout(() => {
-            setJobIndex((prev) => (prev + 1) % jobpositions.length);
-          }, 400);
-        }, 3000);
-      }
-    }
+		function typeTagline() {
+			if (tagIdx <= tagline.length) {
+				setTypedTagline(tagline.slice(0, tagIdx));
+				tagIdx++;
+				setTimeout(typeTagline, 30);
+			} else {
+				setTyping(false);
+				// Wait before fading out and cycling
+				setTimeout(() => {
+					setFade(false);
+					setTimeout(() => {
+						setJobIndex(
+							(prev) => (prev + 1) % jobpositions.length
+						);
+					}, 400);
+				}, 3000);
+			}
+		}
 
-    typeSubtitle();
+		typeSubtitle();
 
-    return () => {
-      setTypedSubtitle("");
-      setTypedTagline("");
-    };
-    // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [jobIndex, jobpositions.length]);
+		return () => {
+			setTypedSubtitle('');
+			setTypedTagline('');
+		};
+		// eslint-disable-next-line react-hooks/exhaustive-deps
+	}, [jobIndex, jobpositions.length]);
+
+	// Flip the lottie every 5 seconds
+	useEffect(() => {
+		const interval = setInterval(() => {
+			setFlipped((prev) => !prev);
+		}, 5000);
+		return () => clearInterval(interval);
+	}, []);
 
 	const handleSubmit = (e) => {
 		e.preventDefault();
@@ -117,7 +130,9 @@ function Contact(props) {
 								DAVID SHEINBEIN
 							</h1>
 							<h6
-								className={`contact-subtitle wp-block-heading has-vivid-red-color has-text-color has-link-color wp-elements-7801a88062b2778f8750ee44fd5f598f contact-section-accent${fade ? ' fade-in' : ' fade-out'}`}
+								className={`contact-subtitle wp-block-heading has-vivid-red-color has-text-color has-link-color wp-elements-7801a88062b2778f8750ee44fd5f598f contact-section-accent${
+									fade ? ' fade-in' : ' fade-out'
+								}`}
 							>
 								{typedSubtitle}
 								<span className='typing-cursor'>
@@ -125,7 +140,9 @@ function Contact(props) {
 								</span>
 							</h6>
 							<h6
-								className={`contact-tagline wp-block-heading has-vivid-red-color has-text-color has-link-color wp-elements-7801a88062b2778f8750ee44fd5f598f contact-section-accent${fade ? ' fade-in' : ' fade-out'}`}
+								className={`contact-tagline wp-block-heading has-vivid-red-color has-text-color has-link-color wp-elements-7801a88062b2778f8750ee44fd5f598f contact-section-accent${
+									fade ? ' fade-in' : ' fade-out'
+								}`}
 							>
 								{typedTagline}
 								<span className='typing-cursor'>
@@ -180,6 +197,16 @@ function Contact(props) {
 									</a>
 								</li>
 							</ul>
+							<div
+								className={`contact-lottie${flipped ? ' flipped' : ''}`}
+							>
+								<DotLottieReact
+									src='https://lottie.host/10207b61-08c1-49a5-848d-75217339b1de/OJ5btkXjkc.lottie'
+									loop
+									autoplay
+									className='contact-lottie-animated'
+								/>
+							</div>
 						</div>
 						<div
 							className='wp-block-column is-layout-flow wp-container-core-column-layout-45 wp-block-column-is-layout-flow'
@@ -188,7 +215,13 @@ function Contact(props) {
 							<div className='contact-form-container'>
 								<div className='contact-form-header'>
 									<h2 className='contact-form-title'>
-										Contact
+										Contact{' '}
+										<DotLottiePlayer
+											autoplay
+											loop
+											src='https://lottie.host/0abe9ae5-1394-4066-8012-07e421669821/SKmc1OwHhu.lottie'
+											className='contact-lottie-header'
+										/>
 									</h2>
 									<p className='contact-form-description'>
 										Interested in collaborating or want to

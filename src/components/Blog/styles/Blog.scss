@@ -1,10 +1,11 @@
-@import "../../../breakpoints/breakpoints.scss";
-@import "../../../mixins/mixins.scss";
+@import '../../../styles/animations.scss';
+@import '../../../breakpoints/breakpoints.scss';
+@import '../../../mixins/mixins.scss';
 
 .blog {
-  .wp-block-post-excerpt__excerpt {
-    color: #11181f;
-  }
+	.wp-block-post-excerpt__excerpt {
+		color: #11181f;
+	}
 
 	&-section {
 		&-header {
@@ -20,11 +21,11 @@
 		margin: 0 auto;
 	}
 
-  .blog-slider-item {
-    min-width: 0;
-    flex: 1 0 0%;
-    // The transition is set inline for each item for now
-  }
+	.blog-slider-item {
+		min-width: 0;
+		flex: 1 0 0%;
+		// The transition is set inline for each item for now
+	}
 
 	.blog-slider-controls {
 		display: flex;
@@ -33,19 +34,19 @@
 		margin-bottom: 1rem;
 		margin-left: 25px;
 
-    button {
-      background: #fff;
-      border: 1px solid #ccc;
-      border-radius: 50%;
-      width: 36px;
-      height: 36px;
-      font-size: 1.5rem;
-      cursor: pointer;
-      transition: background 0.2s;
+		button {
+			background: #fff;
+			border: 1px solid #ccc;
+			border-radius: 50%;
+			width: 36px;
+			height: 36px;
+			font-size: 1.5rem;
+			cursor: pointer;
+			transition: background 0.2s;
 
-      &:hover {
-        background: #f0f0f0;
-      }
-    }
-  }
+			&:hover {
+				background: #f0f0f0;
+			}
+		}
+	}
 }

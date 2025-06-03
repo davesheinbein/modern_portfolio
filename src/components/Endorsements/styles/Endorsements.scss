@@ -1,58 +1,44 @@
-@import "../../../breakpoints/breakpoints.scss";
-@import "../../../mixins/mixins.scss";
+@import '../../../breakpoints/breakpoints.scss';
+@import '../../../mixins/mixins.scss';
+@import '../../../styles/animations.scss';
 
 .endorsements {
-  &-list {
-    &.fade-in {
-      animation: fadeIn 1s;
-    }
-  }
+	&-list {
+		&.fade-in {
+			animation: fadeIn 1s;
+		}
+	}
 }
 
 .endorsements-list {
-  position: relative;
-  min-height: 300px;
+	position: relative;
+	height: 450px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
 }
 
 .endorsements-list .wp-block-columns {
-  opacity: 0;
-  transform: translateY(40px) scale(0.98);
-  animation: fadeSlideIn 1s cubic-bezier(0.4, 0, 0.2, 1) forwards;
+	opacity: 0;
+	transform: translateY(40px) scale(0.98);
+	animation: fadeSlideIn 1s cubic-bezier(0.4, 0, 0.2, 1)
+		forwards;
 }
 
 .endorsements-list .wp-block-columns-exit {
-  opacity: 1;
-  transform: translateY(0) scale(1);
-  animation: fadeSlideOut 0.7s cubic-bezier(0.4, 0, 0.2, 1) forwards;
+	opacity: 1;
+	transform: translateY(0) scale(1);
+	animation: fadeSlideOut 0.7s cubic-bezier(0.4, 0, 0.2, 1)
+		forwards;
 }
 
-@keyframes fadeIn {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
-}
-
-@keyframes fadeSlideIn {
-  from {
-    opacity: 0;
-    transform: translateY(40px) scale(0.98);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0) scale(1);
-  }
-}
-
-@keyframes fadeSlideOut {
-  from {
-    opacity: 1;
-    transform: translateY(0) scale(1);
-  }
-  to {
-    opacity: 0;
-    transform: translateY(-40px) scale(0.98);
-  }
+.endorsements-section-padding {
+	height: 1000px;
+	margin-top: 0px;
+	margin-bottom: 0px;
+	padding-top: var(--wp--preset--spacing--80);
+	padding-right: var(--wp--preset--spacing--50);
+	padding-bottom: var(--wp--preset--spacing--80);
+	padding-left: var(--wp--preset--spacing--50);
 }

@@ -3,6 +3,8 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "@dotlottie/react-player": "^1.6.19",
+    "@lottiefiles/dotlottie-react": "^0.13.5",
     "@types/jest": "^27.5.2",
     "@types/node": "^16.18.73",
     "@types/react": "^18.2.48",
