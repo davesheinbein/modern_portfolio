@@ -298,8 +298,8 @@ input:checked + .slider:before {
   cursor: pointer;
   display: inline-block;
   -webkit-user-select: none;
-     -moz-user-select: none;
-          user-select: none;
+  -moz-user-select: none;
+  user-select: none;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -378,7 +378,8 @@ input:checked + .slider:before {
   outline: none;
   transition: background 0.2s;
 }
-.modern-hamburger:hover, .modern-hamburger:focus {
+.modern-hamburger:hover,
+.modern-hamburger:focus {
   background: #ffe5e9;
 }
 @media (max-width: 1024px) {
@@ -427,19 +428,24 @@ input:checked + .slider:before {
     max-height: 0;
     opacity: 0;
     overflow: hidden;
-    transition: max-height 0.35s cubic-bezier(0.4, 0, 0.2, 1), opacity 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+    transition:
+      max-height 0.35s cubic-bezier(0.4, 0, 0.2, 1),
+      opacity 0.25s cubic-bezier(0.4, 0, 0.2, 1);
   }
   .mobile-nav-collapse.show {
     max-height: 600px;
     opacity: 1;
-    transition: max-height 0.45s cubic-bezier(0.4, 0, 0.2, 1), opacity 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+    transition:
+      max-height 0.45s cubic-bezier(0.4, 0, 0.2, 1),
+      opacity 0.25s cubic-bezier(0.4, 0, 0.2, 1);
   }
   .mobile-nav-collapse .wp-block-navigation-item {
     border-radius: 0.75rem;
     margin-bottom: 0.5rem;
     transition: background 0.2s;
   }
-  .mobile-nav-collapse .wp-block-navigation-item:hover, .mobile-nav-collapse .wp-block-navigation-item:focus {
+  .mobile-nav-collapse .wp-block-navigation-item:hover,
+  .mobile-nav-collapse .wp-block-navigation-item:focus {
     background: #e5f6ff;
     color: #e63946;
   }
@@ -455,7 +461,7 @@ input:checked + .slider:before {
     background: rgba(0, 0, 0, 0.18);
     z-index: 1199;
     -webkit-backdrop-filter: blur(2px);
-            backdrop-filter: blur(2px);
+    backdrop-filter: blur(2px);
     transition: opacity 0.3s;
   }
 }
@@ -485,19 +491,24 @@ input:checked + .slider:before {
     max-height: 0;
     opacity: 0;
     overflow: hidden;
-    transition: max-height 0.35s cubic-bezier(0.4, 0, 0.2, 1), opacity 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+    transition:
+      max-height 0.35s cubic-bezier(0.4, 0, 0.2, 1),
+      opacity 0.25s cubic-bezier(0.4, 0, 0.2, 1);
   }
   .mobile-nav-collapse.show {
     max-height: 600px;
     opacity: 1;
-    transition: max-height 0.45s cubic-bezier(0.4, 0, 0.2, 1), opacity 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+    transition:
+      max-height 0.45s cubic-bezier(0.4, 0, 0.2, 1),
+      opacity 0.25s cubic-bezier(0.4, 0, 0.2, 1);
   }
   .mobile-nav-collapse .wp-block-navigation-item {
     border-radius: 0.75rem;
     margin-bottom: 0.5rem;
     transition: background 0.2s;
   }
-  .mobile-nav-collapse .wp-block-navigation-item:hover, .mobile-nav-collapse .wp-block-navigation-item:focus {
+  .mobile-nav-collapse .wp-block-navigation-item:hover,
+  .mobile-nav-collapse .wp-block-navigation-item:focus {
     background: #e5f6ff;
     color: #e63946;
   }
@@ -513,7 +524,7 @@ input:checked + .slider:before {
     background: rgba(0, 0, 0, 0.18);
     z-index: 1199;
     -webkit-backdrop-filter: blur(2px);
-            backdrop-filter: blur(2px);
+    backdrop-filter: blur(2px);
     transition: opacity 0.3s;
   }
 }
@@ -535,4 +546,4 @@ input:checked + .slider:before {
   display: flex !important;
   justify-content: center;
   align-items: center;
-}/*# sourceMappingURL=Header.css.map */
+} /*# sourceMappingURL=Header.css.map */

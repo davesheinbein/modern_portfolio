@@ -104,6 +104,7 @@ I have earned multiple certifications, showcasing a well-rounded skill set in de
 ### Blogs posts
 
 <!-- BLOG-POST-LIST:START -->
+
 - [Responsive Design in 2024: Making Your Web Apps Shine Across Devices](https://medium.com/@davidsheinbeindev/responsive-design-in-2024-making-your-web-apps-shine-across-devices-e457825fd144?source=rss-1c389b2c5210------2)
 - [Harnessing the Power of JavaScript for Modern Web Applications](https://medium.com/@davidsheinbeindev/harnessing-the-power-of-javascript-for-modern-web-applications-a312eb095b04?source=rss-1c389b2c5210------2)
 - [The Importance of Writing Clean, Maintainable Code](https://medium.com/@davidsheinbeindev/the-importance-of-writing-clean-maintainable-code-4b814d33592b?source=rss-1c389b2c5210------2)

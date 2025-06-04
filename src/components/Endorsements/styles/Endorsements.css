@@ -113,7 +113,8 @@
   flex-direction: column;
   /* Animate the entire stack upward for marquee effect */
   will-change: transform;
-  animation: vertical-marquee var(--marquee-speed, 60s) linear infinite var(--marquee-direction, normal);
+  animation: vertical-marquee var(--marquee-speed, 60s) linear infinite
+    var(--marquee-direction, normal);
 }
 
 @keyframes vertical-marquee {

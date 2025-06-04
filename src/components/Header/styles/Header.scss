@@ -67,18 +67,18 @@
 }
 
 .slider {
-	position: absolute;
-	cursor: pointer;
-	top: 0;
-	left: 0;
-	right: 0;
-	bottom: 0;
-	background-color: var(
-		--wp--preset--color--slider
-	); // background of the slider
-	transition: 0.4s;
-	border-radius: 34px;
-	transform: translateX(25px);
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: var(
+    --wp--preset--color--slider
+  ); // background of the slider
+  transition: 0.4s;
+  border-radius: 34px;
+  transform: translateX(25px);
 }
 
 .slider:before {
@@ -220,14 +220,14 @@ input:checked + .slider:before {
 }
 
 .wp-block-navigation-item.wp-block-navigation-link.header-section-text {
-	position: relative;
-	overflow: hidden;
-	cursor: pointer;
-	display: inline-block;
-	user-select: none;
-	display: flex;
-	justify-content: center;
-	align-items: center;
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+  display: inline-block;
+  user-select: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .wp-block-navigation-item.wp-block-navigation-link.header-section-text
@@ -293,166 +293,166 @@ input:checked + .slider:before {
 // --- Animated Hamburger Button Styles ---
 // Modern animated hamburger for mobile header
 .modern-hamburger {
-	display: none;
-	background: #fff;
-	border: none;
-	border-radius: 50%;
-	box-shadow: 0 2px 8px rgba(230, 57, 70, 0.08);
-	padding: 0.5rem;
-	margin-left: auto;
-	z-index: 1201;
-	cursor: pointer;
-	outline: none;
-	transition: background 0.2s;
-	&:hover,
-	&:focus {
-		background: #ffe5e9;
-	}
-	@media (max-width: 1024px) {
-		display: flex;
-		flex-direction: column;
-		justify-content: center;
-		align-items: center;
-		width: 44px;
-		height: 44px;
-	}
+  display: none;
+  background: #fff;
+  border: none;
+  border-radius: 50%;
+  box-shadow: 0 2px 8px rgba(230, 57, 70, 0.08);
+  padding: 0.5rem;
+  margin-left: auto;
+  z-index: 1201;
+  cursor: pointer;
+  outline: none;
+  transition: background 0.2s;
+  &:hover,
+  &:focus {
+    background: #ffe5e9;
+  }
+  @media (max-width: 1024px) {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 44px;
+    height: 44px;
+  }
 }
 
 .hamburger-bar {
-	width: 28px;
-	height: 3px;
-	background: #e63946;
-	margin: 4px 0;
-	border-radius: 2px;
-	transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  width: 28px;
+  height: 3px;
+  background: #e63946;
+  margin: 4px 0;
+  border-radius: 2px;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .modern-hamburger.open .hamburger-bar:nth-child(1) {
-	transform: translateY(7px) rotate(45deg);
+  transform: translateY(7px) rotate(45deg);
 }
 .modern-hamburger.open .hamburger-bar:nth-child(2) {
-	opacity: 0;
+  opacity: 0;
 }
 .modern-hamburger.open .hamburger-bar:nth-child(3) {
-	transform: translateY(-7px) rotate(-45deg);
+  transform: translateY(-7px) rotate(-45deg);
 }
 
 // --- Mobile Dropdown Animation ---
 .mobile-nav-collapse {
-	@media (max-width: 1024px) {
-		position: fixed;
-		top: 0;
-		left: 0;
-		width: 100vw;
-		background: #fff;
-		border-radius: 0 0 1.25rem 1.25rem;
-		box-shadow: 0 8px 32px rgba(230, 57, 70, 0.12);
-		padding: 1.5rem 1rem 1.5rem 1rem;
-		z-index: 1200;
-		max-height: 0;
-		opacity: 0;
-		overflow: hidden;
-		transition:
-			max-height 0.35s cubic-bezier(0.4, 0, 0.2, 1),
-			opacity 0.25s cubic-bezier(0.4, 0, 0.2, 1);
-		&.show {
-			max-height: 600px;
-			opacity: 1;
-			transition:
-				max-height 0.45s cubic-bezier(0.4, 0, 0.2, 1),
-				opacity 0.25s cubic-bezier(0.4, 0, 0.2, 1);
-		}
-		.wp-block-navigation-item {
-			border-radius: 0.75rem;
-			margin-bottom: 0.5rem;
-			transition: background 0.2s;
-			&:hover,
-			&:focus {
-				background: #e5f6ff;
-				color: #e63946;
-			}
-		}
-	}
+  @media (max-width: 1024px) {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    background: #fff;
+    border-radius: 0 0 1.25rem 1.25rem;
+    box-shadow: 0 8px 32px rgba(230, 57, 70, 0.12);
+    padding: 1.5rem 1rem 1.5rem 1rem;
+    z-index: 1200;
+    max-height: 0;
+    opacity: 0;
+    overflow: hidden;
+    transition:
+      max-height 0.35s cubic-bezier(0.4, 0, 0.2, 1),
+      opacity 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+    &.show {
+      max-height: 600px;
+      opacity: 1;
+      transition:
+        max-height 0.45s cubic-bezier(0.4, 0, 0.2, 1),
+        opacity 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+    }
+    .wp-block-navigation-item {
+      border-radius: 0.75rem;
+      margin-bottom: 0.5rem;
+      transition: background 0.2s;
+      &:hover,
+      &:focus {
+        background: #e5f6ff;
+        color: #e63946;
+      }
+    }
+  }
 }
 
 // --- Mobile Backdrop ---
 .mobile-menu-backdrop {
-	@media (max-width: 1024px) {
-		position: fixed;
-		top: 0;
-		left: 0;
-		width: 100vw;
-		height: 100vh;
-		background: rgba(0, 0, 0, 0.18);
-		z-index: 1199;
-		backdrop-filter: blur(2px);
-		transition: opacity 0.3s;
-	}
+  @media (max-width: 1024px) {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.18);
+    z-index: 1199;
+    backdrop-filter: blur(2px);
+    transition: opacity 0.3s;
+  }
 }
 // --- End Animated Hamburger Button Styles ---
 
 // --- Tablet & iPad Support for Mobile Header ---
 // Update media queries to include tablets (up to 1024px wide)
 .modern-hamburger {
-	@media (max-width: 1024px) {
-		display: flex;
-		flex-direction: column;
-		justify-content: center;
-		align-items: center;
-		width: 44px;
-		height: 44px;
-	}
+  @media (max-width: 1024px) {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 44px;
+    height: 44px;
+  }
 }
 
 .mobile-nav-collapse {
-	@media (max-width: 1024px) {
-		position: fixed;
-		top: 0;
-		left: 0;
-		width: 100vw;
-		background: #fff;
-		border-radius: 0 0 1.25rem 1.25rem;
-		box-shadow: 0 8px 32px rgba(230, 57, 70, 0.12);
-		padding: 1.5rem 1rem 1.5rem 1rem;
-		z-index: 1200;
-		max-height: 0;
-		opacity: 0;
-		overflow: hidden;
-		transition:
-			max-height 0.35s cubic-bezier(0.4, 0, 0.2, 1),
-			opacity 0.25s cubic-bezier(0.4, 0, 0.2, 1);
-		&.show {
-			max-height: 600px;
-			opacity: 1;
-			transition:
-				max-height 0.45s cubic-bezier(0.4, 0, 0.2, 1),
-				opacity 0.25s cubic-bezier(0.4, 0, 0.2, 1);
-		}
-		.wp-block-navigation-item {
-			border-radius: 0.75rem;
-			margin-bottom: 0.5rem;
-			transition: background 0.2s;
-			&:hover,
-			&:focus {
-				background: #e5f6ff;
-				color: #e63946;
-			}
-		}
-	}
+  @media (max-width: 1024px) {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    background: #fff;
+    border-radius: 0 0 1.25rem 1.25rem;
+    box-shadow: 0 8px 32px rgba(230, 57, 70, 0.12);
+    padding: 1.5rem 1rem 1.5rem 1rem;
+    z-index: 1200;
+    max-height: 0;
+    opacity: 0;
+    overflow: hidden;
+    transition:
+      max-height 0.35s cubic-bezier(0.4, 0, 0.2, 1),
+      opacity 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+    &.show {
+      max-height: 600px;
+      opacity: 1;
+      transition:
+        max-height 0.45s cubic-bezier(0.4, 0, 0.2, 1),
+        opacity 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+    }
+    .wp-block-navigation-item {
+      border-radius: 0.75rem;
+      margin-bottom: 0.5rem;
+      transition: background 0.2s;
+      &:hover,
+      &:focus {
+        background: #e5f6ff;
+        color: #e63946;
+      }
+    }
+  }
 }
 
 .mobile-menu-backdrop {
-	@media (max-width: 1024px) {
-		position: fixed;
-		top: 0;
-		left: 0;
-		width: 100vw;
-		height: 100vh;
-		background: rgba(0, 0, 0, 0.18);
-		z-index: 1199;
-		backdrop-filter: blur(2px);
-		transition: opacity 0.3s;
-	}
+  @media (max-width: 1024px) {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.18);
+    z-index: 1199;
+    backdrop-filter: blur(2px);
+    transition: opacity 0.3s;
+  }
 }
 // --- End Tablet & iPad Support ---
 
@@ -461,19 +461,19 @@ input:checked + .slider:before {
 // - Ensures a consistent mobile/tablet experience across all devices.
 
 .theme-switch-label {
-	display: flex;
-	align-items: center;
-	gap: 8px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
 }
 .theme-icon {
-	display: flex;
-	align-items: center;
-	font-size: 18px;
-	margin-right: 0;
+  display: flex;
+  align-items: center;
+  font-size: 18px;
+  margin-right: 0;
 }
 
 .flex-center {
-	display: flex !important;
-	justify-content: center;
-	align-items: center;
+  display: flex !important;
+  justify-content: center;
+  align-items: center;
 }

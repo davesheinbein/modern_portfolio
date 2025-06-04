@@ -59,61 +59,61 @@ function Hero({ headshotImg }) {
     };
   }, [jobIndex, jobpositions.length]);
 
-	return (
-		<div className='wp-block-columns is-layout-flex wp-container-core-columns-layout-4 wp-block-columns-is-layout-flex hero-section'>
-			<div
-				className='wp-block-column is-layout-flow wp-block-column-is-layout-flow'
-				style={{ flexBasis: '100%' }}
-			>
-				<div
-					className='wp-block-group alignfull has-background-color has-primary-background-color has-text-color has-background has-link-color wp-elements-d63b33d30a3ee632cf4ad4e987f8f383 has-global-padding is-layout-constrained wp-block-group-is-layout-constrained hero-section'
-					style={{
-						paddingTop: 'var(--wp--preset--spacing--80)',
-						paddingRight: 'var(--wp--preset--spacing--50)',
-						paddingBottom: 'var(--wp--preset--spacing--80)',
-						paddingLeft: 'var(--wp--preset--spacing--50)',
-					}}
-				>
-					<div className='wp-block-columns alignwide is-layout-flex wp-container-core-columns-layout-3 wp-block-columns-is-layout-flex overflow-hidden'>
-						<div className='wp-block-column is-layout-flow wp-block-column-is-layout-flow'>
-							<div className='wp-block-columns is-layout-flex wp-container-core-columns-layout-2 wp-block-columns-is-layout-flex'>
-								<div
-									className='wp-block-column is-layout-flow wp-block-column-is-layout-flow'
-									style={{ flexBasis: '100%' }}
-								>
-									<figure
-										className='wp-block-image size-full has-custom-border is-style-rounded hero-image-figure'
-										style={{
-											position: 'relative',
-											display: 'inline-block',
-										}}
-									>
-										<div className='hero-lottied'>
-											<DotLottieReact
-												src='https://lottie.host/a1d99be5-6304-4656-9f3a-c76a43ff8931/Q94lW8rHgI.lottie'
-												loop
-												autoplay
-												className='hero-lottie-animated'
-											/>
-										</div>
-										<img
-											width='800'
-											height='800'
-											src={headshotUrl}
-											alt={headshotName}
-											className='hero-img wp-image-88'
-											style={{
-												borderRadius: '10px',
-												aspectRatio: '1',
-												objectFit: 'cover',
-												zIndex: 10,
-												position: 'relative',
-											}}
-										/>
-									</figure>
-								</div>
-							</div>
-						</div>
+  return (
+    <div className="wp-block-columns is-layout-flex wp-container-core-columns-layout-4 wp-block-columns-is-layout-flex hero-section">
+      <div
+        className="wp-block-column is-layout-flow wp-block-column-is-layout-flow"
+        style={{ flexBasis: "100%" }}
+      >
+        <div
+          className="wp-block-group alignfull has-background-color has-primary-background-color has-text-color has-background has-link-color wp-elements-d63b33d30a3ee632cf4ad4e987f8f383 has-global-padding is-layout-constrained wp-block-group-is-layout-constrained hero-section"
+          style={{
+            paddingTop: "var(--wp--preset--spacing--80)",
+            paddingRight: "var(--wp--preset--spacing--50)",
+            paddingBottom: "var(--wp--preset--spacing--80)",
+            paddingLeft: "var(--wp--preset--spacing--50)",
+          }}
+        >
+          <div className="wp-block-columns alignwide is-layout-flex wp-container-core-columns-layout-3 wp-block-columns-is-layout-flex overflow-hidden">
+            <div className="wp-block-column is-layout-flow wp-block-column-is-layout-flow">
+              <div className="wp-block-columns is-layout-flex wp-container-core-columns-layout-2 wp-block-columns-is-layout-flex">
+                <div
+                  className="wp-block-column is-layout-flow wp-block-column-is-layout-flow"
+                  style={{ flexBasis: "100%" }}
+                >
+                  <figure
+                    className="wp-block-image size-full has-custom-border is-style-rounded hero-image-figure"
+                    style={{
+                      position: "relative",
+                      display: "inline-block",
+                    }}
+                  >
+                    <div className="hero-lottied">
+                      <DotLottieReact
+                        src="https://lottie.host/a1d99be5-6304-4656-9f3a-c76a43ff8931/Q94lW8rHgI.lottie"
+                        loop
+                        autoplay
+                        className="hero-lottie-animated"
+                      />
+                    </div>
+                    <img
+                      width="800"
+                      height="800"
+                      src={headshotUrl}
+                      alt={headshotName}
+                      className="hero-img wp-image-88"
+                      style={{
+                        borderRadius: "10px",
+                        aspectRatio: "1",
+                        objectFit: "cover",
+                        zIndex: 10,
+                        position: "relative",
+                      }}
+                    />
+                  </figure>
+                </div>
+              </div>
+            </div>
 
             <div className="wp-block-column is-vertically-aligned-center is-layout-flow wp-block-column-is-layout-flow">
               <div className="wp-block-group is-vertical is-layout-flex wp-container-core-group-layout-2 wp-block-group-is-layout-flex">

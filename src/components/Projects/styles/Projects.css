@@ -65,8 +65,8 @@
   max-width: unset !important;
   font-size: 36px;
   -webkit-user-select: none;
-     -moz-user-select: none;
-          user-select: none;
+  -moz-user-select: none;
+  user-select: none;
 }
 .more__projects-project-link {
   font-size: 30px;
@@ -92,4 +92,4 @@
     grid-template-columns: 1fr;
     gap: 2rem;
   }
-}/*# sourceMappingURL=Projects.css.map */
+} /*# sourceMappingURL=Projects.css.map */
