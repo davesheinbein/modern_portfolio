@@ -63,10 +63,12 @@
   }
 }
 @keyframes blink-cursor {
-  0%, 49% {
+  0%,
+  49% {
     opacity: 1;
   }
-  50%, 100% {
+  50%,
+  100% {
     opacity: 0;
   }
 }
@@ -95,7 +97,8 @@
 .contact .wp-block-social-link-anchor {
   border-radius: 50%;
 }
-.contact .wp-block-social-link-anchor:hover, .contact .wp-block-social-link-anchor:active {
+.contact .wp-block-social-link-anchor:hover,
+.contact .wp-block-social-link-anchor:active {
   scale: 1.25;
   border-radius: 5px;
 }
@@ -187,7 +190,8 @@
   cursor: pointer;
   transition: background 0.2s;
 }
-.contact-form-submit:hover, .contact-form-submit:focus {
+.contact-form-submit:hover,
+.contact-form-submit:focus {
   background: #b71c2b;
 }
 
@@ -210,9 +214,9 @@
   width: 100%;
   max-width: 500px;
   -o-object-fit: contain;
-     object-fit: contain;
+  object-fit: contain;
   -o-object-position: center;
-     object-position: center;
+  object-position: center;
   pointer-events: none;
   transition: transform 0.8s cubic-bezier(0.4, 0, 0.2, 1);
   display: block;

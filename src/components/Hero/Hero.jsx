@@ -1,65 +1,63 @@
-import React, { useState, useEffect } from 'react';
-import './styles/Hero.css';
-import jobpositionsData from '../utils/jobpositions.json';
-import { DotLottieReact } from '@lottiefiles/dotlottie-react';
+import React, { useState, useEffect } from "react";
+import "./styles/Hero.css";
+import jobpositionsData from "../utils/jobpositions.json";
+import { DotLottieReact } from "@lottiefiles/dotlottie-react";
 
 function Hero({ headshotImg }) {
-	const headshotUrl = headshotImg.url;
-	const headshotName = headshotImg.name;
+  const headshotUrl = headshotImg.url;
+  const headshotName = headshotImg.name;
 
-	const jobpositions = jobpositionsData;
-	const [jobIndex, setJobIndex] = useState(0);
-	const [typedJobTitle, setTypedJobTitle] = useState('');
-	const [typedJobSlogan, setTypedJobSlogan] = useState('');
-	const [typing, setTyping] = useState(true);
-	const [fade, setFade] = useState(true);
+  const jobpositions = jobpositionsData;
+  const [jobIndex, setJobIndex] = useState(0);
+  const [typedJobTitle, setTypedJobTitle] = useState("");
+  const [typedJobSlogan, setTypedJobSlogan] = useState("");
+  const [typing, setTyping] = useState(true);
+  const [fade, setFade] = useState(true);
 
-	useEffect(() => {
-		setFade(true);
-		setTyping(true);
-		setTypedJobTitle('');
-		setTypedJobSlogan('');
-		const jobTitle = jobpositions[jobIndex].job_title;
-		const jobSlogan = jobpositions[jobIndex].job_slogan;
-		let idx = 0;
-		let sloganIdx = 0;
+  useEffect(() => {
+    setFade(true);
+    setTyping(true);
+    setTypedJobTitle("");
+    setTypedJobSlogan("");
+    const jobTitle = jobpositions[jobIndex].job_title;
+    const jobSlogan = jobpositions[jobIndex].job_slogan;
+    let idx = 0;
+    let sloganIdx = 0;
 
-		function typeJobTitle() {
-			if (idx <= jobTitle.length) {
-				setTypedJobTitle(jobTitle.slice(0, idx));
-				idx++;
-				setTimeout(typeJobTitle, 40);
-			} else {
-				setTyping('slogan');
-				typeJobSlogan();
-			}
-		}
+    function typeJobTitle() {
+      if (idx <= jobTitle.length) {
+        setTypedJobTitle(jobTitle.slice(0, idx));
+        idx++;
+        setTimeout(typeJobTitle, 40);
+      } else {
+        setTyping("slogan");
+        typeJobSlogan();
+      }
+    }
 
-		function typeJobSlogan() {
-			if (sloganIdx <= jobSlogan.length) {
-				setTypedJobSlogan(jobSlogan.slice(0, sloganIdx));
-				sloganIdx++;
-				setTimeout(typeJobSlogan, 30);
-			} else {
-				setTyping(false);
-				setTimeout(() => {
-					setFade(false);
-					setTimeout(() => {
-						setJobIndex(
-							(prev) => (prev + 1) % jobpositions.length
-						);
-					}, 400);
-				}, 2000);
-			}
-		}
+    function typeJobSlogan() {
+      if (sloganIdx <= jobSlogan.length) {
+        setTypedJobSlogan(jobSlogan.slice(0, sloganIdx));
+        sloganIdx++;
+        setTimeout(typeJobSlogan, 30);
+      } else {
+        setTyping(false);
+        setTimeout(() => {
+          setFade(false);
+          setTimeout(() => {
+            setJobIndex((prev) => (prev + 1) % jobpositions.length);
+          }, 400);
+        }, 2000);
+      }
+    }
 
-		typeJobTitle();
+    typeJobTitle();
 
-		return () => {
-			setTypedJobTitle('');
-			setTypedJobSlogan('');
-		};
-	}, [jobIndex, jobpositions.length]);
+    return () => {
+      setTypedJobTitle("");
+      setTypedJobSlogan("");
+    };
+  }, [jobIndex, jobpositions.length]);
 
 	return (
 		<div className='wp-block-columns is-layout-flex wp-container-core-columns-layout-4 wp-block-columns-is-layout-flex hero-section'>
@@ -117,47 +115,38 @@ function Hero({ headshotImg }) {
 							</div>
 						</div>
 
-						<div className='wp-block-column is-vertically-aligned-center is-layout-flow wp-block-column-is-layout-flow'>
-							<div className='wp-block-group is-vertical is-layout-flex wp-container-core-group-layout-2 wp-block-group-is-layout-flex'>
-								<h2 className='wp-block-heading has-text-align-left has-background-color has-text-color has-link-color has-xl-large-font-size wp-elements-2a35f7445bcb2e60f253fa1e254bdeb6 hero-section-header'>
-									Innovation Unleashed:
-									<div
-										className={`job_title${
-											fade ? ' fade-in' : ' fade-out'
-										}`}
-									>
-										{typedJobTitle}
-										<span className='typing-cursor'>
-											{(
-												typing === true ||
-												typing === 'subtitle'
-											) ?
-												'\u2588'
-											:	''}
-										</span>
-									</div>
-									<div
-										className={`job_slogan${
-											fade ? ' fade-in' : ' fade-out'
-										}`}
-										style={{
-											fontSize: '1.1em',
-											marginTop: 8,
-										}}
-									>
-										{typedJobSlogan}
-										<span className='typing-cursor'>
-											{typing === 'slogan' ? '\u2588' : ''}
-										</span>
-									</div>
-								</h2>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	);
+            <div className="wp-block-column is-vertically-aligned-center is-layout-flow wp-block-column-is-layout-flow">
+              <div className="wp-block-group is-vertical is-layout-flex wp-container-core-group-layout-2 wp-block-group-is-layout-flex">
+                <h2 className="wp-block-heading has-text-align-left has-background-color has-text-color has-link-color has-xl-large-font-size wp-elements-2a35f7445bcb2e60f253fa1e254bdeb6 hero-section-header">
+                  Innovation Unleashed:
+                  <div
+                    className={`job_title${fade ? " fade-in" : " fade-out"}`}
+                  >
+                    {typedJobTitle}
+                    <span className="typing-cursor">
+                      {typing === true || typing === "subtitle" ? "\u2588" : ""}
+                    </span>
+                  </div>
+                  <div
+                    className={`job_slogan${fade ? " fade-in" : " fade-out"}`}
+                    style={{
+                      fontSize: "1.1em",
+                      marginTop: 8,
+                    }}
+                  >
+                    {typedJobSlogan}
+                    <span className="typing-cursor">
+                      {typing === "slogan" ? "\u2588" : ""}
+                    </span>
+                  </div>
+                </h2>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  );
 }
 
 export default Hero;

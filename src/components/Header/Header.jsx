@@ -1,10 +1,10 @@
-import React, { useState, useEffect } from 'react';
-import { useRef } from 'react';
-import Navbar from 'react-bootstrap/Navbar';
-import Nav from 'react-bootstrap/Nav';
-import Container from 'react-bootstrap/Container';
-import './styles/Header.css';
-import jobpositionsData from '../utils/jobpositions.json';
+import React, { useState, useEffect } from "react";
+import { useRef } from "react";
+import Navbar from "react-bootstrap/Navbar";
+import Nav from "react-bootstrap/Nav";
+import Container from "react-bootstrap/Container";
+import "./styles/Header.css";
+import jobpositionsData from "../utils/jobpositions.json";
 
 function Header(props) {
 	// --- Animated Mobile Hamburger Button ---
@@ -17,89 +17,85 @@ function Header(props) {
 	const [typing, setTyping] = useState('subtitle');
 	const { redLogoImg, blueLogoImg } = props;
 
-	const redLogoUrl = redLogoImg.url;
-	const blueLogoUrl = blueLogoImg.url;
-	const redLogoName = redLogoImg.name;
-	const blueLogoName = blueLogoImg.name;
+  const redLogoUrl = redLogoImg.url;
+  const blueLogoUrl = blueLogoImg.url;
+  const redLogoName = redLogoImg.name;
+  const blueLogoName = blueLogoImg.name;
 
-	const jobpositions = jobpositionsData;
+  const jobpositions = jobpositionsData;
 
-	const handleMenuToggle = () => {
-		setIsMenuOpen(!isMenuOpen);
-	};
+  const handleMenuToggle = () => {
+    setIsMenuOpen(!isMenuOpen);
+  };
 
-	const handleToggle = () => {
-		props.handleThemeChange(
-			props.color === 'dark' ? 'default' : 'dark'
-		);
-	};
+  const handleToggle = () => {
+    props.handleThemeChange(props.color === "dark" ? "default" : "dark");
+  };
 
-	// Typing animation for subtitle and tagline
-	useEffect(() => {
-		setFade(true);
-		setTyping('subtitle');
-		setTypedSubtitle('');
-		setTypedTagline('');
-		const subtitle = jobpositions[jobIndex].job_title;
-		const tagline = jobpositions[jobIndex].job_description;
-		let subIdx = 0;
-		let tagIdx = 0;
+  // Typing animation for subtitle and tagline
+  useEffect(() => {
+    setFade(true);
+    setTyping("subtitle");
+    setTypedSubtitle("");
+    setTypedTagline("");
+    const subtitle = jobpositions[jobIndex].job_title;
+    const tagline = jobpositions[jobIndex].job_description;
+    let subIdx = 0;
+    let tagIdx = 0;
 
-		function typeSubtitle() {
-			if (subIdx <= subtitle.length) {
-				setTypedSubtitle(subtitle.slice(0, subIdx));
-				subIdx++;
-				setTimeout(typeSubtitle, 40);
-			} else {
-				setTyping('tagline');
-				typeTagline();
-			}
-		}
+    function typeSubtitle() {
+      if (subIdx <= subtitle.length) {
+        setTypedSubtitle(subtitle.slice(0, subIdx));
+        subIdx++;
+        setTimeout(typeSubtitle, 40);
+      } else {
+        setTyping("tagline");
+        typeTagline();
+      }
+    }
 
-		function typeTagline() {
-			if (tagIdx <= tagline.length) {
-				setTypedTagline(tagline.slice(0, tagIdx));
-				tagIdx++;
-				setTimeout(typeTagline, 30);
-			} else {
-				setTyping(false);
-				// Wait before fading out and cycling
-				setTimeout(() => {
-					setFade(false);
-					setTimeout(() => {
-						setJobIndex(
-							(prev) => (prev + 1) % jobpositions.length
-						);
-					}, 400);
-				}, 3000);
-			}
-		}
+    function typeTagline() {
+      if (tagIdx <= tagline.length) {
+        setTypedTagline(tagline.slice(0, tagIdx));
+        tagIdx++;
+        setTimeout(typeTagline, 30);
+      } else {
+        setTyping(false);
+        // Wait before fading out and cycling
+        setTimeout(() => {
+          setFade(false);
+          setTimeout(() => {
+            setJobIndex((prev) => (prev + 1) % jobpositions.length);
+          }, 400);
+        }, 3000);
+      }
+    }
 
-		typeSubtitle();
+    typeSubtitle();
 
-		return () => {
-			setTypedSubtitle('');
-			setTypedTagline('');
-		};
-		// eslint-disable-next-line react-hooks/exhaustive-deps
-	}, [jobIndex, jobpositions.length]);
+    return () => {
+      setTypedSubtitle("");
+      setTypedTagline("");
+    };
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [jobIndex, jobpositions.length]);
 
-	// Utility to split text into spans for ripple effect
-	function RippleText({ text }) {
-		return (
-			<>
-				{text.split('').map((char, i) => (
-					<span
-						className='ripple-letter'
-						key={i}
-						style={{ '--ripple-delay': `${i * 60}ms` }}
-					>
-						{char}
-					</span>
-				))}
-			</>
-		);
-	}
+  // Utility to split text into spans for ripple effect
+  function RippleText({ text }) {
+    return (
+      <>
+        {text.split("").map((char, i) => (
+          <span
+            className="ripple-letter"
+            key={i}
+            style={{ "--ripple-delay": `${i * 60}ms` }}
+          >
+            {char}
+          </span>
+        ))}
+      </>
+    );
+  }
 
 	// --- Desktop Navigation Enhancement ---
 	// Only show main sections on desktop, but include all on mobile

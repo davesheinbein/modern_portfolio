@@ -25,24 +25,19 @@ export function getShuffledEndorsements() {
  * @param {function} onComplete - Callback when typing is done.
  * @param {number} [speed=40] - Typing speed in ms per character.
  */
-export function typeText(
-	text,
-	setTyped,
-	onComplete,
-	speed = 40
-) {
-	let idx = 0;
-	setTyped('');
-	function typeNext() {
-		if (idx < text.length) {
-			setTyped((prev) => prev + text[idx]);
-			idx++;
-			setTimeout(typeNext, speed);
-		} else if (onComplete) {
-			onComplete();
-		}
-	}
-	typeNext();
+export function typeText(text, setTyped, onComplete, speed = 40) {
+  let idx = 0;
+  setTyped("");
+  function typeNext() {
+    if (idx < text.length) {
+      setTyped((prev) => prev + text[idx]);
+      idx++;
+      setTimeout(typeNext, speed);
+    } else if (onComplete) {
+      onComplete();
+    }
+  }
+  typeNext();
 }
 
 /**
@@ -53,13 +48,12 @@ export function typeText(
  * @returns {Array} - The paginated items.
  */
 export function getPaginatedItems(arr, startIdx, count) {
-	if (!Array.isArray(arr) || arr.length === 0 || count <= 0)
-		return [];
-	const result = [];
-	for (let i = 0; i < count; i++) {
-		result.push(arr[(startIdx + i) % arr.length]);
-	}
-	return result;
+  if (!Array.isArray(arr) || arr.length === 0 || count <= 0) return [];
+  const result = [];
+  for (let i = 0; i < count; i++) {
+    result.push(arr[(startIdx + i) % arr.length]);
+  }
+  return result;
 }
 
 /**
@@ -69,11 +63,6 @@ export function getPaginatedItems(arr, startIdx, count) {
  * @returns {object|null} - The image object or null if not found.
  */
 export function findImageByName(imgList, targetImageName) {
-	if (!Array.isArray(imgList) || !targetImageName)
-		return null;
-	return (
-		imgList.find(
-			(img) => img && img.name === targetImageName
-		) || null
-	);
+  if (!Array.isArray(imgList) || !targetImageName) return null;
+  return imgList.find((img) => img && img.name === targetImageName) || null;
 }

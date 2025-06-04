@@ -1,187 +1,187 @@
 [
-	{
-		"job_title": "Senior Frontend Engineer",
-		"job_description": "Leads UI development.",
-		"job_slogan": "Crafting seamless user journeys."
-	},
-	{
-		"job_title": "React Engineer",
-		"job_description": "Expert in React UIs.",
-		"job_slogan": "Reacting to every challenge."
-	},
-	{
-		"job_title": "Full Stack Engineer",
-		"job_description": "Builds front & back end.",
-		"job_slogan": "Bridging front and back, seamlessly."
-	},
-	{
-		"job_title": "Web Application Developer",
-		"job_description": "Optimizes web apps.",
-		"job_slogan": "Web apps, optimized for you."
-	},
-	{
-		"job_title": "Design Systems Developer",
-		"job_description": "Creates UI components.",
-		"job_slogan": "Designing systems, defining standards."
-	},
-	{
-		"job_title": "Frontend Developer",
-		"job_description": "Builds responsive UIs.",
-		"job_slogan": "Making interfaces intuitive."
-	},
-	{
-		"job_title": "JavaScript Developer",
-		"job_description": "JavaScript for web.",
-		"job_slogan": "Powering the web, one script at a time."
-	},
-	{
-		"job_title": "API Engineer",
-		"job_description": "Builds APIs.",
-		"job_slogan": "Connecting the digital world."
-	},
-	{
-		"job_title": "UI/UX Developer",
-		"job_description": "Designs user interfaces.",
-		"job_slogan": "User experience, reimagined."
-	},
-	{
-		"job_title": "Backend Developer",
-		"job_description": "Server-side logic.",
-		"job_slogan": "The engine behind the interface."
-	},
-	{
-		"job_title": "Mobile Engineer",
-		"job_description": "Builds mobile apps.",
-		"job_slogan": "Mobile innovation in your hands."
-	},
-	{
-		"job_title": "Auth & Identity Engineer",
-		"job_description": "Secures authentication.",
-		"job_slogan": "Securing your digital identity."
-	},
-	{
-		"job_title": "Product Developer",
-		"job_description": "Improves workflows.",
-		"job_slogan": "Building products, boosting productivity."
-	},
-	{
-		"job_title": "Web Engineer",
-		"job_description": "Maintains web platforms.",
-		"job_slogan": "Keeping the web running smoothly."
-	},
-	{
-		"job_title": "Angular Engineer",
-		"job_description": "Angular & RxJS expert.",
-		"job_slogan": "Angular precision, RxJS power."
-	},
-	{
-		"job_title": "Creative Technologist",
-		"job_description": "Merges code & design.",
-		"job_slogan": "Where creativity meets technology."
-	},
-	{
-		"job_title": "Growth Engineer",
-		"job_description": "Scales products.",
-		"job_slogan": "Engineering for exponential growth."
-	},
-	{
-		"job_title": "Angular Developer",
-		"job_description": "Builds with Angular.",
-		"job_slogan": "Angular at the core of every app."
-	},
-	{
-		"job_title": "Web Developer",
-		"job_description": "Builds websites.",
-		"job_slogan": "Websites that work for you."
-	},
-	{
-		"job_title": "Mobile Developer",
-		"job_description": "Creates mobile apps.",
-		"job_slogan": "Apps for life on the go."
-	},
-	{
-		"job_title": "JavaScript Engineer",
-		"job_description": "JavaScript for web.",
-		"job_slogan": "Engineering the web with JS."
-	},
-	{
-		"job_title": "Full Stack Developer",
-		"job_description": "Front & back end dev.",
-		"job_slogan": "Full stack, full power."
-	},
-	{
-		"job_title": "Product Engineer",
-		"job_description": "Product-focused dev.",
-		"job_slogan": "Engineering products that matter."
-	},
-	{
-		"job_title": "Software Developer",
-		"job_description": "General development.",
-		"job_slogan": "Solving problems with code."
-	},
-	{
-		"job_title": "DevOps Engineer",
-		"job_description": "Links dev & ops.",
-		"job_slogan": "Bridging development and operations."
-	},
-	{
-		"job_title": "Design Systems Engineer",
-		"job_description": "Creates UI systems.",
-		"job_slogan": "Engineering design consistency."
-	},
-	{
-		"job_title": "UI/UX Engineer",
-		"job_description": "Designs user experience.",
-		"job_slogan": "Engineering delightful experiences."
-	},
-	{
-		"job_title": "API Developer",
-		"job_description": "Maintains APIs.",
-		"job_slogan": "APIs that connect the world."
-	},
-	{
-		"job_title": "Auth & Identity Developer",
-		"job_description": "Secures authentication.",
-		"job_slogan": "Your identity, our priority."
-	},
-	{
-		"job_title": "Growth Developer",
-		"job_description": "Scales products.",
-		"job_slogan": "Developing for tomorrow's growth."
-	},
-	{
-		"job_title": "React Developer",
-		"job_description": "Builds with React.",
-		"job_slogan": "Reacting to your needs."
-	},
-	{
-		"job_title": "Web Application Engineer",
-		"job_description": "Optimizes web apps.",
-		"job_slogan": "Engineering web excellence."
-	},
-	{
-		"job_title": "Software Engineer",
-		"job_description": "Broad development.",
-		"job_slogan": "Engineering the future."
-	},
-	{
-		"job_title": "DevOps Developer",
-		"job_description": "Links dev & ops.",
-		"job_slogan": "Developing seamless operations."
-	},
-	{
-		"job_title": "Data Visualization Engineer",
-		"job_description": "Visualizes data.",
-		"job_slogan": "Turning data into insight."
-	},
-	{
-		"job_title": "Data Visualization Developer",
-		"job_description": "Visualizes data.",
-		"job_slogan": "Developing clarity from complexity."
-	},
-	{
-		"job_title": "Backend Engineer",
-		"job_description": "Server-side APIs.",
-		"job_slogan": "Powering the backend, empowering the user."
-	}
+  {
+    "job_title": "Senior Frontend Engineer",
+    "job_description": "Leads UI development.",
+    "job_slogan": "Crafting seamless user journeys."
+  },
+  {
+    "job_title": "React Engineer",
+    "job_description": "Expert in React UIs.",
+    "job_slogan": "Reacting to every challenge."
+  },
+  {
+    "job_title": "Full Stack Engineer",
+    "job_description": "Builds front & back end.",
+    "job_slogan": "Bridging front and back, seamlessly."
+  },
+  {
+    "job_title": "Web Application Developer",
+    "job_description": "Optimizes web apps.",
+    "job_slogan": "Web apps, optimized for you."
+  },
+  {
+    "job_title": "Design Systems Developer",
+    "job_description": "Creates UI components.",
+    "job_slogan": "Designing systems, defining standards."
+  },
+  {
+    "job_title": "Frontend Developer",
+    "job_description": "Builds responsive UIs.",
+    "job_slogan": "Making interfaces intuitive."
+  },
+  {
+    "job_title": "JavaScript Developer",
+    "job_description": "JavaScript for web.",
+    "job_slogan": "Powering the web, one script at a time."
+  },
+  {
+    "job_title": "API Engineer",
+    "job_description": "Builds APIs.",
+    "job_slogan": "Connecting the digital world."
+  },
+  {
+    "job_title": "UI/UX Developer",
+    "job_description": "Designs user interfaces.",
+    "job_slogan": "User experience, reimagined."
+  },
+  {
+    "job_title": "Backend Developer",
+    "job_description": "Server-side logic.",
+    "job_slogan": "The engine behind the interface."
+  },
+  {
+    "job_title": "Mobile Engineer",
+    "job_description": "Builds mobile apps.",
+    "job_slogan": "Mobile innovation in your hands."
+  },
+  {
+    "job_title": "Auth & Identity Engineer",
+    "job_description": "Secures authentication.",
+    "job_slogan": "Securing your digital identity."
+  },
+  {
+    "job_title": "Product Developer",
+    "job_description": "Improves workflows.",
+    "job_slogan": "Building products, boosting productivity."
+  },
+  {
+    "job_title": "Web Engineer",
+    "job_description": "Maintains web platforms.",
+    "job_slogan": "Keeping the web running smoothly."
+  },
+  {
+    "job_title": "Angular Engineer",
+    "job_description": "Angular & RxJS expert.",
+    "job_slogan": "Angular precision, RxJS power."
+  },
+  {
+    "job_title": "Creative Technologist",
+    "job_description": "Merges code & design.",
+    "job_slogan": "Where creativity meets technology."
+  },
+  {
+    "job_title": "Growth Engineer",
+    "job_description": "Scales products.",
+    "job_slogan": "Engineering for exponential growth."
+  },
+  {
+    "job_title": "Angular Developer",
+    "job_description": "Builds with Angular.",
+    "job_slogan": "Angular at the core of every app."
+  },
+  {
+    "job_title": "Web Developer",
+    "job_description": "Builds websites.",
+    "job_slogan": "Websites that work for you."
+  },
+  {
+    "job_title": "Mobile Developer",
+    "job_description": "Creates mobile apps.",
+    "job_slogan": "Apps for life on the go."
+  },
+  {
+    "job_title": "JavaScript Engineer",
+    "job_description": "JavaScript for web.",
+    "job_slogan": "Engineering the web with JS."
+  },
+  {
+    "job_title": "Full Stack Developer",
+    "job_description": "Front & back end dev.",
+    "job_slogan": "Full stack, full power."
+  },
+  {
+    "job_title": "Product Engineer",
+    "job_description": "Product-focused dev.",
+    "job_slogan": "Engineering products that matter."
+  },
+  {
+    "job_title": "Software Developer",
+    "job_description": "General development.",
+    "job_slogan": "Solving problems with code."
+  },
+  {
+    "job_title": "DevOps Engineer",
+    "job_description": "Links dev & ops.",
+    "job_slogan": "Bridging development and operations."
+  },
+  {
+    "job_title": "Design Systems Engineer",
+    "job_description": "Creates UI systems.",
+    "job_slogan": "Engineering design consistency."
+  },
+  {
+    "job_title": "UI/UX Engineer",
+    "job_description": "Designs user experience.",
+    "job_slogan": "Engineering delightful experiences."
+  },
+  {
+    "job_title": "API Developer",
+    "job_description": "Maintains APIs.",
+    "job_slogan": "APIs that connect the world."
+  },
+  {
+    "job_title": "Auth & Identity Developer",
+    "job_description": "Secures authentication.",
+    "job_slogan": "Your identity, our priority."
+  },
+  {
+    "job_title": "Growth Developer",
+    "job_description": "Scales products.",
+    "job_slogan": "Developing for tomorrow's growth."
+  },
+  {
+    "job_title": "React Developer",
+    "job_description": "Builds with React.",
+    "job_slogan": "Reacting to your needs."
+  },
+  {
+    "job_title": "Web Application Engineer",
+    "job_description": "Optimizes web apps.",
+    "job_slogan": "Engineering web excellence."
+  },
+  {
+    "job_title": "Software Engineer",
+    "job_description": "Broad development.",
+    "job_slogan": "Engineering the future."
+  },
+  {
+    "job_title": "DevOps Developer",
+    "job_description": "Links dev & ops.",
+    "job_slogan": "Developing seamless operations."
+  },
+  {
+    "job_title": "Data Visualization Engineer",
+    "job_description": "Visualizes data.",
+    "job_slogan": "Turning data into insight."
+  },
+  {
+    "job_title": "Data Visualization Developer",
+    "job_description": "Visualizes data.",
+    "job_slogan": "Developing clarity from complexity."
+  },
+  {
+    "job_title": "Backend Engineer",
+    "job_description": "Server-side APIs.",
+    "job_slogan": "Powering the backend, empowering the user."
+  }
 ]

@@ -1,125 +1,125 @@
-@import '../../../breakpoints/breakpoints.scss';
-@import '../../../mixins/mixins.scss';
+@import "../../../breakpoints/breakpoints.scss";
+@import "../../../mixins/mixins.scss";
 
 // Animations
-@import '../../../styles/animations.scss';
+@import "../../../styles/animations.scss";
 
 .social-link {
-	padding-left: 0;
+  padding-left: 0;
 }
 
 .contact {
-	.wp-block-social-link-anchor {
-		border-radius: 50%;
-		&:hover,
-		&:active {
-			scale: 1.25;
-			border-radius: 5px;
-		}
-	}
+  .wp-block-social-link-anchor {
+    border-radius: 50%;
+    &:hover,
+    &:active {
+      scale: 1.25;
+      border-radius: 5px;
+    }
+  }
 
-	&-subtitle {
-		padding: -5px 0 0;
-		font-size: 16px;
-		font-weight: 600;
-		color: #444;
-		margin-bottom: 0.5rem;
-	}
+  &-subtitle {
+    padding: -5px 0 0;
+    font-size: 16px;
+    font-weight: 600;
+    color: #444;
+    margin-bottom: 0.5rem;
+  }
 
-	&-tagline {
-		padding: -5px 0 0;
-		font-size: 10px;
-		font-weight: 400;
-		color: #444;
-		margin-bottom: 0.5rem;
-	}
+  &-tagline {
+    padding: -5px 0 0;
+    font-size: 10px;
+    font-weight: 400;
+    color: #444;
+    margin-bottom: 0.5rem;
+  }
 }
 
 .contact-form-container {
-	background: #fff;
-	border-radius: 16px;
-	box-shadow: 0 2px 16px rgba(0, 0, 0, 0.07);
-	padding: 2.5rem 2rem 2rem 2rem;
-	margin: 2rem 0;
-	max-width: 520px;
-	width: 100%;
+  background: #fff;
+  border-radius: 16px;
+  box-shadow: 0 2px 16px rgba(0, 0, 0, 0.07);
+  padding: 2.5rem 2rem 2rem 2rem;
+  margin: 2rem 0;
+  max-width: 520px;
+  width: 100%;
 }
 
 .contact-form-header {
-	margin-bottom: 1.5rem;
+  margin-bottom: 1.5rem;
 }
 
 .contact-form-title {
-	display: flex;
-	font-size: 2rem;
-	font-weight: 700;
-	margin-bottom: 0.5rem;
-	color: #11181f;
+  display: flex;
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+  color: #11181f;
 }
 
 .contact-form-description {
-	font-size: 1.1rem;
-	color: #444;
-	margin-bottom: 0;
+  font-size: 1.1rem;
+  color: #444;
+  margin-bottom: 0;
 }
 
 .contact-form-fields {
-	display: flex;
-	flex-direction: column;
-	gap: 1.25rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
 }
 
 .contact-form-field {
-	label {
-		font-weight: 600;
-		margin-bottom: 0.25rem;
-		display: block;
-		color: #11181f;
-	}
+  label {
+    font-weight: 600;
+    margin-bottom: 0.25rem;
+    display: block;
+    color: #11181f;
+  }
 
-	input,
-	textarea {
-		width: 100%;
-		padding: 0.75rem 1rem;
-		border: 1px solid #e0e0e0;
-		border-radius: 8px;
-		font-size: 1rem;
-		background: #fafbfc;
-		margin-top: 0.25rem;
-		transition: border 0.2s;
+  input,
+  textarea {
+    width: 100%;
+    padding: 0.75rem 1rem;
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    font-size: 1rem;
+    background: #fafbfc;
+    margin-top: 0.25rem;
+    transition: border 0.2s;
 
-		&:focus {
-			border: 1.5px solid #e63946;
-			outline: none;
-		}
-	}
+    &:focus {
+      border: 1.5px solid #e63946;
+      outline: none;
+    }
+  }
 }
 
 .contact-form-actions {
-	margin-top: 1.5rem;
-	text-align: right;
+  margin-top: 1.5rem;
+  text-align: right;
 }
 
 .contact-form-submit {
-	background: #e63946;
-	color: #fff;
-	font-weight: 700;
-	border: none;
-	border-radius: 8px;
-	padding: 0.75rem 2.5rem;
-	font-size: 1.1rem;
-	cursor: pointer;
-	transition: background 0.2s;
+  background: #e63946;
+  color: #fff;
+  font-weight: 700;
+  border: none;
+  border-radius: 8px;
+  padding: 0.75rem 2.5rem;
+  font-size: 1.1rem;
+  cursor: pointer;
+  transition: background 0.2s;
 
-	&:hover,
-	&:focus {
-		background: #b71c2b;
-	}
+  &:hover,
+  &:focus {
+    background: #b71c2b;
+  }
 }
 
 .contact-form-lottie-icon {
-	width: 35px;
-	height: 35px;
+  width: 35px;
+  height: 35px;
 }
 
 .contact-lottie {
@@ -132,30 +132,30 @@
 	overflow: hidden;
 	transition: transform 0.8s cubic-bezier(0.4, 0, 0.2, 1);
 
-	&-animated {
-		width: 100%;
-		max-width: 500px;
-		object-fit: contain;
-		object-position: center;
-		pointer-events: none;
-		transition: transform 0.8s cubic-bezier(0.4, 0, 0.2, 1);
-		display: block;
-		margin: 0 auto;
-	}
+  &-animated {
+    width: 100%;
+    max-width: 500px;
+    object-fit: contain;
+    object-position: center;
+    pointer-events: none;
+    transition: transform 0.8s cubic-bezier(0.4, 0, 0.2, 1);
+    display: block;
+    margin: 0 auto;
+  }
 
-	&.flipped .contact-lottie-animated {
-		transform: rotateY(180deg);
-	}
+  &.flipped .contact-lottie-animated {
+    transform: rotateY(180deg);
+  }
 
-	&-header {
-		display: flex;
-		align-items: center;
-		justify-content: center;
-		gap: 1rem;
-		margin-bottom: 1.5rem;
-		width: 50px;
-		height: 50px;
-	}
+  &-header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    margin-bottom: 1.5rem;
+    width: 50px;
+    height: 50px;
+  }
 }
 
 // Hide disco mode if present
