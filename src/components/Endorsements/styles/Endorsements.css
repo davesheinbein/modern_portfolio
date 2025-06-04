@@ -63,10 +63,12 @@
   }
 }
 @keyframes blink-cursor {
-  0%, 49% {
+  0%,
+  49% {
     opacity: 1;
   }
-  50%, 100% {
+  50%,
+  100% {
     opacity: 0;
   }
 }
@@ -121,4 +123,4 @@
   padding-right: var(--wp--preset--spacing--50);
   padding-bottom: var(--wp--preset--spacing--80);
   padding-left: var(--wp--preset--spacing--50);
-}/*# sourceMappingURL=Endorsements.css.map */
+} /*# sourceMappingURL=Endorsements.css.map */

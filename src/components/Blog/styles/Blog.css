@@ -58,10 +58,12 @@
   }
 }
 @keyframes blink-cursor {
-  0%, 49% {
+  0%,
+  49% {
     opacity: 1;
   }
-  50%, 100% {
+  50%,
+  100% {
     opacity: 0;
   }
 }
@@ -124,4 +126,4 @@
 }
 .blog .blog-slider-controls button:hover {
   background: #f0f0f0;
-}/*# sourceMappingURL=Blog.css.map */
+} /*# sourceMappingURL=Blog.css.map */

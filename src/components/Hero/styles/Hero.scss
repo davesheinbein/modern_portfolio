@@ -1,54 +1,54 @@
-@import '../../../styles/animations.scss';
+@import "../../../styles/animations.scss";
 
 .hero-image-figure {
-	position: relative;
-	display: inline-block;
+  position: relative;
+  display: inline-block;
 }
 
 .hero {
-	&-lottie {
-		z-index: 0;
+  &-lottie {
+    z-index: 0;
 
-		&-animated {
-			position: absolute;
-			left: 0;
-			top: 0;
-			width: 250px;
-			height: 250px;
-			pointer-events: none;
-			transform: scaleX(-1);
-			animation: lottie-move 3.2s
-				cubic-bezier(0.7, 0.2, 0.2, 1) infinite alternate;
-		}
+    &-animated {
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 250px;
+      height: 250px;
+      pointer-events: none;
+      transform: scaleX(-1);
+      animation: lottie-move 3.2s cubic-bezier(0.7, 0.2, 0.2, 1) infinite
+        alternate;
+    }
 
-		&-large {
-			width: 300px;
-			height: 300px;
-		}
-	}
+    &-large {
+      width: 300px;
+      height: 300px;
+    }
+  }
 }
 
 @media (max-width: 600px) {
-	.hero-animated {
-		width: 28px;
-		height: 28px;
-		left: 110%;
-		top: -14px;
-	}
+  .hero-animated {
+    width: 28px;
+    height: 28px;
+    left: 110%;
+    top: -14px;
+  }
 
-	.hero-image-figure .dotlottie-react {
-		width: 28px !important;
-		height: 28px !important;
-		left: 110% !important;
-		top: -14px !important;
-	}
+  .hero-image-figure .dotlottie-react {
+    width: 28px !important;
+    height: 28px !important;
+    left: 110% !important;
+    top: -14px !important;
+  }
 
-	.hero-lottie {
-		.hero-lottie-animated {
-			width: 28px;
-			height: 28px;
-			left: 0;
-			top: 0;
-		}
-	}
+  .hero-lottie {
+    .hero-lottie-animated {
+      width: 28px;
+      height: 28px;
+      left: 0;
+      top: 0;
+    }
+  }
 }
