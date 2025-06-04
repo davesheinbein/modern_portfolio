@@ -27,9 +27,14 @@
 	display: grid;
 	grid-template-columns: repeat(2, 1fr);
 	gap: 20px;
-	// margin: 0 !important;
 	margin: 0 auto;
 	padding: 10px 0 !important;
+
+	@media (max-width: 1024px) {
+		grid-template-columns: 1fr;
+		display: grid;
+		gap: 2rem;
+	}
 }
 
 .git__project-item {
@@ -63,6 +68,8 @@
 			font-size: 30px;
 			padding: 0 20px;
 			text-decoration: none;
+			text-wrap: nowrap;
+
 			&-icon {
 				padding-right: 5px;
 			}
@@ -72,4 +79,16 @@
 
 .no-border {
 	border: none !important;
+}
+
+// Responsive grid for personal projects (A Few Personal Projects)
+.wp-block-columns.is-layout-flex.wp-container-core-columns-layout-12.wp-block-columns-is-layout-flex {
+	display: grid !important;
+	grid-template-columns: repeat(2, 1fr);
+	gap: 20px;
+
+	@media (max-width: 1024px) {
+		grid-template-columns: 1fr;
+		gap: 2rem;
+	}
 }

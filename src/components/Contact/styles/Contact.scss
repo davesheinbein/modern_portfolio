@@ -124,7 +124,6 @@
 
 .contact-lottie {
 	margin-top: auto !important;
-	height: 101%;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
@@ -157,4 +156,9 @@
 		width: 50px;
 		height: 50px;
 	}
+}
+
+// Hide disco mode if present
+[class*="disco"] {
+  display: none !important;
 }

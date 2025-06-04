@@ -76,7 +76,7 @@ function Hero({ headshotImg }) {
 						paddingLeft: 'var(--wp--preset--spacing--50)',
 					}}
 				>
-					<div className='wp-block-columns alignwide is-layout-flex wp-container-core-columns-layout-3 wp-block-columns-is-layout-flex'>
+					<div className='wp-block-columns alignwide is-layout-flex wp-container-core-columns-layout-3 wp-block-columns-is-layout-flex overflow-hidden'>
 						<div className='wp-block-column is-layout-flow wp-block-column-is-layout-flow'>
 							<div className='wp-block-columns is-layout-flex wp-container-core-columns-layout-2 wp-block-columns-is-layout-flex'>
 								<div

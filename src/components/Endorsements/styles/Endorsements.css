@@ -57,7 +57,7 @@
   }
   100% {
     left: 120%;
-    top: -20px;
+    top: -60px;
     opacity: 1;
     transform: translate(-50%, 0) scale(1);
   }
@@ -95,24 +95,47 @@
 .endorsements-list {
   position: relative;
   height: 450px;
+  overflow: hidden;
+  width: 100%;
+  margin: 0 auto;
+  --marquee-speed: 60s;
+  --marquee-direction: normal;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
 }
 
-.endorsements-list .wp-block-columns {
-  opacity: 0;
-  transform: translateY(40px) scale(0.98);
-  animation: fadeSlideIn 1s cubic-bezier(0.4, 0, 0.2, 1) forwards;
+.endorsements-list-inner {
+  display: flex;
+  flex-direction: column;
+  /* Animate the entire stack upward for marquee effect */
+  will-change: transform;
+  animation: vertical-marquee var(--marquee-speed, 60s) linear infinite var(--marquee-direction, normal);
 }
 
-.endorsements-list .wp-block-columns-exit {
+@keyframes vertical-marquee {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(-50%);
+  }
+}
+.endorsement-item {
+  position: relative;
+  width: 100%;
   opacity: 1;
-  transform: translateY(0) scale(1);
-  animation: fadeSlideOut 0.7s cubic-bezier(0.4, 0, 0.2, 1) forwards;
+  transform: none;
+  animation: none;
+  margin-bottom: 2rem;
 }
 
+@media (max-width: 600px) {
+  .endorsements-list {
+    height: 300px;
+  }
+}
 .endorsements-section-padding {
   height: 1000px;
   margin-top: 0px;
